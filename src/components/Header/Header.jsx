@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import styled from 'styled-components'
 import colors from '../../utils/colors'
 import { breakpoints } from '../../utils/css-breakpoints'
@@ -48,12 +48,14 @@ function Header() {
         <StyledHeader>
             <StyledContainer className="container">
                 <div className="logo">
-                    <img
-                        src="/logo.svg"
-                        alt="Hélène Carriou, développeuse web"
-                        width={88}
-                        height={68}
-                    />
+                    <Link to="/" activeClassName="active">
+                        <img
+                            src="/logo.svg"
+                            alt="Hélène Carriou, développeuse web"
+                            width={88}
+                            height={68}
+                        />
+                    </Link>
                 </div>
                 <nav>
                     <StyledLink to="/" activeClassName="active">
