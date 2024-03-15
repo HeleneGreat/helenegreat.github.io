@@ -15,14 +15,9 @@ const StyledLink = styled(Link)`
     bottom: 20px;
     left: 50%;
     transform: translatex(-50%);
-    background-color: ${colors.tertiary};
-    color: #fff;
-    padding: 8px 30px;
     font-size: 22px;
-    font-family: ${fonts.colombo};
     &:hover {
         background-color: ${colors.primary};
-        transition: all 0.2s ease-in-out;
     }
 `
 const StyledName = styled('span')`
@@ -61,7 +56,11 @@ function Card({ project }) {
                 height={80}
                 width={80}
             />
-            <StyledLink to={`/portfolio/${project.slug}`} project={project}>
+            <StyledLink
+                className="button"
+                to={`/portfolio/${project.slug}`}
+                project={project}
+            >
                 En savoir +
             </StyledLink>
         </StyledCard>

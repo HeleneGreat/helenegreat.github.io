@@ -1,33 +1,13 @@
 import ProjectCard from '../../components/ProjectCard/ProjectCard'
 import styled from 'styled-components'
-import { breakpoints } from '../../utils/css-breakpoints'
 import colors from '../../utils/colors'
 import projects from '../../datas/projects'
 
-// const StyledHeader = styled('div')`
-//     color: #fff;
-//     background-color: ${colors.primary};
-//     padding: 50px 0 80px;
-//     p {
-//         margin-top: 30px;
-//         font-size: 23px;
-//         letter-spacing: 1px;
-//         line-height: 35px;
-//         margin-top: 50px;
-//         @media screen and ${breakpoints.laptop} {
-//             width: 80%;
-//         }
-//         @media screen and ${breakpoints.desktop} {
-//             width: 70%;
-//         }
-//     }
-// `
 const StyledPortfolioBody = styled('div')`
     background-color: ${colors.secondary};
-    padding-bottom: 80px;
     h2 {
         text-align: center;
-        padding: 40px 0;
+        padding-bottom: 40px;
     }
 `
 const StyledProjectList = styled('ul')`
@@ -60,7 +40,7 @@ function Portfolio() {
                     </p>
                 </div>
             </div>
-            <StyledPortfolioBody>
+            <StyledPortfolioBody className="page-body">
                 <div className="container">
                     <h2>Mes projets</h2>
                     <StyledProjectList>

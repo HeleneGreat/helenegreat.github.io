@@ -7,14 +7,18 @@ import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 import Curriculum from './pages/Curriculum/Curriculum';
 import Portfolio from './pages/Portfolio/Portfolio';
+import Project from './pages/Project/Project';
 import Contact from './pages/Contact/Contact';
 import Error from './components/Error/Error';
+import projects from './datas/projects'
+
 
 // Style
 import { createGlobalStyle } from 'styled-components'
 import PostNoBillColombo from './assets/fonts/postnobillscolombo-medium-webfont.woff'
 import {breakpoints} from './utils/css-breakpoints'
 import fonts from './utils/fonts'
+import colors from './utils/colors'
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -27,8 +31,26 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
   }
+  ::-webkit-scrollbar {
+    width: 12px;
+    background : ${colors.secondary};
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px grey;
+  }
+  ::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 0 1px grey;
+    background: ${colors.primary};
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2a3d2a; 
+  }
   * {
     font-family: ${fonts.pt};
+    &::selection{
+      background-color: #fff;
+      color: ${colors.primary};
+    }
   }
   h1, h2 {
     font-family: ${fonts.colombo}
@@ -39,8 +61,15 @@ const GlobalStyle = createGlobalStyle`
   ul {
     list-style-type: none;
   }
-  p{
+  p, a, h1, h2, h3, ul, li{
     margin: 0;
+    padding: 0;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  h2 {
+    font-size: 50px;
   }
   .container {
     width: 90%;
@@ -50,6 +79,44 @@ const GlobalStyle = createGlobalStyle`
     }
     @media screen and ${breakpoints.desktop} {
       width: 1200px;
+    }
+  }
+  .main {
+    margin-top: 80px;
+  }
+  p, a, li{
+    font-size: 23px;
+    line-height: 35px;
+  }
+  .page-header{
+    color: #fff;
+    background-color: ${colors.primary};
+    padding: 50px 0 80px;
+    p {
+        margin-top: 30px;
+        letter-spacing: 1px;
+        @media screen and ${breakpoints.laptop} {
+            width: 80%;
+        }
+        @media screen and ${breakpoints.desktop} {
+            width: 70%;
+        }
+    }
+  }
+  .page-body{
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  .button{
+    background-color: ${colors.tertiary};
+    color: #fff;
+    padding: 8px 30px;
+    font-size: 30px;
+    font-family: ${fonts.colombo};
+    &:hover {
+        background-color: ${colors.primary};
+        color: #fff;
+        transition: all 0.2s ease-in-out;
     }
   }
 `
@@ -64,8 +131,9 @@ root.render(
         <Route path="/" element={<Home/>}/>
         <Route path="/parcours" element={<Curriculum/>}/>
         <Route path="/portfolio" element={<Portfolio/>}/>
-        <Route path="/portfolio/:projectId" element={<Portfolio/>}/>
+        <Route path="/portfolio/:projectSlug" element={<Project projects={projects}/>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/404" element={<Error/>} />
         <Route path='*' element={<Error/>}/>
       </Routes>
       <Footer/>
