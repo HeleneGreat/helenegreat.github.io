@@ -5,8 +5,12 @@ import { breakpoints } from '../../utils/css-breakpoints'
 import fonts from '../../utils/fonts'
 
 const StyledHeader = styled('header')`
-    padding: 30px 0;
+    padding: 7px 0;
     background-color: ${colors.primary};
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999999999;
 `
 const StyledContainer = styled('div')`
     display: flex;

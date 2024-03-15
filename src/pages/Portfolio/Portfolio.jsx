@@ -1,75 +1,27 @@
-import { useParams } from 'react-router-dom'
 import ProjectCard from '../../components/ProjectCard/ProjectCard'
-import DefaultPicture from '../../assets/DefaultPicture.jpg'
 import styled from 'styled-components'
 import { breakpoints } from '../../utils/css-breakpoints'
 import colors from '../../utils/colors'
+import projects from '../../datas/projects'
 
-const projectList = [
-    {
-        id: 1,
-        slug: 'un',
-        name: 'Premier projet',
-        introduction: '11111111111',
-        coverImage: DefaultPicture,
-        techno: [],
-        description: '111111111111111111111111111111111111111',
-        images: [],
-        githubLink: '1',
-    },
-    {
-        id: 2,
-        slug: 'deux',
-        name: 'Deuxième projet',
-        introduction: '22222222222',
-        // coverImage: DefaultPicture,
-        techno: [],
-        description: '222222222222222222222222222222222222222222',
-        images: [],
-        githubLink: '2',
-    },
-    {
-        id: 3,
-        slug: 'trois',
-        name: 'Troisième projet',
-        introduction: '3333333333333',
-        coverImage: DefaultPicture,
-        techno: [],
-        description: '3333333333333333333333333333333333333333333333',
-        images: [],
-        githubLink: '3',
-    },
-    {
-        id: 4,
-        slug: 'quatre',
-        name: 'Quatrième projet',
-        introduction: '444444444444',
-        coverImage: DefaultPicture,
-        techno: [],
-        description: '4444444444444444444444444444444444444444',
-        images: [],
-        githubLink: '4',
-    },
-]
-const StyledHeader = styled('div')`
-    color: #fff;
-    background-color: ${colors.primary};
-    padding: 50px 0 80px;
-    p {
-        margin-top: 30px;
-        font-size: 23px;
-        letter-spacing: 1px;
-        line-height: 35px;
-        margin-top: 50px;
-        @media screen and ${breakpoints.laptop} {
-            width: 80%;
-        }
-        @media screen and ${breakpoints.desktop} {
-            width: 70%;
-        }
-    }
-`
-
+// const StyledHeader = styled('div')`
+//     color: #fff;
+//     background-color: ${colors.primary};
+//     padding: 50px 0 80px;
+//     p {
+//         margin-top: 30px;
+//         font-size: 23px;
+//         letter-spacing: 1px;
+//         line-height: 35px;
+//         margin-top: 50px;
+//         @media screen and ${breakpoints.laptop} {
+//             width: 80%;
+//         }
+//         @media screen and ${breakpoints.desktop} {
+//             width: 70%;
+//         }
+//     }
+// `
 const StyledPortfolioBody = styled('div')`
     background-color: ${colors.secondary};
     padding-bottom: 80px;
@@ -86,12 +38,9 @@ const StyledProjectList = styled('ul')`
 `
 
 function Portfolio() {
-    // const { projectId } = useParams()
-
     return (
-        <div>
-            {/* <h2>Project n° {projectId}</h2> */}
-            <StyledHeader>
+        <div className="main">
+            <div className="page-header">
                 <div className="container">
                     <h1>Portfolio</h1>
                     <p className="presentation">
@@ -110,18 +59,13 @@ function Portfolio() {
                         auctor ultrices. Orci non lorem dignissim non et.
                     </p>
                 </div>
-            </StyledHeader>
+            </div>
             <StyledPortfolioBody>
                 <div className="container">
                     <h2>Mes projets</h2>
                     <StyledProjectList>
-                        {projectList.map((project) => (
-                            <ProjectCard
-                                key={project.id}
-                                name={project.name}
-                                description={project.introduction}
-                                picture={project.coverImage}
-                            />
+                        {projects.map((project) => (
+                            <ProjectCard key={project.id} project={project} />
                         ))}
                     </StyledProjectList>
                 </div>

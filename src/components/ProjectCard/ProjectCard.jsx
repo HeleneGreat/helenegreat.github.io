@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
-import DefaultPicture from '../../assets/DefaultPicture.jpg'
 import styled from 'styled-components'
 import { breakpoints } from '../../utils/css-breakpoints'
 import colors from '../../utils/colors'
@@ -52,23 +51,28 @@ const StyledCard = styled('li')`
     }
 `
 
-function Card({ name, picture }) {
+function Card({ project }) {
     return (
         <StyledCard>
-            <StyledName>{name}</StyledName>
-            <StyledCoverImg src={picture} alt="projet" height={80} width={80} />
-            <StyledLink to="/">En savoir +</StyledLink>
+            <StyledName>{project.name}</StyledName>
+            <StyledCoverImg
+                src={project.coverImage}
+                alt={project.name}
+                height={80}
+                width={80}
+            />
+            <StyledLink to={`/portfolio/${project.slug}`} project={project}>
+                En savoir +
+            </StyledLink>
         </StyledCard>
     )
 }
 
 Card.propTypes = {
-    name: PropTypes.string.isRequired,
-    picture: PropTypes.string,
-}
-Card.defaultProps = {
-    name: 'Nouveau projet',
-    picture: DefaultPicture,
+    projet: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        coverImage: PropTypes.string,
+    }),
 }
 
 export default Card
