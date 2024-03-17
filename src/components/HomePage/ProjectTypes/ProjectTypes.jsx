@@ -6,7 +6,7 @@ function ProjectTypes() {
         'Site vitrine',
         'Single Page Application',
         'Application web',
-        'Mobile',
+        'Application mobile',
     ]
     return <SkillsList skills={skills} />
 }

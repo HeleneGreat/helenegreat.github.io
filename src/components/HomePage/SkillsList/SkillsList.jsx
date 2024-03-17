@@ -23,6 +23,7 @@ const StyledElement = styled('li')`
     p {
         font-family: ${fonts.colombo};
         padding: 0 10px;
+        font-size: 28px;
     }
     &:not(:last-of-type):after {
         content: '';

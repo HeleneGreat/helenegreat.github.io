@@ -85,7 +85,7 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   .main {
-    margin-top: 80px;
+    margin-top: 91px;
   }
   p, a, li{
     font-size: 23px;

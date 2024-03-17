@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import colors from '../../utils/colors'
-import { breakpoints } from '../../utils/css-breakpoints'
 import fonts from '../../utils/fonts'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -27,13 +26,22 @@ const StyledName = styled('div')`
         }
     }
 `
+
+const StyledLinks = styled('div')`
+    a:not(:first-of-type) {
+        margin-left: 50px;
+    }
+    svg {
+        transition: all 0.4s ease-in-out;
+    }
+    a:hover svg {
+        transform: scale(1.2);
+    }
+`
 const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
     color: #fff;
     font-size: 50px;
-    margin-left: 50px;
 `
-
-const StyledLinks = styled('div')``
 
 function Footer() {
     return (
@@ -46,10 +54,18 @@ function Footer() {
                     </p>
                 </StyledName>
                 <StyledLinks>
-                    <Link to="/" activeClassName="active" title="LinkedIn">
+                    <Link
+                        to="https://www.linkedin.com/in/hélène-carriou/"
+                        title="Profil LinkedIn"
+                        target="_blank"
+                    >
                         <StyledFontAwesomeIcon icon={faLinkedin} />
                     </Link>
-                    <Link to="/contact" activeClassName="active" title="GitHub">
+                    <Link
+                        to="https://github.com/HeleneGreat"
+                        title="Profil GitHub"
+                        target="_blank"
+                    >
                         <StyledFontAwesomeIcon icon={faSquareGithub} />
                     </Link>
                 </StyledLinks>
