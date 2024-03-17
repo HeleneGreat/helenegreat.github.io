@@ -7,21 +7,8 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { faSquareGithub } from '@fortawesome/free-brands-svg-icons'
+import ProjectIntroduction from '../../components/ProjectIntroduction/ProjectIntroduction'
 
-const SyledIntro = styled('div')`
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    img {
-        width: 350px;
-        height: 350px;
-        object-fit: cover;
-        padding-left: 50px;
-    }
-`
-const StyledH1 = styled('h1')`
-    margin-top: 30px;
-`
 const StyledProjectBody = styled('div')`
     background-color: ${colors.secondary};
 `
@@ -80,16 +67,7 @@ function Project() {
                         <StyledChevronIcon icon={faChevronLeft} />
                         Retour
                     </StyledButton>
-                    <StyledH1>{project.name}</StyledH1>
-                    <SyledIntro>
-                        <p>{project.introduction}</p>
-                        <img
-                            src={project.coverImage}
-                            alt={project.name}
-                            width={500}
-                            height={500}
-                        />
-                    </SyledIntro>
+                    <ProjectIntroduction project={project} titleSize={'h1'} />
                 </div>
             </div>
             <Techno technos={project.techno} />

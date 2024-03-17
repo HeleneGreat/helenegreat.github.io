@@ -52,7 +52,7 @@ const GlobalStyle = createGlobalStyle`
       color: ${colors.primary};
     }
   }
-  h1, h2 {
+  h1, h2, h3 {
     font-family: ${fonts.colombo}
   }
   a {
@@ -70,6 +70,9 @@ const GlobalStyle = createGlobalStyle`
   }
   h2 {
     font-size: 50px;
+  }
+  h3 {
+    font-size: 40px;
   }
   .container {
     width: 90%;
