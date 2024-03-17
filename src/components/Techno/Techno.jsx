@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import colors from '../../utils/colors'
 import technoIcons from '../../datas/technoIcons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import TechnoLevel from '../TechnoLevel/TechnoLevel'
 
 const StyledTechno = styled('div')`
     background-color: ${colors.black};
@@ -53,6 +54,9 @@ function Techno({ technos, allIcons = false }) {
                                     title={technoIcon.name}
                                 />
                                 {allIcons && <p>{technoIcon.name}</p>}
+                                {allIcons && (
+                                    <TechnoLevel level={technoIcon.level} />
+                                )}
                             </li>
                         )
                     })}

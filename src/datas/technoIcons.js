@@ -7,59 +7,73 @@ const technoIcons = [
 
     {
         name: 'Symfony',
-        icon: faSymfony
+        icon: faSymfony,
+        level: 5
     },
     {
         name: 'PHP',
-        icon: faPhp
+        icon: faPhp,
+        level: 5
     },
     {
         name: 'HTML',
-        icon: faHtml5
+        icon: faHtml5,
+        level: 5
     },
     {
         name: 'CSS',
-        icon: faCss3Alt
+        icon: faCss3Alt,
+        level: 5
     },
     {
         name: 'Sass',
-        icon: faSass
+        icon: faSass,
+        level: 5
     },
     {
         name: 'Bootstrap',
-        icon: faBootstrap
-    },
-    {
-        name: 'JS',
-        icon: faJsSquare
-    },
-    {
-        name: 'React',
-        icon: faReact
-    },
-    {
-        name: 'Wordpress',
-        icon: faWordpress
-    },
-    {
-        name: 'Android',
-        icon: faAndroid
-    },
-    {
-        name: 'Python',
-        icon: faPython
+        icon: faBootstrap,
+        level: 5
     },
     {
         name: 'SQL',
-        icon: faDatabase
+        icon: faDatabase,
+        level: 5
     },
     {
+        name: 'Javascript',
+        icon: faJsSquare,
+        level: 3
+    },
+    {
+        name: 'React',
+        icon: faReact,
+        level: 3
+    },
+    {
+        name: 'Wordpress',
+        icon: faWordpress,
+        level: 3
+    }, 
+    {
         name: 'Doctrine',
-        icon: faDatabase
+        icon: faDatabase,
+        level: 4
+    },
+    {
+        name: 'Android',
+        icon: faAndroid,
+        level: 2
+    },
+    {
+        name: 'Python',
+        icon: faPython,
+        level: 1
     },
     {
         name: 'Git',
-        icon: faGit
+        icon: faGit,
+        level: 4
     },
     {
         name: 'GitHub',

@@ -5,7 +5,15 @@ import LastProject from '../../components/HomePage/LastProject/LastProject'
 import ProjectTypes from '../../components/HomePage/ProjectTypes/ProjectTypes'
 
 function Home() {
-    const mainTechnos = ['Symfony', 'React', 'HTML', 'Git', 'JS', 'SQL', 'CSS']
+    const mainTechnos = [
+        'Symfony',
+        'React',
+        'HTML',
+        'Git',
+        'Javascript',
+        'SQL',
+        'CSS',
+    ]
     return (
         <div className="main">
             <Title />
