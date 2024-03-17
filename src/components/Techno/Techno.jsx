@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import colors from '../../utils/colors'
 import technoIcons from '../../datas/technoIcons'
-import { useParams } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const StyledTechno = styled('div')`

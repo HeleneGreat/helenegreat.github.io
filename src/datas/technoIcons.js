@@ -1,6 +1,8 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faHtml5, faCss3Alt, faPhp, faJsSquare, faJs, faGit, faWordpress, faFigma, faStackOverflow, faAndroid, faReact, faPython, faNode, faSymfony, faSass, faNpm, faJira, faBootstrap} from '@fortawesome/free-brands-svg-icons'
+import { faDatabase } from '@fortawesome/free-solid-svg-icons'
+import prestashop from '../assets/prestashop.png'
 
+// TODO add Twig, prestashop + Doctrine, SQL ?
 const technoIcons = [
     {
         name: 'HTML',
@@ -73,6 +75,14 @@ const technoIcons = [
     {
         name: 'Bootstrap',
         icon: faBootstrap
+    },
+    {
+        name: 'SQL',
+        icon: faDatabase
+    },
+    {
+        name: 'Doctrine',
+        icon: faDatabase
     },
 ]
 

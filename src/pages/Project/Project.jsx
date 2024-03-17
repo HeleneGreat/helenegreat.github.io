@@ -111,6 +111,7 @@ function Project() {
                         className="button"
                         to={project.githubLink}
                         title="GitHub"
+                        target="_blank"
                     >
                         Repository
                         <StyledGitHubIcon icon={faSquareGithub} />
