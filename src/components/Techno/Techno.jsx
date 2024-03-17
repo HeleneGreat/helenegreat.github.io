@@ -7,21 +7,40 @@ const StyledTechno = styled('div')`
     background-color: ${colors.black};
     color: #fff;
     width: 100%;
+    &.allIcons {
+        background-color: ${colors.primary};
+        padding: 30px 0;
+        h2 {
+            text-align: center;
+        }
+    }
 `
 const StyledList = styled('ul')`
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 0;
+    &.allIcons {
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: ${colors.primary};
+        li {
+            width: 20%;
+            text-align: center;
+            padding: 30px 0;
+        }
+    }
 `
 const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
     font-size: 60px;
 `
-function Techno({ technos }) {
+function Techno({ technos, allIcons = false }) {
     return (
-        <StyledTechno>
+        <StyledTechno className={allIcons ? 'allIcons' : ''}>
             <div className="container">
-                <StyledList>
+                {allIcons && <h2>Mes compétences techniques</h2>}
+                <StyledList className={allIcons ? 'allIcons' : ''}>
                     {technos.map((techno, index) => {
                         const technoIcon = technoIcons.find(
                             (item) => item.name === techno
@@ -33,6 +52,7 @@ function Techno({ technos }) {
                                     icon={technoIcon.icon}
                                     title={technoIcon.name}
                                 />
+                                {allIcons && <p>{technoIcon.name}</p>}
                             </li>
                         )
                     })}

@@ -2,6 +2,8 @@ import ProjectCard from '../../components/ProjectCard/ProjectCard'
 import styled from 'styled-components'
 import colors from '../../utils/colors'
 import projects from '../../datas/projects'
+import Techno from '../../components/Techno/Techno'
+import technoIcons from '../../datas/technoIcons'
 
 const StyledPortfolioBody = styled('div')`
     background-color: ${colors.secondary};
@@ -50,6 +52,10 @@ function Portfolio() {
                     </StyledProjectList>
                 </div>
             </StyledPortfolioBody>
+            <Techno
+                technos={technoIcons.map((item) => item.name)}
+                allIcons={true}
+            />
         </div>
     )
 }

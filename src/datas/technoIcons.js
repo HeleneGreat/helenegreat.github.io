@@ -1,9 +1,18 @@
-import { faGithub, faHtml5, faCss3Alt, faPhp, faJsSquare, faJs, faGit, faWordpress, faFigma, faStackOverflow, faAndroid, faReact, faPython, faNode, faSymfony, faSass, faNpm, faJira, faBootstrap} from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faHtml5, faCss3Alt, faPhp, faJsSquare, faGit, faWordpress, faFigma, faStackOverflow, faAndroid, faReact, faPython, faNode, faSymfony, faSass, faNpm, faJira, faBootstrap} from '@fortawesome/free-brands-svg-icons'
 import { faDatabase } from '@fortawesome/free-solid-svg-icons'
-import prestashop from '../assets/prestashop.png'
 
 // TODO add Twig, prestashop + Doctrine, SQL ?
 const technoIcons = [
+
+
+    {
+        name: 'Symfony',
+        icon: faSymfony
+    },
+    {
+        name: 'PHP',
+        icon: faPhp
+    },
     {
         name: 'HTML',
         icon: faHtml5
@@ -13,52 +22,56 @@ const technoIcons = [
         icon: faCss3Alt
     },
     {
-        name: 'PHP',
-        icon: faPhp
+        name: 'Sass',
+        icon: faSass
+    },
+    {
+        name: 'Bootstrap',
+        icon: faBootstrap
     },
     {
         name: 'JS',
         icon: faJsSquare
     },
     {
-        name: 'Git',
-        icon: faGit
+        name: 'React',
+        icon: faReact
     },
     {
         name: 'Wordpress',
         icon: faWordpress
     },
     {
-        name: 'Figma',
-        icon: faFigma
-    },
-    {
-        name: 'StackOverflow',
-        icon: faStackOverflow
-    },
-    {
         name: 'Android',
         icon: faAndroid
-    },
-    {
-        name: 'React',
-        icon: faReact
     },
     {
         name: 'Python',
         icon: faPython
     },
     {
+        name: 'SQL',
+        icon: faDatabase
+    },
+    {
+        name: 'Doctrine',
+        icon: faDatabase
+    },
+    {
+        name: 'Git',
+        icon: faGit
+    },
+    {
+        name: 'GitHub',
+        icon: faGithub
+    },
+    {
+        name: 'Figma',
+        icon: faFigma
+    },
+    {
         name: 'Node',
         icon: faNode
-    },
-    {
-        name: 'Symfony',
-        icon: faSymfony
-    },
-    {
-        name: 'Sass',
-        icon: faSass
     },
     {
         name: 'npm',
@@ -69,21 +82,10 @@ const technoIcons = [
         icon: faJira
     },
     {
-        name: 'GitHub',
-        icon: faGithub
+        name: 'StackOverflow',
+        icon: faStackOverflow
     },
-    {
-        name: 'Bootstrap',
-        icon: faBootstrap
-    },
-    {
-        name: 'SQL',
-        icon: faDatabase
-    },
-    {
-        name: 'Doctrine',
-        icon: faDatabase
-    },
+
 ]
 
 export default technoIcons
