@@ -7,7 +7,7 @@ import ProjectIntroduction from '../../ProjectIntroduction/ProjectIntroduction'
 const StyledLastProject = styled('div')`
     background-color: ${colors.primary};
     color: #fff;
-    padding: 40px 0;
+    padding: 40px 0 60px;
     h2 {
         text-align: center;
     }

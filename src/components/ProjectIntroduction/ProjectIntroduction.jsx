@@ -11,15 +11,18 @@ const StyledIntro = styled('div')`
         padding-left: 50px;
     }
 `
+const StyledProjectIntro = styled('div')`
+    h1,
+    h3 {
+        margin-top: 30px;
+    }
+`
 
 function ProjectIntroduction({ project, titleSize }) {
     const TitleSize = titleSize
-    const StyledTitle = styled(TitleSize)`
-        margin-top: 30px;
-    `
     return (
-        <div>
-            <StyledTitle>{project.name}</StyledTitle>
+        <StyledProjectIntro>
+            <TitleSize>{project.name}</TitleSize>
             <StyledIntro>
                 <p>{project.introduction}</p>
                 <img
@@ -29,7 +32,7 @@ function ProjectIntroduction({ project, titleSize }) {
                     height={500}
                 />
             </StyledIntro>
-        </div>
+        </StyledProjectIntro>
     )
 }
 
