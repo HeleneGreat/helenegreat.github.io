@@ -30,6 +30,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     margin: 0;
+    scroll-behavior: smooth;
   }
   ::-webkit-scrollbar {
     width: 12px;
@@ -86,6 +87,7 @@ const GlobalStyle = createGlobalStyle`
   }
   .main {
     margin-top: 91px;
+    min-height: calc(100vh - 221px);
   }
   p, a, li{
     font-size: 23px;
