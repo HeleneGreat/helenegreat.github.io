@@ -52,7 +52,7 @@ function Header() {
         <StyledHeader>
             <StyledContainer className="container">
                 <div className="logo">
-                    <Link to="/" activeClassName="active">
+                    <Link to="/">
                         <img
                             src="/logo.svg"
                             alt="Hélène Carriou, développeuse web"
@@ -62,18 +62,10 @@ function Header() {
                     </Link>
                 </div>
                 <nav>
-                    <StyledLink to="/" activeClassName="active">
-                        Accueil
-                    </StyledLink>
-                    <StyledLink to="/parcours" activeClassName="active">
-                        Parcours
-                    </StyledLink>
-                    <StyledLink to="/portfolio" activeClassName="active">
-                        Portfolio
-                    </StyledLink>
-                    <StyledLink to="/contact" activeClassName="active">
-                        Contact
-                    </StyledLink>
+                    <StyledLink to="/">Accueil</StyledLink>
+                    <StyledLink to="/parcours">Parcours</StyledLink>
+                    <StyledLink to="/portfolio">Portfolio</StyledLink>
+                    <StyledLink to="/contact">Contact</StyledLink>
                 </nav>
             </StyledContainer>
         </StyledHeader>
