@@ -65,7 +65,7 @@ function Curriculum() {
                     />
                 </StyledPageHeader>
             </div>
-            <StyledCurriculumBody className="page-body">
+            <StyledCurriculumBody>
                 {jobSlug ? <JobDetails jobSlug={jobSlug} /> : <JobList />}
             </StyledCurriculumBody>
         </div>
