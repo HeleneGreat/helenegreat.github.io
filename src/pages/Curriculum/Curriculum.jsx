@@ -1,8 +1,9 @@
-import styled from 'styled-components'
+import { useParams } from 'react-router-dom'
 import portrait from '../../assets/helene_carriou1.png'
 import colors from '../../utils/colors'
-import jobs from '../../datas/jobs'
-import JobCard from '../../components/JobCard/JobCard'
+import JobList from '../../components/CurriculumPage/JobList/JobList'
+import JobDetails from '../../components/CurriculumPage/JobDetails/JobDetails'
+import styled from 'styled-components'
 
 const StyledPageHeader = styled('div')`
     display: flex;
@@ -32,6 +33,8 @@ const StyledImg = styled('img')`
 `
 
 function Curriculum() {
+    const { jobSlug } = useParams()
+
     return (
         <div className="main">
             <div className="page-header">
@@ -63,12 +66,7 @@ function Curriculum() {
                 </StyledPageHeader>
             </div>
             <StyledCurriculumBody className="page-body">
-                <div className="container">
-                    <h2>Mon parcours</h2>
-                    {jobs.map((job) => (
-                        <JobCard key={job.id} job={job} />
-                    ))}
-                </div>
+                {jobSlug ? <JobDetails jobSlug={jobSlug} /> : <JobList />}
             </StyledCurriculumBody>
         </div>
     )

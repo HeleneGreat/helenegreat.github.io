@@ -53,7 +53,7 @@ function Presentation() {
                         similique explicabo dolores! Aliquam, mollitia
                         architecto?
                     </p>
-                    <StyledLink className="button" to="/portfolio">
+                    <StyledLink className="button" to="/parcours">
                         Voir mon parcours
                     </StyledLink>
                 </StyledWhoAmI>

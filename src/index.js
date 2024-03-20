@@ -11,6 +11,7 @@ import Project from './pages/Project/Project';
 import Contact from './pages/Contact/Contact';
 import Error from './components/Error/Error';
 import projects from './datas/projects'
+import jobs from './datas/jobs';
 
 
 // Style
@@ -135,6 +136,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/parcours" element={<Curriculum/>}/>
+        <Route path="/parcours/:jobSlug" element={<Curriculum jobs={jobs}/>}/>
         <Route path="/portfolio" element={<Portfolio/>}/>
         <Route path="/portfolio/:projectSlug" element={<Project projects={projects}/>}/>
         <Route path="/contact" element={<Contact/>}/>

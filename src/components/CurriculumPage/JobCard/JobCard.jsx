@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import colors from '../../utils/colors'
-import fonts from '../../utils/fonts'
+import colors from '../../../utils/colors'
+import fonts from '../../../utils/fonts'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
 
