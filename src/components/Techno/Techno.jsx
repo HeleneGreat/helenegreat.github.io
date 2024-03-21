@@ -19,7 +19,7 @@ const StyledTechno = styled('div')`
 const StyledList = styled('ul')`
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 15px 0;
     &.allIcons {
         justify-content: space-between;

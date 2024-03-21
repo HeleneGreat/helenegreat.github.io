@@ -37,21 +37,25 @@ function Presentation() {
                 <StyledWhoAmI>
                     <h2>Qui suis-je ?</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Pariatur iure nobis rerum mollitia laudantium ut harum
-                        modi numquam molestias, quas ad at optio. Deleniti esse
-                        repudiandae maiores cumque voluptatem dicta
-                        necessitatibus aperiam aut reprehenderit saepe natus,
-                        ex, error, id tempore atque ad sit pariatur dolor quos?
-                        Hic perspiciatis facilis quis doloremque, nihil
-                        laboriosam nobis. Veniam quasi consectetur temporibus
-                        sed, minima earum nisi, officia omnis ipsa modi dolore
-                        laudantium iure. Doloremque, deleniti id deserunt unde
-                        aspernatur repudiandae voluptatum, adipisci quia optio
-                        corrupti animi? Accusantium illum obcaecati in, saepe
-                        maxime quibusdam itaque voluptates beatae, minus, dicta
-                        similique explicabo dolores! Aliquam, mollitia
-                        architecto?
+                        Bienvenue sur mon site ! Je suis une passionnée de
+                        développement web et une exploratrice infatigable du
+                        monde numérique. J'ai choisi il y a quelques années de
+                        me consacrer pleinement au développement web. Après une
+                        reconversion professionnelle réussie, une formation
+                        solide en informatique et une expérience professionnelle
+                        diversifiée, je suis constamment en quête de nouveaux
+                        défis et de nouvelles connaissances pour enrichir mon
+                        expertise. Mon parcours m'a permis d'explorer les
+                        domaines du développement front-end et back-end, ainsi
+                        que les dernières tendances en matière de technologies
+                        web. Curieuse et créative de nature, j'aime repousser
+                        les limites de la technologie pour créer des solutions
+                        innovantes et efficaces. À travers ce site, je partage
+                        avec vous mon portfolio, mes projets, et mon parcours
+                        professionnel, dans l'espoir de vous inspirer et de vous
+                        faire découvrir ma passion pour le développement web.
+                        N'hésitez pas à explorer et à me contacter pour toute
+                        collaboration ou opportunité professionnelle.
                     </p>
                     <StyledLink className="button" to="/parcours">
                         Voir mon parcours

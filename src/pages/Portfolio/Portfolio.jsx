@@ -26,19 +26,19 @@ function Portfolio() {
                 <div className="container">
                     <h1>Portfolio</h1>
                     <p className="presentation">
-                        Lorem ipsum dolor sit amet consectetur. Amet ultricies
-                        commodo imperdiet quam magna in mi. Et mauris nulla non
-                        arcu eget eget tincidunt. Habitasse malesuada velit
-                        vehicula dolor mauris tincidunt viverra semper nibh.
-                        Dictumst neque aliquam tristique nibh elementum. Nisl
-                        potenti neque enim id dui. Augue lorem diam ridiculus a
-                        pharetra lorem purus fringilla consectetur. Ullamcorper
-                        accumsan mattis sed neque. Mattis tellus rhoncus dapibus
-                        magna id risus risus arcu. Neque at ut quam tellus a.
-                        Vestibulum sed viverra curabitur mattis accumsan dictum
-                        at aliquet nibh. At non ultricies commodo nunc quam
-                        neque dolor amet consequat. Turpis quisque pretium porta
-                        auctor ultrices. Orci non lorem dignissim non et.
+                        Bienvenue dans la section dédiée à mes projets web !
+                        Ici, je vous invite à découvrir une sélection de
+                        réalisations qui reflètent mon expertise et ma passion
+                        pour le développement web. Des sites vitrines aux
+                        applications interactives, chaque projet a été conçu
+                        avec soin et créativité pour répondre aux besoins
+                        définis. Que ce soit pour améliorer l'expérience
+                        utilisateur, optimiser la performance ou créer des
+                        solutions innovantes, chaque projet représente un
+                        nouveau défi relevé avec enthousiasme. Explorez ces
+                        réalisations pour découvrir mon savoir-faire et ma
+                        vision du web. N'hésitez pas à me contacter pour en
+                        savoir plus ou pour discuter de vos propres projets web.
                     </p>
                 </div>
             </div>

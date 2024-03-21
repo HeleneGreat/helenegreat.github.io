@@ -40,23 +40,22 @@ function Curriculum() {
             <div className="page-header">
                 <StyledPageHeader className="container">
                     <StyledPresentation>
-                        <h1>Une passion qui mène à une reconversion</h1>
+                        <h1>
+                            Développeuse passionnée, curieuse et polyvalente
+                        </h1>
                         <p className="presentation">
-                            Lorem ipsum dolor sit amet consectetur. Amet
-                            ultricies commodo imperdiet quam magna in mi. Et
-                            mauris nulla non arcu eget eget tincidunt. Habitasse
-                            malesuada velit vehicula dolor mauris tincidunt
-                            viverra semper nibh. Dictumst neque aliquam
-                            tristique nibh elementum. Nisl potenti neque enim id
-                            dui. Augue lorem diam ridiculus a pharetra lorem
-                            purus fringilla consectetur. Ullamcorper accumsan
-                            mattis sed neque. Mattis tellus rhoncus dapibus
-                            magna id risus risus arcu. Neque at ut quam tellus
-                            a. Vestibulum sed viverra curabitur mattis accumsan
-                            dictum at aliquet nibh. At non ultricies commodo
-                            nunc quam neque dolor amet consequat. Turpis quisque
-                            pretium porta auctor ultrices. Orci non lorem
-                            dignissim non et.
+                            Je suis une développeuse full-stack passionnée par
+                            la création d'expériences numériques innovantes.
+                            Forte d'une solide formation en développement web et
+                            d'une expérience professionnelle diversifiée, je
+                            maîtrise les technologies front-end et back-end. Mon
+                            parcours m'a permis d'acquérir une expertise dans la
+                            conception, le développement et la maintenance
+                            d'applications web. Créative, méthodique et avide
+                            d'apprentissage, je m'engage à relever les défis
+                            techniques avec enthousiasme et à contribuer au
+                            succès des projets grâce à ma polyvalence et mon
+                            engagement envers l'excellence technique.
                         </p>
                     </StyledPresentation>
                     <StyledImg
