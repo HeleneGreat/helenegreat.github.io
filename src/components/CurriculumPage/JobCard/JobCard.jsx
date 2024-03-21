@@ -25,7 +25,7 @@ const StyledWhere = styled('p')`
 `
 const StyledIntro = styled('p')`
     line-height: 30px;
-    font-size: 21;
+    font-size: 21px;
 `
 const StyledLink = styled(Link)`
     display: block;

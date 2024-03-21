@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import colors from '../../../utils/colors'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link, Navigate } from 'react-router-dom'
@@ -32,19 +32,25 @@ const StyledTitle = styled('div')`
         padding: 0 0 20px 0;
     }
 `
+const StyledJobTitle = css`
+    margin-left: 190px; // Bouton retour
+    margin-right: 70px; // Icone
+`
+const StyledH2 = styled('h2')`
+    ${StyledJobTitle}
+`
 const StyledWhere = styled('p')`
+    ${StyledJobTitle}
     font-size: 28px;
     text-align: center;
 `
 const StyledWhen = styled('p')`
+    ${StyledJobTitle}
     font-size: 18px;
     text-align: center;
     &:last-of-type {
         line-height: 25px;
     }
-`
-const StyledH3 = styled('h3')`
-    padding: 40px 0 20px;
 `
 const StyledDescription = styled('div')`
     width: 80%;
@@ -56,6 +62,7 @@ const StyledDescription = styled('div')`
     li {
         font-size: 21px;
         line-height: 30px;
+        padding-bottom: 12px;
     }
     ul {
         list-style-type: disc;
@@ -73,7 +80,7 @@ function JobDetails({ jobSlug }) {
 
     return (
         <div>
-            <Techno technos={job.techno} />
+            {job.techno ? <Techno technos={job.techno} /> : ''}
             <div className="page-body">
                 <StyledJobDetails className="container">
                     <StyledTitle>
@@ -85,7 +92,7 @@ function JobDetails({ jobSlug }) {
                             <StyledChevronIcon icon={faChevronLeft} />
                             Retour
                         </StyledButton>
-                        <h2>{job.name}</h2>
+                        <StyledH2>{job.name}</StyledH2>
                         <StyledJobIcon icon={job.icon} />
                     </StyledTitle>
                     <StyledWhere>
@@ -95,7 +102,6 @@ function JobDetails({ jobSlug }) {
                     <StyledWhen>{job.contrat}</StyledWhen>
 
                     <StyledDescription>
-                        <StyledH3>Missions</StyledH3>
                         <div
                             dangerouslySetInnerHTML={{
                                 __html: job.description,
