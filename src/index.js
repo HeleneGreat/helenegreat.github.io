@@ -68,7 +68,10 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
   h1 {
-    font-size: 70px;
+    font-size: 55px;
+    @media screen and ${breakpoints.tablet} {
+      font-size: 70px;
+    }
   }
   h2 {
     font-size: 50px;
@@ -87,26 +90,38 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   .main {
-    margin-top: 91px;
-    min-height: calc(100vh - 221px);
+    margin-top: 72px;
+    min-height: calc(100vh - 248px); 
+    @media screen and ${breakpoints.tablet} {
+      min-height: calc(100vh - 202px); 
+    }
+    @media screen and ${breakpoints.laptop} {
+      margin-top: 91px;
+      min-height: calc(100vh - 221px); 
+    }
   }
   p, a, li{
-    font-size: 23px;
-    line-height: 35px;
+    font-size: 18px;
+    line-height: 28px;
+    @media screen and ${breakpoints.tablet} {
+      font-size: 23px;
+      line-height: 35px;
+    }
   }
   .page-header{
     color: #fff;
     background-color: ${colors.primary};
     padding: 50px 0 80px;
     p {
-        margin-top: 30px;
-        letter-spacing: 1px;
-        @media screen and ${breakpoints.laptop} {
+      letter-spacing: 1px;
+      margin-top: 20px;
+      @media screen and ${breakpoints.laptop} {
+          margin-top: 30px;
             width: 80%;
-        }
-        @media screen and ${breakpoints.desktop} {
-            width: 70%;
-        }
+      }
+      @media screen and ${breakpoints.desktop} {
+          width: 70%;
+      }
     }
   }
   .page-body{

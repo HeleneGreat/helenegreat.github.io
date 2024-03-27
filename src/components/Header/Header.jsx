@@ -18,7 +18,11 @@ const StyledContainer = styled('div')`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media screen and ${breakpoints.tablet} {
+    @media screen and (max-width: 768px) {
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
     }
 `
 const StyledNav = styled('nav')`
@@ -29,12 +33,12 @@ const StyledNav = styled('nav')`
         visibility: hidden;
         width: 0;
         position: absolute;
-        top: 110px;
+        top: 72px;
         right: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: calc(100vh - 110px);
+        height: calc(100vh - 72px);
         &.nav-active {
             width: 70%;
             opacity: 1;
@@ -43,6 +47,8 @@ const StyledNav = styled('nav')`
     }
 `
 const StyledMenuBurger = styled(MenuBurger)`
+    width: auto;
+    height: 50px;
     flex-grow: 1;
     transform: scaleX(-1);
     path {
@@ -110,13 +116,21 @@ function Header() {
                     </Link>
                 </div>
                 <StyledMenuICon onClick={handleShowNavbar}>
-                    <StyledMenuBurger width={100} height={100} />
+                    <StyledMenuBurger width={50} height={50} />
                 </StyledMenuICon>
                 <StyledNav className={`${showNavbar && 'nav-active'}`}>
-                    <StyledLink to="/">Accueil</StyledLink>
-                    <StyledLink to="/parcours">Parcours</StyledLink>
-                    <StyledLink to="/portfolio">Portfolio</StyledLink>
-                    <StyledLink to="/contact">Contact</StyledLink>
+                    <StyledLink to="/" onClick={handleShowNavbar}>
+                        Accueil
+                    </StyledLink>
+                    <StyledLink to="/parcours" onClick={handleShowNavbar}>
+                        Parcours
+                    </StyledLink>
+                    <StyledLink to="/portfolio" onClick={handleShowNavbar}>
+                        Portfolio
+                    </StyledLink>
+                    <StyledLink to="/contact" onClick={handleShowNavbar}>
+                        Contact
+                    </StyledLink>
                 </StyledNav>
             </StyledContainer>
         </StyledHeader>
