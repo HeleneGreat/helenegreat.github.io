@@ -22,10 +22,10 @@ const StyledList = styled('ul')`
     align-items: center;
     justify-content: space-around;
     padding: 15px 0;
+    flex-wrap: wrap;
     &.allIcons {
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
         background-color: ${colors.primary};
         li {
             text-align: center;

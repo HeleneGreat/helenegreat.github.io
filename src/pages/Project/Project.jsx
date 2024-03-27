@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { faSquareGithub } from '@fortawesome/free-brands-svg-icons'
 import ProjectIntroduction from '../../components/ProjectIntroduction/ProjectIntroduction'
+import { breakpoints } from '../../utils/css-breakpoints'
 
 const StyledProjectBody = styled('div')`
     background-color: ${colors.secondary};
@@ -34,10 +35,17 @@ const StyledProjectImages = styled('div')`
     justify-content: space-evenly;
     flex-wrap: wrap;
     img {
-        width: 300px;
-        height: 300px;
-        object-fit: cover;
-        padding: 0 10px 30px;
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+    }
+    @media screen and ${breakpoints.tablet} {
+        img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            padding: 0 10px 30px;
+        }
     }
 `
 const StyledGitHubIcon = styled(FontAwesomeIcon)`

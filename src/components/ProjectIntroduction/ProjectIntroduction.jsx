@@ -1,14 +1,35 @@
 import styled from 'styled-components'
+import { breakpoints } from '../../utils/css-breakpoints'
 
 const StyledIntro = styled('div')`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    p {
+        order: 2;
+    }
     img {
-        width: 450px;
-        height: 450px;
-        object-fit: cover;
-        padding-left: 50px;
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        order: 1;
+    }
+    @media screen and ${breakpoints.laptop} {
+        flex-wrap: nowrap;
+        img {
+            order: 2;
+            width: 40%;
+            max-width: unset;
+            padding-left: 50px;
+        }
+    }
+    @media screen and ${breakpoints.desktop} {
+        img {
+            width: 450px;
+            height: 450px;
+            object-fit: cover;
+        }
     }
 `
 const StyledProjectIntro = styled('div')`
