@@ -5,8 +5,8 @@ const StyledIntro = styled('div')`
     justify-content: space-around;
     align-items: center;
     img {
-        width: 350px;
-        height: 350px;
+        width: 450px;
+        height: 450px;
         object-fit: cover;
         padding-left: 50px;
     }
@@ -28,8 +28,8 @@ function ProjectIntroduction({ project, titleSize }) {
                 <img
                     src={project.coverImage}
                     alt={project.name}
-                    width={500}
-                    height={500}
+                    width={450}
+                    height={450}
                 />
             </StyledIntro>
         </StyledProjectIntro>

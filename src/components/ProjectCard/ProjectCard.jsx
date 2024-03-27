@@ -53,8 +53,8 @@ function Card({ project }) {
             <StyledCoverImg
                 src={project.coverImage}
                 alt={project.name}
-                height={80}
-                width={80}
+                height={390}
+                width={390}
             />
             <StyledLink
                 className="button"
