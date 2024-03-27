@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { breakpoints } from '../../utils/css-breakpoints'
 import colors from '../../utils/colors'
 import fonts from '../../utils/fonts'
 
