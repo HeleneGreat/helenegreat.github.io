@@ -3,6 +3,7 @@ import colors from '../../utils/colors'
 import technoIcons from '../../datas/technoIcons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import TechnoLevel from '../TechnoLevel/TechnoLevel'
+import { breakpoints } from '../../utils/css-breakpoints'
 
 const StyledTechno = styled('div')`
     background-color: ${colors.black};
@@ -27,9 +28,19 @@ const StyledList = styled('ul')`
         flex-wrap: wrap;
         background-color: ${colors.primary};
         li {
-            width: 20%;
             text-align: center;
             padding: 30px 0;
+            width: 50%;
+            min-width: fit-content;
+            @media screen and ${breakpoints.mobile} {
+                width: 33%;
+            }
+            @media screen and ${breakpoints.tablet} {
+                width: 25%;
+            }
+            @media screen and ${breakpoints.laptop} {
+                width: 20%;
+            }
         }
     }
 `

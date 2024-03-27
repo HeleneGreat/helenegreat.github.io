@@ -4,6 +4,7 @@ import colors from '../../utils/colors'
 import projects from '../../datas/projects'
 import Techno from '../../components/Techno/Techno'
 import technoIcons from '../../datas/technoIcons'
+import { breakpoints } from '../../utils/css-breakpoints'
 
 const StyledPortfolioBody = styled('div')`
     background-color: ${colors.secondary};
@@ -14,9 +15,15 @@ const StyledPortfolioBody = styled('div')`
 `
 const StyledProjectList = styled('ul')`
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 25px;
     grid-row-gap: 25px;
+    grid-template-columns: repeat(1, 1fr);
+    @media screen and ${breakpoints.tablet} {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and ${breakpoints.laptop} {
+        grid-template-columns: repeat(3, 1fr);
+    }
 `
 
 function Portfolio() {

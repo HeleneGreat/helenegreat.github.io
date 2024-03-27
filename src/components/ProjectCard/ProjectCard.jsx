@@ -16,6 +16,7 @@ const StyledLink = styled(Link)`
     left: 50%;
     transform: translatex(-50%);
     font-size: 22px;
+    text-wrap: nowrap;
     &:hover {
         background-color: ${colors.primary};
     }
