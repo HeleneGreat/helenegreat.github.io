@@ -45,7 +45,10 @@ const StyledList = styled('ul')`
     }
 `
 const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
-    font-size: 60px;
+    font-size: 30px;
+    @media screen and ${breakpoints.tablet} {
+        font-size: 60px;
+    }
 `
 function Techno({ technos, allIcons = false }) {
     return (

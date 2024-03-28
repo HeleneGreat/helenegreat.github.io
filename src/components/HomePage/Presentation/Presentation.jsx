@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import colors from '../../../utils/colors'
 import { Link } from 'react-router-dom'
 import SkillsList from '../SkillsList/SkillsList'
+import { breakpoints } from '../../../utils/css-breakpoints'
 
 const StyledPresentation = styled('div')`
     background-color: ${colors.secondary};
@@ -9,7 +10,9 @@ const StyledPresentation = styled('div')`
 `
 
 const StyledWhoAmI = styled('div')`
-    max-width: 70%;
+    @media screen and ${breakpoints.laptop} {
+        max-width: 70%;
+    }
     margin: 0 auto;
     h2,
     p {
@@ -32,8 +35,8 @@ function Presentation() {
     ]
     return (
         <StyledPresentation>
+            <SkillsList skills={skills} />
             <div className="container">
-                <SkillsList skills={skills} />
                 <StyledWhoAmI>
                     <h2>Qui suis-je ?</h2>
                     <p>
