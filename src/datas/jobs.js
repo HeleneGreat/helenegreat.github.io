@@ -53,7 +53,7 @@ const jobs = [
         city: 'Plescop',
         year: "2022-2023",
         fullDate: "Septembre 2022 à juin 2024",
-        introduction: `J'ai poursuivi une formation Bac+3/4 en alternance. Cette expérience m'a immergé dans un environnement dynamique où j'ai perfectionné mes compétences en développement, en conception de bases de données et en gestion de projets. `,
+        introduction: `J'ai poursuivi une formation Bac+3/4 en alternance. Cette expérience m'a immergée dans un environnement dynamique où j'ai perfectionné mes compétences en développement, en conception de bases de données et en gestion de projets. `,
         techno: ['Symfony', 'React', 'React Native', 'Nodejs', 'Sass'],
         description: `
         <h3>Cursus</h3>

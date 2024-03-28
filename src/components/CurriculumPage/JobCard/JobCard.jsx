@@ -9,7 +9,7 @@ const StyledJobCard = styled('div')`
     margin: 15px 0;
     border: 1px solid ${colors.primary};
     border-radius: 7px;
-    width: 40%;
+    text-align: left;
 `
 const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
     float: right;
