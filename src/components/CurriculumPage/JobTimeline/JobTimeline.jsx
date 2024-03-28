@@ -10,13 +10,30 @@ import jobs from '../../../datas/jobs'
 import styled from 'styled-components'
 import colors from '../../../utils/colors'
 import fonts from '../../../utils/fonts'
+import useMediaQuery from '../../../hooks/useMediaQuery'
+import { breakpoints } from '../../../utils/css-breakpoints'
 
+const StyledTimelineItem = styled(TimelineItem)`
+    &&.MuiTimelineItem-positionRight::before {
+        flex: 0;
+        @media screen and ${breakpoints.tablet} {
+            flex: 1;
+        }
+    }
+`
 const StyledTimelineOppositeContent = styled(TimelineOppositeContent)`
     &&.years {
         margin: auto 0;
         font-family: ${fonts.pt};
         color: ${colors.black};
-        font-size: 20px;
+        font-size: 15px;
+        @media screen and ${breakpoints.tablet} {
+            font-size: 20px;
+            max-width: 12%;
+        }
+        @media screen and ${breakpoints.laptop} {
+            max-width: unset;
+        }
     }
 `
 const StyledTimelineSeparator = styled(TimelineSeparator)`
@@ -32,13 +49,19 @@ const StyledTimelineDot = styled(TimelineDot)`
 `
 
 function OppositeContentTimeline() {
+    const isTablet = useMediaQuery(breakpoints.tablet)
+    const isLaptop = useMediaQuery(breakpoints.laptop)
     return (
-        <Timeline position="alternate">
+        <Timeline position={isLaptop ? 'alternate' : 'right'}>
             {jobs.map((job, index) => (
-                <TimelineItem key={index}>
-                    <StyledTimelineOppositeContent className="years">
-                        {job.year}
-                    </StyledTimelineOppositeContent>
+                <StyledTimelineItem key={index}>
+                    {isTablet ? (
+                        <StyledTimelineOppositeContent className="years">
+                            {job.year}
+                        </StyledTimelineOppositeContent>
+                    ) : (
+                        ''
+                    )}
                     <StyledTimelineSeparator>
                         <StyledTimelineConnector
                             className={index === 0 ? 'invisible' : ''}
@@ -53,7 +76,7 @@ function OppositeContentTimeline() {
                     <TimelineContent>
                         <JobCard key={job.id} job={job} />
                     </TimelineContent>
-                </TimelineItem>
+                </StyledTimelineItem>
             ))}
         </Timeline>
     )

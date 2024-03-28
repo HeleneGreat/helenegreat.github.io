@@ -6,9 +6,6 @@ import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import jobs from '../../../datas/jobs'
 import Techno from '../../Techno/Techno'
 
-const StyledJobDetails = styled('div')`
-    // background-color: ${colors.secondary};
-`
 const StyledButton = styled(Link)`
     height: fit-content;
     position: absolute;
@@ -73,7 +70,7 @@ const StyledDescription = styled('div')`
 function JobDetails({ jobSlug }) {
     const job = jobs.find((job) => job.slug === jobSlug)
 
-    // // The slug has to belong to a job
+    // The slug has to belong to a job
     if (!job) {
         return <Navigate to="/404" />
     }
@@ -82,7 +79,7 @@ function JobDetails({ jobSlug }) {
         <div>
             {job.techno ? <Techno technos={job.techno} /> : ''}
             <div className="page-body">
-                <StyledJobDetails className="container">
+                <JobDetails className="container">
                     <StyledTitle>
                         <StyledButton
                             to="/parcours"
@@ -108,7 +105,7 @@ function JobDetails({ jobSlug }) {
                             }}
                         ></div>
                     </StyledDescription>
-                </StyledJobDetails>
+                </JobDetails>
             </div>
         </div>
     )
