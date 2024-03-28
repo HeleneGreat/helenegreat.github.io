@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.fcecff6f.js",
-    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "main.js": "/static/js/main.5291c6d1.js",
+    "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/helene_carriou1.png": "/static/media/helene_carriou1.0f1b664963553bf0f232.png",
     "static/media/DefaultPicture.jpg": "/static/media/DefaultPicture.2935e089b49923f152ca.jpg",
     "static/media/istorel-cover.png": "/static/media/istorel-cover.403ac3339ae1429dfe49.png",
@@ -10,14 +10,15 @@
     "static/media/bookshelf-corner-cover.png": "/static/media/bookshelf-corner-cover.06b6c36827c9604071b0.png",
     "static/media/wiki-disney-cover.png": "/static/media/wiki-disney-cover.dba97c4963daf94687df.png",
     "static/media/portfolio-cover.png": "/static/media/portfolio-cover.219ef7f75266bfbf425f.png",
+    "static/media/404-error.svg": "/static/media/404-error.8d0fcf2ace5fa2a3bd68277424c688aa.svg",
     "static/media/helene_carriou2.jpg": "/static/media/helene_carriou2.6a32652b6233abb630cb.jpg",
     "static/media/postnobillscolombo-medium-webfont.woff": "/static/media/postnobillscolombo-medium-webfont.36b1dec88e4c6d2dcf57.woff",
     "index.html": "/index.html",
     "static/media/menu-burger.svg": "/static/media/menu-burger.3e10dd7cfbf3847dbfe88047825c95e2.svg",
-    "main.fcecff6f.js.map": "/static/js/main.fcecff6f.js.map",
-    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+    "main.5291c6d1.js.map": "/static/js/main.5291c6d1.js.map",
+    "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.fcecff6f.js"
+    "static/js/main.5291c6d1.js"
   ]
 }
