@@ -111,7 +111,7 @@ function Techno({ technos, allIcons = false }) {
                         return (
                             <li
                                 key={index}
-                                className={!allIcons && 'home-icons'}
+                                className={!allIcons ? 'home-icons' : ''}
                             >
                                 <StyledFontAwesomeIcon icon={technoIcon.icon} />
                                 {!allIcons && (

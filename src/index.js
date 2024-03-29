@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { HashRouter  as Router, Switch, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -13,6 +12,7 @@ import Contact from './pages/Contact/Contact';
 import Error from './components/Error/Error';
 import projects from './datas/projects'
 import jobs from './datas/jobs';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 
 // Style
@@ -147,20 +147,19 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
+      <ScrollToTop/>
       <GlobalStyle/>
       <Header/>
-      {/* <Routes> */}
-        <Switch>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/parcours" element={<Curriculum/>}/>
-          <Route path="/parcours/:jobSlug" element={<Curriculum jobs={jobs}/>}/>
-          <Route path="/portfolio" element={<Portfolio/>}/>
-          <Route path="/portfolio/:projectSlug" element={<Project projects={projects}/>}/>
-          <Route path="/contact" element={<Contact/>}/>
-          {/* <Route path="/not-found" element={<Error/>} /> */}
-          <Route path='*' element={<Error/>}/>
-        </Switch>
-      {/* </Routes> */}
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/parcours" element={<Curriculum/>}/>
+        <Route path="/parcours/:jobSlug" element={<Curriculum jobs={jobs}/>}/>
+        <Route path="/portfolio" element={<Portfolio/>}/>
+        <Route path="/portfolio/:projectSlug" element={<Project projects={projects}/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+        <Route path="/not-found" element={<Error/>} />
+        <Route path='*' element={<Error/>}/>
+      </Routes>
       <Footer/>
     </Router>
   </React.StrictMode>
