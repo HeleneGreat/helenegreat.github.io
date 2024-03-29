@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,22 +12,97 @@
       content="Web site created using create-react-app"
     />
     <title>Hélène Carriou, développeuse web full-stack</title>
-    <script>
-      let pathSegmentsToKeep = 0;
-
-      let l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
-    </script>
+    
   </head>
   <body>
-  
-    <div id="root"></div>
-   
+    <style>
+      @font-face {
+        font-family: 'post_no_bills_colombomedium';
+        src: url('./fonts/postnobillscolombo-medium-webfont.woff') format('truetype');
+      }
+      *{
+        margin: 0
+      }
+      header{
+        background-color: #324933;
+        padding: 15px 0;
+      }
+      header p{
+        color: #fff;
+        font-size: 30px;
+        text-align: left;
+      }
+      .main{
+        min-height: 100vh;
+        background-color: #F5EFE1;
+      }
+      .container{
+          width: 90%;
+          margin: 0 auto;
+          text-align: center;
+          font-family: "post_no_bills_colombomedium", sans-serif;
+      }
+      .container h1 {
+        padding: 50px 0;
+        font-size: 30px;
+      }
+      .container img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+      }
+      .container a.button{
+        display: block;
+        margin: 0 auto;
+        background-color: #FD6035;
+        color: #F5EFE1;
+        width: fit-content;
+        padding: 8px 17px;
+        font-size: 20px;
+        text-decoration: none;
+        margin-bottom: 30px;
+      }
+      .container a.button:hover{
+        background-color: #324933;
+      }
+      @media screen and (min-width: 768px) {
+        .container img{
+          width: 70%;
+        }
+        .container h1{
+          font-size: 55px;
+        }
+        .container a.button{
+          font-size: 30px;
+          padding: 8px 30px;
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        header p{
+          font-size: 50px;
+        }
+        .container{
+          width: 80%;
+        }
+      }
+      @media screen and (min-width: 1440px) {
+        .container{
+          width: 1200px;
+        }
+      }
+    </style>
+
+    <header>
+      <div class="container">
+        <p>Hélène Carriou, développeuse full-stack</p>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <h1>Oups, cette page n'existe pas</h1>
+        <img src="404-error.svg" alt="Erreur 404" width="800" height="530">
+        <a class="button" href="https://helenegreat.github.io/">Retour au porfolio</a>
+      </div>
+    </main>
   </body>
 </html>
