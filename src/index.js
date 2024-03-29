@@ -155,7 +155,7 @@ root.render(
         <Route path="/portfolio" element={<Portfolio/>}/>
         <Route path="/portfolio/:projectSlug" element={<Project projects={projects}/>}/>
         <Route path="/contact" element={<Contact/>}/>
-        <Route path="/404" element={<Error/>} />
+        <Route path="/not-found" element={<Error/>} />
         <Route path='*' element={<Error/>}/>
       </Routes>
       <Footer/>
