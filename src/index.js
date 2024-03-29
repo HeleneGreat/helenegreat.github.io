@@ -42,7 +42,7 @@ const GlobalStyle = createGlobalStyle`
   }
   ::-webkit-scrollbar-thumb {
     box-shadow: inset 0 0 0 1px grey;
-    background: ${colors.primary};
+    background: ${colors.primaryLight};
   }
   ::-webkit-scrollbar-thumb:hover {
     background: #2a3d2a; 
