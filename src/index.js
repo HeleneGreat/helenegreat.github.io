@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { HashRouter  as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter  as Router, Switch, Routes, Route } from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -149,16 +149,18 @@ root.render(
     <Router>
       <GlobalStyle/>
       <Header/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/parcours" element={<Curriculum/>}/>
-        <Route path="/parcours/:jobSlug" element={<Curriculum jobs={jobs}/>}/>
-        <Route path="/portfolio" element={<Portfolio/>}/>
-        <Route path="/portfolio/:projectSlug" element={<Project projects={projects}/>}/>
-        <Route path="/contact" element={<Contact/>}/>
-        <Route path="/not-found" element={<Error/>} />
-        <Route path='*' element={<Error/>}/>
-      </Routes>
+      {/* <Routes> */}
+        <Switch>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/parcours" element={<Curriculum/>}/>
+          <Route path="/parcours/:jobSlug" element={<Curriculum jobs={jobs}/>}/>
+          <Route path="/portfolio" element={<Portfolio/>}/>
+          <Route path="/portfolio/:projectSlug" element={<Project projects={projects}/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+          {/* <Route path="/not-found" element={<Error/>} /> */}
+          <Route path='*' element={<Error/>}/>
+        </Switch>
+      {/* </Routes> */}
       <Footer/>
     </Router>
   </React.StrictMode>
