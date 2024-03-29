@@ -4,6 +4,12 @@ import fonts from '../../utils/fonts'
 import { useRef, useState } from 'react'
 import styled from 'styled-components'
 import emailData from '../../datas/email'
+// import ReCAPTCHA from 'react-google-recaptcha-enterprise'
+import ReCAPTCHA from 'react-google-recaptcha'
+import { Link } from 'react-router-dom'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { breakpoints } from '../../utils/css-breakpoints'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const StyledContact = styled('div')`
     background-color: ${colors.primary};
@@ -12,16 +18,38 @@ const StyledContact = styled('div')`
 const StyledContainer = styled('div')`
     padding-top: 50px;
     padding-bottom: 50px;
-    display: flex;
+    @media screen and ${breakpoints.laptop} {
+        display: flex;
+    }
 `
 const StyledTitle = styled('div')`
-    width: 40%;
-    padding-right: 50px;
+    padding-bottom: 15px;
+    @media screen and ${breakpoints.laptop} {
+        padding-bottom: 0px;
+        width: 40%;
+        padding-right: 50px;
+    }
+`
+const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
+    color: #fff;
+    font-size: 40px;
+    margin-top: 20px;
+    @media screen and ${breakpoints.tablet} {
+        font-size: 50px;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
 `
 const StyledSubmit = styled('div')`
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 15px;
+    @media screen and ${breakpoints.laptop} {
+        margin-top: 30px;
+    }
 `
 const StyledMessage = styled('div')`
     position: absolute;
@@ -78,10 +106,10 @@ const StyledForm = styled('form')`
     flex-grow: 1;
     input:not(.button),
     textarea {
-        padding: 15px;
+        padding: 10px;
         border: #fff 2px solid;
         margin: 15px 0;
-        font-size: 20px;
+        font-size: 18px;
         transition: all 0.3s ease-in-out;
         &:focus {
             outline: none;
@@ -95,13 +123,21 @@ const StyledForm = styled('form')`
             background-color: ${colors.tertiary};
             color: #fff;
         }
+        @media screen and ${breakpoints.laptop} {
+            font-size: 20px;
+            padding: 15px;
+        }
     }
     input:not(.button) {
         display: block;
-        width: 50%;
+        width: calc(100% - 34px);
+        @media screen and ${breakpoints.laptop} {
+            width: 50%;
+        }
     }
     textarea {
-        width: calc(100% - 34px);
+        min-width: calc(100% - 34px);
+        max-width: calc(100% - 34px);
         min-height: 200px;
     }
     .button {
@@ -112,12 +148,27 @@ const StyledForm = styled('form')`
             color: ${colors.tertiary};
         }
     }
+    iframe {
+        @media only screen and (max-width: 351px) {
+            transform: scale(0.77);
+            transform-origin: 0 0;
+        }
+    }
 `
 
 function Contact() {
     const form = useRef()
     const [loading, setLoading] = useState(false)
     const [message, setMessage] = useState()
+
+    // function onChange(e) {
+    // grecaptcha.enterprise.ready(async () => {
+    //     const token = await grecaptcha.enterprise.execute(
+    //         '6LczCJ0pAAAAADiMojP3vhf9wTGRrKv4l2tbO9Cy',
+    //         { action: 'EMAIL' }
+    //     )
+    // })
+    // }
 
     const sendEmail = (e) => {
         e.preventDefault()
@@ -137,6 +188,7 @@ function Contact() {
             currentDate.getMinutes() +
             ':' +
             currentDate.getSeconds()
+        // console.dir(form.current, { depth: null })
         form.current['timestamp'].value = dateString
 
         emailjs
@@ -172,6 +224,13 @@ function Contact() {
                         Pour me contacter, vous pouvez utiliser ce formulaire,
                         ou m’écrire directement via mon profil LinkedIn.
                     </p>
+                    <Link
+                        to="https://www.linkedin.com/in/hélène-carriou/"
+                        title="Profil LinkedIn"
+                        target="_blank"
+                    >
+                        <StyledFontAwesomeIcon icon={faLinkedin} />
+                    </Link>
                 </StyledTitle>
                 <StyledForm ref={form} onSubmit={sendEmail}>
                     <input
@@ -191,6 +250,11 @@ function Contact() {
                     <textarea name="message" placeholder="Votre message... *" />
                     <input type="hidden" name="timestamp" />
                     <input type="hidden" name="g-recaptcha-response" />
+                    <ReCAPTCHA
+                        sitekey="6Lc_JJ0pAAAAABmjgM4Pd2bPVuGfC4Rznyu0kiiA" // v2
+                        // sitekey="6LeaFp0pAAAAAPdno-IAAm2L2AHJhuaGMmpnzXin" // enterprise
+                        onChange={sendEmail}
+                    />
                     <StyledSubmit>
                         <input
                             type="submit"
