@@ -74,12 +74,12 @@ function JobDetails({ jobSlug }) {
     if (!job) {
         return <Navigate to="/404" />
     }
-
+    console.log(job.name)
     return (
-        <div>
+        <div id="job-details">
             {job.techno ? <Techno technos={job.techno} /> : ''}
             <div className="page-body">
-                <JobDetails className="container">
+                <div className="container">
                     <StyledTitle>
                         <StyledButton
                             to="/parcours"
@@ -105,7 +105,7 @@ function JobDetails({ jobSlug }) {
                             }}
                         ></div>
                     </StyledDescription>
-                </JobDetails>
+                </div>
             </div>
         </div>
     )
