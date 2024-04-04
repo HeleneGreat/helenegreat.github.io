@@ -35,7 +35,7 @@ const jobs = [
         <p>Travailler au sein de cette agence web m'a permis de développer non seulement mes compétences techniques, mais aussi ma capacité à collaborer efficacement au sein d'une équipe multidisciplinaire et à répondre aux besoins variés des clients. Cette expérience m'a également offert une vue d'ensemble sur le processus de développement web, de la conception à la mise en production, renforçant ainsi ma polyvalence en tant que développeuse web full-stack.</p>
         <h3>Quelques réalisations</h3>
         <ul>
-        <li>Intégrations de maquettes</li>
+        <li>Intégrations de maquettes : Seanertek, Girouette.fr, Casafan... </li>
         <li>Mise à jour et amélioration de modules Prestashop</li>
         <li>Création de modules Prestashop</li>
         <li>Manipulation de bases de données</li>
