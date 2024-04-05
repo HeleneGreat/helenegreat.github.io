@@ -45,15 +45,13 @@ const StyledImg = styled('img')`
     border-top-right-radius: 200px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    width: 200px;
-    height: 250px;
+    display: none;
+    height: 400px;
+    width: 300px;
     padding-top: 20px;
     object-fit: cover;
-    @media screen and ${breakpoints.tablet} {
-        height: 400px;
-        width: 300px;
-    }
     @media screen and ${breakpoints.laptop} {
+        display: block;
         padding: 0;
     }
     @media screen and ${breakpoints.desktop} {

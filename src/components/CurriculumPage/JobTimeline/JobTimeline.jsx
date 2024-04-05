@@ -15,9 +15,9 @@ import { breakpoints } from '../../../utils/css-breakpoints'
 
 const StyledTimelineItem = styled(TimelineItem)`
     &&.MuiTimelineItem-positionRight::before {
-        flex: 0;
-        @media screen and ${breakpoints.tablet} {
-            flex: 1;
+        @media screen and (max-width: 768px) {
+            flex: 0;
+            padding: 0;
         }
     }
 `
