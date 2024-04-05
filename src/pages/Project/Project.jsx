@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { Navigate } from 'react-router-dom'
 import projects from '../../datas/projects'
@@ -9,6 +10,17 @@ import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { faSquareGithub } from '@fortawesome/free-brands-svg-icons'
 import ProjectIntroduction from '../../components/ProjectIntroduction/ProjectIntroduction'
 import { breakpoints } from '../../utils/css-breakpoints'
+import Lightbox from 'yet-another-react-lightbox'
+import {
+    Captions,
+    Thumbnails,
+    Zoom,
+    Counter,
+} from 'yet-another-react-lightbox/plugins'
+import 'yet-another-react-lightbox/styles.css'
+import 'yet-another-react-lightbox/plugins/captions.css'
+import 'yet-another-react-lightbox/plugins/thumbnails.css'
+import 'yet-another-react-lightbox/plugins/counter.css'
 
 const StyledProjectBody = styled('div')`
     background-color: ${colors.secondary};
@@ -37,14 +49,17 @@ const StyledProjectImages = styled('div')`
     img {
         width: 100%;
         height: auto;
-        padding: 10px 0;
+        margin: 10px 0;
+        &:hover {
+            cursor: pointer;
+        }
     }
     @media screen and ${breakpoints.tablet} {
         img {
             width: 300px;
             height: 300px;
             object-fit: cover;
-            padding: 0 10px 30px;
+            margin: 0 10px 30px;
         }
     }
 `
@@ -53,9 +68,23 @@ const StyledGitHubIcon = styled(FontAwesomeIcon)`
     font-size: 45px;
     vertical-align: middle;
 `
+const StyledLightbox = styled(Lightbox)`
+    z-index: 99999999999999999999;
+    .yarl__slide_title {
+        text-align: center;
+    }
+    .yarl__container:hover {
+        cursor: pointer;
+    }
+    .yarl__slide_image:hover {
+        cursor: default;
+    }
+`
 
 function Project() {
     const { projectSlug } = useParams()
+    const [open, setOpen] = useState(false)
+    const [index, setIndex] = useState(-1)
 
     // The slug has to belong to a project
     const project = projects.find((project) => project.slug === projectSlug)
@@ -84,14 +113,31 @@ function Project() {
                     <StyledProjectImages>
                         {project.images.map((image, index) => (
                             <img
-                                src={image}
-                                alt={project.name}
+                                onClick={() => {
+                                    setOpen(true)
+                                    setIndex(index)
+                                }}
+                                src={image.src}
+                                alt={image.legend}
                                 key={index}
                                 width={300}
                                 height={300}
                             />
                         ))}
                     </StyledProjectImages>
+                    <StyledLightbox
+                        closeOnBackdropClick={true}
+                        controller={{ closeOnBackdropClick: true }}
+                        open={(open, index >= 0)}
+                        close={() => setIndex(-1)}
+                        index={index}
+                        slides={project.images}
+                        plugins={[Captions, Thumbnails, Counter, Zoom]}
+                        captions={{
+                            descriptionTextAlign: 'center',
+                        }}
+                        zoom={{ maxZoomPixelRatio: 5, scrollToZoom: true }}
+                    />
                     <p>{project.description}</p>
                     <StyledLink
                         className="button"

@@ -103,9 +103,9 @@ const projects = [
         techno: ['PHP', 'HTML', 'CSS', 'Javascript'],
         description: "Lorem ipsum dolor sit amet consectetur. Vel imperdiet nunc tempor placerat. Eu lacus lorem mollis lectus. Amet in in lorem varius tristique vehicula amet. Donec ipsum sapien leo leo gravida sit aliquam. Ipsum mauris praesent volutpat sagittis tristique aliquet non consectetur velit. Sit nisl est tellus nulla. Nisi nunc sapien laoreet nisl varius. Iaculis lacinia enim nunc odio faucibus at commodo. Vivamus quam ac maecenas nulla amet risus sem tellus. Turpis nunc amet sed nisi. In consectetur magnis vitae nibh tellus vel nec erat. Nunc amet odio tincidunt id pulvinar quisque auctor. Pharetra lacus ante at quam fermentum consequat vestibulum accumsan. Id metus posuere tincidunt elementum aliquam faucibus faucibus. Sit mauris lobortis tempor volutpat tellus laoreet elit. Nec mauris fermentum platea proin vel risus massa duis. Luctus nibh in pulvinar vestibulum purus. Et ipsum diam leo augue in orci. Laoreet odio est in diam in sed facilisis eu consectetur.",
         images: [
-            DefaultPicture,
-            DefaultPicture,
-            DefaultPicture,
+            { src: bookshelfCorner, title: "Istorel", description: "A beautiful project"},
+            { src: psToyscolor, title: "Istorel", description: "A beautiful project"},
+            { src: photoSolex, title: "Istorel", description: "A beautiful project"}
         ],
         githubLink: 'https://github.com/HeleneGreat/istorel',
     },
