@@ -51,7 +51,7 @@ function Card({ project }) {
         <StyledCard>
             <StyledName>{project.name}</StyledName>
             <StyledCoverImg
-                src={project.coverImage}
+                src={project.coverImage[0].src}
                 alt={project.name}
                 height={390}
                 width={390}
