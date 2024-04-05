@@ -6,7 +6,10 @@ import colors from '../../utils/colors'
 import Techno from '../../components/Techno/Techno'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+import {
+    faChevronLeft,
+    faArrowUpRightFromSquare,
+} from '@fortawesome/free-solid-svg-icons'
 import { faSquareGithub } from '@fortawesome/free-brands-svg-icons'
 import ProjectIntroduction from '../../components/ProjectIntroduction/ProjectIntroduction'
 import { breakpoints } from '../../utils/css-breakpoints'
@@ -37,11 +40,6 @@ const StyledButton = styled(Link)`
         }
     }
 `
-const StyledLink = styled(Link)`
-    display: block;
-    width: fit-content;
-    margin: 30px auto 0;
-`
 const StyledProjectImages = styled('div')`
     display: flex;
     justify-content: space-evenly;
@@ -63,10 +61,56 @@ const StyledProjectImages = styled('div')`
         }
     }
 `
-const StyledGitHubIcon = styled(FontAwesomeIcon)`
-    padding-left: 20px;
-    font-size: 45px;
+const StyledDescription = styled('div')`
+    h3 {
+        padding: 40px 0 20px;
+    }
+    p,
+    li {
+        padding-bottom: 12px;
+    }
+`
+const StyledLink = styled(Link)`
+    display: table-cell;
     vertical-align: middle;
+    width: fit-content;
+    &.button {
+        height: 40px;
+        padding: 0 15px;
+        line-height: 40px;
+        @media screen and ${breakpoints.laptop} {
+            height: 60px;
+            padding: 0 30px;
+            line-height: 55px;
+        }
+        &:last-of-type {
+            margin-left: 30px;
+            @media screen and ${breakpoints.laptop} {
+                margin-left: 50px;
+            }
+        }
+    }
+`
+const StyledButtons = styled('div')`
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+`
+const StyledIcon = styled(FontAwesomeIcon)`
+    padding-left: 20px;
+    vertical-align: middle;
+    &.fa-arrow-up-right-from-square {
+        font-size: 20px;
+        @media screen and ${breakpoints.laptop} {
+            font-size: 22px;
+        }
+    }
+    &.fa-square-github {
+        font-size: 30px;
+        @media screen and ${breakpoints.laptop} {
+            font-size: 45px;
+        }
+    }
 `
 const StyledLightbox = styled(Lightbox)`
     z-index: 99999999999999999999;
@@ -76,8 +120,12 @@ const StyledLightbox = styled(Lightbox)`
     .yarl__container:hover {
         cursor: pointer;
     }
-    .yarl__slide_image:hover {
-        cursor: default;
+    .yarl__slide_image {
+        background-color: #323232;
+        padding: 50px;
+        &:hover {
+            cursor: default;
+        }
     }
 `
 
@@ -138,16 +186,37 @@ function Project() {
                         }}
                         zoom={{ maxZoomPixelRatio: 5, scrollToZoom: true }}
                     />
-                    <p>{project.description}</p>
-                    <StyledLink
-                        className="button"
-                        to={project.githubLink}
-                        title="GitHub"
-                        target="_blank"
-                    >
-                        Repository
-                        <StyledGitHubIcon icon={faSquareGithub} />
-                    </StyledLink>
+                    <StyledDescription>
+                        <div
+                            dangerouslySetInnerHTML={{
+                                __html: project.description,
+                            }}
+                        ></div>
+                    </StyledDescription>
+                    <StyledButtons>
+                        <StyledLink
+                            className="button"
+                            to={project.githubLink}
+                            title="GitHub"
+                            target="_blank"
+                        >
+                            Repository
+                            <StyledIcon icon={faSquareGithub} />
+                        </StyledLink>
+                        {project.websiteLink ? (
+                            <StyledLink
+                                className="button"
+                                to={project.websiteLink}
+                                title="GitHub"
+                                target="_blank"
+                            >
+                                {project.name}
+                                <StyledIcon icon={faArrowUpRightFromSquare} />
+                            </StyledLink>
+                        ) : (
+                            ''
+                        )}
+                    </StyledButtons>
                 </div>
             </StyledProjectBody>
         </div>
