@@ -69,6 +69,10 @@ const StyledDescription = styled('div')`
     li {
         padding-bottom: 12px;
     }
+    ul {
+        list-style-type: disc;
+        padding-left: 40px;
+    }
 `
 const StyledLink = styled(Link)`
     display: table-cell;
@@ -193,21 +197,26 @@ function Project() {
                             }}
                         ></div>
                     </StyledDescription>
+
                     <StyledButtons>
-                        <StyledLink
-                            className="button"
-                            to={project.githubLink}
-                            title="GitHub"
-                            target="_blank"
-                        >
-                            Repository
-                            <StyledIcon icon={faSquareGithub} />
-                        </StyledLink>
+                        {project.websiteLink ? (
+                            <StyledLink
+                                className="button"
+                                to={project.githubLink}
+                                title="GitHub"
+                                target="_blank"
+                            >
+                                Repository
+                                <StyledIcon icon={faSquareGithub} />
+                            </StyledLink>
+                        ) : (
+                            ''
+                        )}
                         {project.websiteLink ? (
                             <StyledLink
                                 className="button"
                                 to={project.websiteLink}
-                                title="GitHub"
+                                title="Voir le sit en ligne"
                                 target="_blank"
                             >
                                 {project.name}

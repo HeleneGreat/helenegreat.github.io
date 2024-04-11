@@ -1,27 +1,34 @@
 import DefaultPicture from '../assets/DefaultPicture.jpg'
+//1 Istorel
 import istorel from '../assets/projects/istorel-cover.png'
+//2 Parc Asterix
+import asterix from '../assets/projects/asterix-cover.png'
+import asterix1 from '../assets/projects/asterix1.png'
+import asterix2 from '../assets/projects/asterix2.png'
+import asterix3 from '../assets/projects/asterix3.png'
+//3 WP Yulbaba
+//4 The Bookshelf Corner
 import bookshelfCorner from '../assets/projects/bookshelf-corner-cover.png'
-import photoSolex from '../assets/projects/photo-solex-cover.png'
-import psToyscolor from '../assets/projects/ps-toyscolor-cover.png'
+import bookshelfCorner1 from '../assets/projects/bookshelf-corner1.png'
+import bookshelfCorner2 from '../assets/projects/bookshelf-corner2.png'
+import bookshelfCorner3 from '../assets/projects/bookshelf-corner3.png'
+//5 Wiki Disney
 import wikiDisney from '../assets/projects/wiki-disney-cover.png'
+//6 PS Toycolor
+import psToyscolor from '../assets/projects/ps-toyscolor-cover.png'
+//7 Photo Solex
+import photoSolex from '../assets/projects/photo-solex-cover.png'
+//8 Portfolio
 import portfolio from '../assets/projects/portfolio-cover.png'
 
 
-//1 Istorel
-//2 Parc Asterix
-//3 WP Yulbaba
-//4 The Bookshelf Corner
-//5 Wiki Disney
-//6 PS Toycolor
-//7 Photo Solex
-//8 Portfolio
 
 const projects = [
     {
         id: 8,
         slug: 'portfolio',
         name: 'Portfolio',
-        introduction: 'Lorem ipsum dolor sit amet consectetur. Eget massa odio nec in lacus mauris est. Malesuada viverra risus ut euismod dignissim. Eget diam id egestas tellus. Commodo varius sit habitant consectetur orci adipiscing cras consequat ipsum. Orci eget sagittis consectetur nullam sed amet cras mattis. Pellentesque sagittis ut pulvinar porttitor sed eu augue non bibendum. Ut eget viverra ac purus quis orci. Erat enim ac pharetra blandit imperdiet. Adipiscing viverra dictum at eros.',
+        introduction: ``,
         coverImage: [
             {
                 src: portfolio,
@@ -30,7 +37,7 @@ const projects = [
             }
         ],
         techno: ['React', 'Javascript'],
-        description: 'Lorem ipsum dolor sit amet consectetur. Vel imperdiet nunc tempor placerat. Eu lacus lorem mollis lectus. Amet in in lorem varius tristique vehicula amet. Donec ipsum sapien leo leo gravida sit aliquam. Ipsum mauris praesent volutpat sagittis tristique aliquet non consectetur velit. Sit nisl est tellus nulla. Nisi nunc sapien laoreet nisl varius. Iaculis lacinia enim nunc odio faucibus at commodo. Vivamus quam ac maecenas nulla amet risus sem tellus. Turpis nunc amet sed nisi. In consectetur magnis vitae nibh tellus vel nec erat. Nunc amet odio tincidunt id pulvinar quisque auctor. Pharetra lacus ante at quam fermentum consequat vestibulum accumsan. Id metus posuere tincidunt elementum aliquam faucibus faucibus. Sit mauris lobortis tempor volutpat tellus laoreet elit. Nec mauris fermentum platea proin vel risus massa duis. Luctus nibh in pulvinar vestibulum purus. Et ipsum diam leo augue in orci. Laoreet odio est in diam in sed facilisis eu consectetur.',
+        description: ``,
         images: [],
         githubLink: 'https://github.com/HeleneGreat/portfolio-v2',
     },
@@ -38,7 +45,7 @@ const projects = [
         id: 7,
         slug: 'photo-solex',
         name: 'Photo Solex',
-        introduction: '3333333333333',
+        introduction: `Photo Solex c'est LE projet fil rouge de mon bachelor. C'est un site de partage de photos anciennes, pour les utilisateurs s'entraident pour identifier les personnes présentes sur les photos. C'est un projet en constant évolution, que je continue de développer sur mon temps libre.`,
         coverImage: [
             {
                 src: photoSolex,
@@ -47,24 +54,23 @@ const projects = [
             }
         ],
         techno: ['PHP', 'Javascript', 'Twig', 'HTML', 'Sass', 'Doctrine'],
-        description: '3333333333333333333333333333333333333333333333',
+        description: ``,
         images: [],
-        githubLink: 'https://github.com/HeleneGreat/family-pictures',
     },
     {
         id: 6,
         slug: 'ps-toyscolor',
-        name: 'PS Toyscolor',
-        introduction: '11111111111',
+        name: 'Prestashop Toyscolor',
+        introduction: ``,
         coverImage: [
             {
                 src: psToyscolor,
-                title: "PS Toyscolor",
+                title: "Prestashop Toyscolor",
                 description: "Photo de couverture"
             }
         ],
         techno: ['PHP', 'Symfony', 'Prestashop', 'SQL', 'Twig', 'HTML', 'Sass'],
-        description: '111111111111111111111111111111111111111',
+        description: ``,
         images: [],
         githubLink: 'https://github.com/HeleneGreat/ps_toyscolor',
     },
@@ -72,7 +78,7 @@ const projects = [
         id: 5,
         slug: 'wiki-disney',
         name: 'Wiki Disney',
-        introduction: '11111111111',
+        introduction: `Premier projet en Symfony, ce wiki a aussi été l'occasion de travailler à 3 développeurs, avec Git et GitHub.`,
         coverImage: [
             {
                 src: wikiDisney,
@@ -81,7 +87,7 @@ const projects = [
             }
         ],
         techno: ['Symfony', 'PHP', 'Sass', 'Twig', 'Bootstrap', 'Doctrine'],
-        description: '111111111111111111111111111111111111111',
+        description: ``,
         images: [],
         githubLink: 'https://github.com/HeleneGreat/wiki_disney',
     },
@@ -89,7 +95,7 @@ const projects = [
         id: 4,
         slug: 'the-bookshelf-corner',
         name: 'The Bookshelf Corner',
-        introduction: '22222222222',
+        introduction: `The Bookshelf Corner c'est un blog littéraire fictif qui permet aux administrateurs de publier leur avis sur des livres. Il y a également tout une communauté, avec des utilisateurs qui peuvent s'inscrire pour poster des commentaires sur les articles. Le back office complet permet de gérer son compte en fonction de ses autorisations. C'est le projet que j'ai présenté pour l'obtention de mon titre de Développeur intégrateur web (bac+2).`,
         coverImage: [
             {
                 src: bookshelfCorner,
@@ -98,24 +104,41 @@ const projects = [
             }
         ],
         techno: ['PHP', 'Javascript', 'SQL', 'HTML', 'CSS'],
-        description: '222222222222222222222222222222222222222222',
-        images: [],
+        description: `
+        <p>The Bookshelf Corner est un projet web conçu pour héberger un blog axé sur la passion de la lecture. Le site a été réalisé en utilisant PHP, HTML, CSS, JavaScript et SQL, sans recours à aucun framework.</p>
+        <p>Le projet suit une architecture MVC (Model - View - Controller) pour une organisation claire et une maintenance simplifiée. Chaque table de la base de données est associée à son propre controller et model. L'ensemble du site est construit de manière responsive, privilégiant une approche mobile-first en CSS.</p>
+        <p>Fonctionnalités principales :</p>
+        <ul>
+            <li><b>Espace administrateur :</b> Les administrateurs ont accès à un panel complet permettant la gestion des articles, des commentaires, des utilisateurs et des messages. Ils peuvent également modifier la liste des livres qui seront affichés en page d'accueil (<i>Les coups de coeur de la rédation</i>).</li>
+            <li><b>Création de compte et connexion :</b> Les visiteurs peuvent créer un compte pour poster des commentaires sur les articles.</li>
+            <li><b>Gestion des livres :</b> Les articles sont organisés par catégorie et genre littéraire. Chaque livre dispose d'une page individuelle avec un espace réservé aux commentaires des utilisateurs enregistrés.</li>
+            <li><b>Tableau de bord utilisateur :</b> Les utilisateurs enregistrés ont accès à un tableau de bord leur permettant de consulter des statistiques sur leurs commentaires publiés et de gérer leurs propres commentaires et données de compte.</li>
+            <li><b>Modération et paramètres du site :</b> Les administrateurs peuvent modérer les commentaires et gérer les messages reçus via le formulaire de contact. Ils ont également la possibilité de configurer les paramètres globaux du site, tels que le nom et le logo du blog.</li>
+        </ul>
+        <p></p>
+        `,
+        images: [
+            { src: bookshelfCorner1, title: "The Bookshelf Corner", description: "Back office d'un administrateur"},
+            { src: bookshelfCorner2, title: "The Bookshelf Corner", description: "Requêtes SQL pour le CRUD d'un livre"},
+            { src: bookshelfCorner3, title: "The Bookshelf Corner", description: "Requête SQL pour récupérer les commentaires d'un livre"}
+        ],
         githubLink: 'https://github.com/HeleneGreat/bookshelf-corner',
+        websiteLink: 'https://helenegreat.alwaysdata.net/bookshelf_corner/'
     },
     {
         id: 3,
         slug: 'wp-yulbaba',
-        name: 'WP Yulbaba',
-        introduction: '11111111111',
+        name: 'Wordpress Yulbaba',
+        introduction: ``,
         coverImage: [
             {
                 src: DefaultPicture,
-                title: "WP Yulbaba",
+                title: "Wordpress Yulbaba",
                 description: "Photo de couverture"
             }
         ],
         techno: ['Wordpress', 'PHP', 'CSS', 'Javascript', 'HTML'],
-        description: '111111111111111111111111111111111111111',
+        description: ``,
         images: [],
         githubLink: 'https://github.com/HeleneGreat/wp-yulbaba',
     },
@@ -123,17 +146,26 @@ const projects = [
         id: 2,
         slug: 'parc-asterix',
         name: 'Parc Asterix',
-        introduction: '11111111111',
+        introduction: `Dans les débuts de ma découverte du PHP orienté objet, j'ai entrepris un projet modeste mais passionnant. Plongeant dans les méandres de la programmation orientée objet (POO), j'ai élaboré un petit jeu de gestion de parc d'attraction, qui se lance dans la console de VS Code.`,
         coverImage: [
             {
-                src: DefaultPicture,
+                src: asterix,
                 title: "Parc Astérix",
-                description: "Photo de couverture"
+                description: "Index.php : appel des informations qui s'afficheront dans la console"
             }
         ],
         techno: ['PHP'],
-        description: '111111111111111111111111111111111111111',
-        images: [],
+        description: `
+        <p>Ce projet incarnait pour moi un laboratoire d'exploration des fondements de la POO. J'ai pris plaisir à expérimenter avec ses principes fondamentaux, explorant les concepts de classe, d'objet, d'encapsulation, d'héritage et de polymorphisme.</p>
+        <p>Il s'agit d'un jeu de gestion d'un parc d'attractions. Il est possible de construire des attractions, les entretenir et les dégrader !</p>
+        <p>Ce jeu n'est qu'une ébauche. Il suffit de décommenter les différentes lignes de index.php en fonction des consignes qu'on veut implémenter, puis de le lancer via la commande <i>php index.php</i>.</p>
+        <p>Toute ressemblance avec le jeu Planet Coaster n'est absolument pas fortuite...</p>
+        `,
+        images: [
+            { src: asterix1, title: "Parc Asterix", description: "UML du projet : seules les parties 'Parc' et 'Attraction' ont été implémentée"},
+            { src: asterix2, title: "Parc Asterix", description: "Class Parc"},
+            { src: asterix3, title: "Parc Asterix", description: "Execution du script dans le terminal"}
+        ],
         githubLink: 'https://github.com/HeleneGreat/parc-asterix',
     },
     {
