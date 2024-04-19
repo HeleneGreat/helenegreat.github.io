@@ -44,20 +44,31 @@ const StyledProjectImages = styled('div')`
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    img {
-        width: 100%;
-        height: auto;
+    .img-container {
+        overflow: hidden;
         margin: 10px 0;
-        &:hover {
+        border: 3px solid ${colors.black};
+        border-radius: 5px;
+        img {
+            width: 100%;
+            height: auto;
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover img {
             cursor: pointer;
+            transform: scale(1.1);
         }
     }
     @media screen and ${breakpoints.tablet} {
-        img {
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
+        .img-container {
             margin: 0 10px 30px;
+            img {
+                width: 300px;
+                height: 300px;
+                min-width: 100%;
+                min-height: 100%;
+                object-fit: cover;
+            }
         }
     }
 `
@@ -164,17 +175,19 @@ function Project() {
                 <div className="container">
                     <StyledProjectImages>
                         {project.images.map((image, index) => (
-                            <img
-                                onClick={() => {
-                                    setOpen(true)
-                                    setIndex(index)
-                                }}
-                                src={image.src}
-                                alt={image.legend}
-                                key={index}
-                                width={300}
-                                height={300}
-                            />
+                            <div className="img-container">
+                                <img
+                                    onClick={() => {
+                                        setOpen(true)
+                                        setIndex(index)
+                                    }}
+                                    src={image.src}
+                                    alt={image.legend}
+                                    key={index}
+                                    width={300}
+                                    height={300}
+                                />
+                            </div>
                         ))}
                     </StyledProjectImages>
                     <StyledLightbox

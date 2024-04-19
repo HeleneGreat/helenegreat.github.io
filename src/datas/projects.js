@@ -14,6 +14,9 @@ import bookshelfCorner2 from '../assets/projects/bookshelf-corner2.png'
 import bookshelfCorner3 from '../assets/projects/bookshelf-corner3.png'
 //5 Wiki Disney
 import wikiDisney from '../assets/projects/wiki-disney-cover.png'
+import wikiDisney1 from '../assets/projects/wiki-disney1.png'
+import wikiDisney2 from '../assets/projects/wiki-disney2.png'
+import wikiDisney3 from '../assets/projects/wiki-disney3.png'
 //6 PS Toycolor
 import psToyscolor from '../assets/projects/ps-toyscolor-cover.png'
 //7 Photo Solex
@@ -38,7 +41,11 @@ const projects = [
         ],
         techno: ['React', 'Javascript'],
         description: ``,
-        images: [],
+        images: [
+            { src: DefaultPicture, title: "", description: ""},
+            { src: DefaultPicture, title: "", description: ""},
+            { src: DefaultPicture, title: "", description: ""}
+        ],
         githubLink: 'https://github.com/HeleneGreat/portfolio-v2',
     },
     {
@@ -55,7 +62,11 @@ const projects = [
         ],
         techno: ['PHP', 'Javascript', 'Twig', 'HTML', 'Sass', 'Doctrine'],
         description: ``,
-        images: [],
+        images: [
+            { src: DefaultPicture, title: "", description: ""},
+            { src: DefaultPicture, title: "", description: ""},
+            { src: DefaultPicture, title: "", description: ""}
+        ],
     },
     {
         id: 6,
@@ -71,14 +82,18 @@ const projects = [
         ],
         techno: ['PHP', 'Symfony', 'Prestashop', 'SQL', 'Twig', 'HTML', 'Sass'],
         description: ``,
-        images: [],
+        images: [
+            { src: DefaultPicture, title: "", description: ""},
+            { src: DefaultPicture, title: "", description: ""},
+            { src: DefaultPicture, title: "", description: ""}
+        ],
         githubLink: 'https://github.com/HeleneGreat/ps_toyscolor',
     },
     {
         id: 5,
         slug: 'wiki-disney',
         name: 'Wiki Disney',
-        introduction: `Premier projet en Symfony, ce wiki a aussi été l'occasion de travailler à 3 développeurs, avec Git et GitHub.`,
+        introduction: `Premier projet en Symfony, ce wiki a été l'occasion d'expérimenter sur les entités, leurs relations, mais aussi de travailler à trois développeurs, avec Git et GitHub. Nous avions un cahier des charges à respecter, avec trois entités et différentes relations, pour découvrir et tester les différentes possibilités offertes par le framework Symfony. Ce projet était orienté back, ce qui explique le peu d'effort fourni pour la charte graphique du site !`,
         coverImage: [
             {
                 src: wikiDisney,
@@ -87,8 +102,25 @@ const projects = [
             }
         ],
         techno: ['Symfony', 'PHP', 'Sass', 'Twig', 'Bootstrap', 'Doctrine'],
-        description: ``,
-        images: [],
+        description: `
+        <p>Dans le cadre de ce projet, notre mission était de concevoir un site de type WIKI avec Symfony, en respectant un cahier des charges exigeant. Nous devions créer un site comprenant au minimum quatre articles répartis dans deux catégories spécifiques, chacun défini par des entités distinctes.</p>
+        <p>Nous avons choisi de répertorier les personnages de l'univers Disney. Les utilisateurs inscrits peuvent ajouter les personnages de leur choix et ainsi agrandir chaque jour un peu plus ce catalogue.</p>
+        <p>La structure du site devait comporter des éléments standard tels qu'un menu de navigation, une bannière, un footer et un bouton de connexion. La partie publique du site devait inclure une page d'accueil présentant une description du thème du Wiki, des listes de catégories et d'articles aléatoires, ainsi que des pages dédiées aux catégories et aux articles. La partie privée devait permettre aux utilisateurs de gérer les articles qu'ils ont créés, avec la possibilité de créer de nouveaux articles.</p>
+        <p>L'évaluation de ce travail couvrait divers aspects tels que :</p>
+        <ul>
+            <li>le respect de la structure de données,</li>
+            <li>la persistance des données avec Doctrine,</li>
+            <li>l'utilisation efficace des fonctionnalités de Symfony,</li>
+            <li>la gestion des formulaires,</li>
+            <li>la gestion de la connexion et des droits d'accès.</li>
+        </ul>
+        <p>En plus de se familiariser avec Symfony, ce projet a été l'occasion de découvrir Twig et le concept d'héritage de templates, que je réutiliserai presque constamment dans mes projets suivants.</p>
+        `,
+        images: [
+            { src: wikiDisney1, title: "Wiki Disney", description: "UML du projet"},
+            { src: wikiDisney2, title: "Wiki Disney", description: "Cahier des charges du projet"},
+            { src: wikiDisney3, title: "Wiki Disney", description: "Exemple de code : ajout de la liste des catégories en tant que variables globales Twig pour pouvoir y accéder par exemple dans le header"}
+        ],
         githubLink: 'https://github.com/HeleneGreat/wiki_disney',
     },
     {
@@ -139,7 +171,11 @@ const projects = [
         ],
         techno: ['Wordpress', 'PHP', 'CSS', 'Javascript', 'HTML'],
         description: ``,
-        images: [],
+        images: [
+            { src: DefaultPicture, title: "", description: ""},
+            { src: DefaultPicture, title: "", description: ""},
+            { src: DefaultPicture, title: "", description: ""}
+        ],
         githubLink: 'https://github.com/HeleneGreat/wp-yulbaba',
     },
     {
