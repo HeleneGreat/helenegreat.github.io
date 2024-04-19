@@ -1,31 +1,40 @@
 {
   "files": {
     "main.css": "/static/css/main.620fa7f0.css",
-    "main.js": "/static/js/main.34916bc4.js",
+    "main.js": "/static/js/main.77c12171.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/helene_carriou1.png": "/static/media/helene_carriou1.0f1b664963553bf0f232.png",
     "static/media/DefaultPicture.jpg": "/static/media/DefaultPicture.2935e089b49923f152ca.jpg",
+    "static/media/portfolio3.png": "/static/media/portfolio3.08d05189f15f739261d8.png",
     "static/media/istorel-cover.png": "/static/media/istorel-cover.403ac3339ae1429dfe49.png",
-    "static/media/asterix2.png": "/static/media/asterix2.515eac107add2355b42d.png",
+    "static/media/asterix2.png": "/static/media/asterix2.b048cb47197381c9ec14.png",
     "static/media/ps-toyscolor-cover.png": "/static/media/ps-toyscolor-cover.c1f5b9db6972b20ed1bb.png",
     "static/media/photo-solex-cover.png": "/static/media/photo-solex-cover.631d04cc8ee9df063c65.png",
+    "static/media/bookshelf-corner1.png": "/static/media/bookshelf-corner1.53e99c948a046538b45c.png",
     "static/media/bookshelf-corner-cover.png": "/static/media/bookshelf-corner-cover.06b6c36827c9604071b0.png",
     "static/media/portfolio-cover.png": "/static/media/portfolio-cover.dee34c2d71df919c84fb.png",
+    "static/media/wiki-disney3.png": "/static/media/wiki-disney3.7b7e53f2c6be71b9764a.png",
+    "static/media/portfolio1.png": "/static/media/portfolio1.9c05d7673c06f8f071be.png",
     "static/media/wiki-disney-cover.png": "/static/media/wiki-disney-cover.dba97c4963daf94687df.png",
+    "static/media/portfolio2.png": "/static/media/portfolio2.9a86f799a8fe54462ab6.png",
     "static/media/asterix-cover.png": "/static/media/asterix-cover.cab3eb9893c6f52161b9.png",
+    "static/media/bookshelf-corner2.png": "/static/media/bookshelf-corner2.80d3d95871f2363abec5.png",
     "static/media/asterix1.png": "/static/media/asterix1.90e3b1e34c47f247cce3.png",
+    "static/media/wiki-disney2.png": "/static/media/wiki-disney2.d08d47b048e52a000b50.png",
+    "static/media/bookshelf-corner3.png": "/static/media/bookshelf-corner3.2e20848998f84b0944f7.png",
     "static/media/asterix3.png": "/static/media/asterix3.4b9cd01318005d3937f0.png",
     "static/media/404-error.svg": "/static/media/404-error.8d0fcf2ace5fa2a3bd68277424c688aa.svg",
     "static/media/helene_carriou2.jpg": "/static/media/helene_carriou2.6a32652b6233abb630cb.jpg",
     "static/media/postnobillscolombo-medium-webfont.woff": "/static/media/postnobillscolombo-medium-webfont.36b1dec88e4c6d2dcf57.woff",
+    "static/media/wiki-disney1.png": "/static/media/wiki-disney1.85df92e70319698a2743.png",
     "index.html": "/index.html",
     "static/media/menu-burger.svg": "/static/media/menu-burger.3e10dd7cfbf3847dbfe88047825c95e2.svg",
     "main.620fa7f0.css.map": "/static/css/main.620fa7f0.css.map",
-    "main.34916bc4.js.map": "/static/js/main.34916bc4.js.map",
+    "main.77c12171.js.map": "/static/js/main.77c12171.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.620fa7f0.css",
-    "static/js/main.34916bc4.js"
+    "static/js/main.77c12171.js"
   ]
 }
