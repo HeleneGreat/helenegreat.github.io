@@ -11,6 +11,9 @@ const StyledLastProject = styled('div')`
     h2 {
         text-align: center;
     }
+    p {
+        margin-top: 30px;
+    }
 `
 
 const StyledLink = styled(Link)`

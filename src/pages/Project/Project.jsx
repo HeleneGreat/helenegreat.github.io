@@ -212,7 +212,7 @@ function Project() {
                     </StyledDescription>
 
                     <StyledButtons>
-                        {project.websiteLink ? (
+                        {project.githubLink ? (
                             <StyledLink
                                 className="button"
                                 to={project.githubLink}

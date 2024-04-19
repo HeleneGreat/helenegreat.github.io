@@ -23,6 +23,9 @@ import psToyscolor from '../assets/projects/ps-toyscolor-cover.png'
 import photoSolex from '../assets/projects/photo-solex-cover.png'
 //8 Portfolio
 import portfolio from '../assets/projects/portfolio-cover.png'
+import portfolio1 from '../assets/projects/portfolio1.png'
+import portfolio2 from '../assets/projects/portfolio2.png'
+import portfolio3 from '../assets/projects/portfolio3.png'
 
 
 
@@ -31,7 +34,8 @@ const projects = [
         id: 8,
         slug: 'portfolio',
         name: 'Portfolio',
-        introduction: ``,
+        introduction: `
+        Mon portfolio, c'est le site sur lequel vous vous trouvez ! Il représente bien plus qu'un simple site web, c'est une vitrine de mes compétences et de ma passion pour le développement web. En plus de me présenter, il met en lumière les projets que j'ai développés sur mon temps libre, reflétant mon engagement et mon dévouement envers mon métier. Ce portfolio, ça a également été une excuse pour replonger dans le monde merveilleux de Reactjs, et de piocher parmi les nombreuses librairies de composants existantes pour expérimenter et améliorer mes compétences dans ce domaine. `,
         coverImage: [
             {
                 src: portfolio,
@@ -39,14 +43,20 @@ const projects = [
                 description: "Photo de couverture"
             }
         ],
-        techno: ['React', 'Javascript'],
-        description: ``,
+        techno: ['React', 'Javascript', 'Figma'],
+        description: `
+        <p>La réalisation de ce portfolio a été l'occasion de me replonger dans le framework Reactjs, que j'avais étudié lors de mon bachelor, mais que je n'avais pas eu l'occasion d'utiliser depuis. Pour réaliser le plus simplement possible ce projet, il n'y a pas de back-office, c'est uniquement un site front. Les données telles que mes expériences et mes projets sont contenus dans des tableaux, que je modifie manuellement si besoin.</p>
+        <p>Après avoir cherché de l'inspiration sur Dribbble, j'ai réalisé la maquette du site sur Figma, ce qui m'a permis de rapidement identifier les principaux composants que j'aurai à coder. Pour gagner du temps, j'ai uniquement réalisé la maquette pour grands écrans, puisque grâce à mon expérience en agence web, je suis capable de réaliser facilement des pages responsives. Ce site est d'ailleurs intégré en mobile-first.</p>
+        <p>J'ai profité des GitHub Pages pour héberger mon portfolio, car c'était pour moi la solution la plus simple et la plus économique. Cela a été facile grâce au package <i>gh-pages</i>, qui publie en une ligne de commande ce que je commite sur la branche main de ce projet. Le seul soucis que j'ai rencontré est que GitHub Pages ne gère pas le router de react si on ne passe pas par la page d'accueil du projet. Pour y remédier, j'ai créé une page 404.html non dynamique spécialement pour GitHub.</p>
+        <p>Ce projet a été un vrai moment de détente, moi qui travaillait dernièrement surtout sur du back, ça m'a rappelé que j'apprécie également beaucoup le front. Finalement ce qui m'a pris le plus de temps, ça a été la rédaction des contenus !</p>
+
+        `,
         images: [
-            { src: DefaultPicture, title: "", description: ""},
-            { src: DefaultPicture, title: "", description: ""},
-            { src: DefaultPicture, title: "", description: ""}
+            { src: portfolio1, title: "Portfolio", description: "La maquette du site, réalisée sur Figma."},
+            { src: portfolio2, title: "Portfolio", description: "Appel des composants de la page d'accueil."},
+            { src: portfolio3, title: "Portfolio", description: "Création d'une timeline responsive pour afficher la liste de mes expériences."}
         ],
-        githubLink: 'https://github.com/HeleneGreat/portfolio-v2',
+        githubLink: 'https://github.com/HeleneGreat/helenegreat.github.io',
     },
     {
         id: 7,
@@ -60,7 +70,7 @@ const projects = [
                 description: "Photo de couverture"
             }
         ],
-        techno: ['PHP', 'Javascript', 'Twig', 'HTML', 'Sass', 'Doctrine'],
+        techno: ['PHP', 'Javascript', 'Twig', 'HTML', 'Sass', 'Doctrine', 'Figma'],
         description: ``,
         images: [
             { src: DefaultPicture, title: "", description: ""},
