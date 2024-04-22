@@ -35,7 +35,7 @@ function LastProject() {
                 <ProjectIntroduction project={lastProject} titleSize={'h3'} />
                 <StyledLink
                     className="button"
-                    to={`/portfolio/${lastProject.slug}`}
+                    to={`/projets/${lastProject.slug}`}
                     title={lastProject.name}
                 >
                     En savoir +

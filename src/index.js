@@ -158,8 +158,8 @@ root.render(
         <Route path="/" element={<Home/>}/>
         <Route path="/parcours" element={<Curriculum/>}/>
         <Route path="/parcours/:jobSlug" element={<Curriculum jobs={jobs}/>}/>
-        <Route path="/portfolio" element={<Portfolio/>}/>
-        <Route path="/portfolio/:projectSlug" element={<Project projects={projects}/>}/>
+        <Route path="/projets" element={<Portfolio/>}/>
+        <Route path="/projets/:projectSlug" element={<Project projects={projects}/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path='*' element={<Error/>}/>
       </Routes>

@@ -7,7 +7,9 @@ import fonts from '../../utils/fonts'
 const StyledCoverImg = styled('img')`
     width: 100%;
     height: 100%;
+    filter: drop-shadow(5px 5px 10px ${colors.black});
     object-fit: cover;
+    object-position: right;
 `
 const StyledLink = styled(Link)`
     position: absolute;
@@ -58,7 +60,7 @@ function Card({ project }) {
             />
             <StyledLink
                 className="button"
-                to={`/portfolio/${project.slug}`}
+                to={`/projets/${project.slug}`}
                 project={project}
             >
                 En savoir +

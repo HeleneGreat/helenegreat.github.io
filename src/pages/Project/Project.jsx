@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useParams, useNavigate } from 'react-router-dom'
 import { Navigate } from 'react-router-dom'
 import projects from '../../datas/projects'
 import colors from '../../utils/colors'
@@ -148,6 +148,11 @@ function Project() {
     const { projectSlug } = useParams()
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
+    const navigate = useNavigate()
+
+    const handleClick = () => {
+        navigate(-1)
+    }
 
     // The slug has to belong to a project
     const project = projects.find((project) => project.slug === projectSlug)
@@ -159,11 +164,7 @@ function Project() {
         <div className="main">
             <div className="page-header">
                 <div className="container">
-                    <StyledButton
-                        className="button"
-                        to="/portfolio"
-                        title="Retour au portfolio"
-                    >
+                    <StyledButton className="button" onClick={handleClick}>
                         <StyledChevronIcon icon={faChevronLeft} />
                         Retour
                     </StyledButton>

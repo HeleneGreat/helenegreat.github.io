@@ -3,6 +3,7 @@ import { breakpoints } from '../../utils/css-breakpoints'
 import Lightbox from 'yet-another-react-lightbox'
 import 'yet-another-react-lightbox/styles.css'
 import { useState } from 'react'
+import colors from '../../utils/colors'
 
 const StyledIntro = styled('div')`
     display: flex;
@@ -16,6 +17,7 @@ const StyledIntro = styled('div')`
         max-width: 450px;
         height: auto;
         order: 1;
+        filter: drop-shadow(5px 5px 10px ${colors.black});
         &:hover {
             cursor: pointer;
         }

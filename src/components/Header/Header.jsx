@@ -125,8 +125,8 @@ function Header() {
                     <StyledLink to="/parcours" onClick={handleShowNavbar}>
                         Parcours
                     </StyledLink>
-                    <StyledLink to="/portfolio" onClick={handleShowNavbar}>
-                        Portfolio
+                    <StyledLink to="/projets" onClick={handleShowNavbar}>
+                        Projets
                     </StyledLink>
                     <StyledLink to="/contact" onClick={handleShowNavbar}>
                         Contact
