@@ -19,6 +19,9 @@ import wikiDisney2 from '../assets/projects/wiki-disney2.png'
 import wikiDisney3 from '../assets/projects/wiki-disney3.png'
 //6 PS Toycolor
 import psToyscolor from '../assets/projects/ps-toyscolor-cover.png'
+import psToyscolor1 from '../assets/projects/ps-toyscolor1.png'
+import psToyscolor2 from '../assets/projects/ps-toyscolor2.png'
+import psToyscolor3 from '../assets/projects/ps-toyscolor3.png'
 //7 Photo Solex
 import photoSolex from '../assets/projects/photo-solex-cover.png'
 //8 Portfolio
@@ -48,6 +51,7 @@ const projects = [
         <p>La réalisation de ce portfolio a été l'occasion de me replonger dans le framework Reactjs, que j'avais étudié lors de mon bachelor, mais que je n'avais pas eu l'occasion d'utiliser depuis. Pour réaliser le plus simplement possible ce projet, il n'y a pas de back-office, c'est uniquement un site front. Les données telles que mes expériences et mes projets sont contenus dans des tableaux, que je modifie manuellement si besoin.</p>
         <p>Après avoir cherché de l'inspiration sur Dribbble, j'ai réalisé la maquette du site sur Figma, ce qui m'a permis de rapidement identifier les principaux composants que j'aurai à coder. Pour gagner du temps, j'ai uniquement réalisé la maquette pour grands écrans, puisque grâce à mon expérience en agence web, je suis capable de réaliser facilement des pages responsives. Ce site est d'ailleurs intégré en mobile-first.</p>
         <p>J'ai profité des GitHub Pages pour héberger mon portfolio, car c'était pour moi la solution la plus simple et la plus économique. Cela a été facile grâce au package <i>gh-pages</i>, qui publie en une ligne de commande ce que je commite sur la branche main de ce projet. Le seul soucis que j'ai rencontré est que GitHub Pages ne gère pas le router de react si on ne passe pas par la page d'accueil du projet. Pour y remédier, j'ai créé une page 404.html non dynamique spécialement pour GitHub.</p>
+        <p>Certains composants sont assez conséquents et aurait pu être redécoupés en plusieurs petits composants, mais comme ils n'ont pas vocation à être réutilisés autre part dans ce petit projet, je les ai laissés tels quels.</p>
         <p>Ce projet a été un vrai moment de détente, moi qui travaillait dernièrement surtout sur du back, ça m'a rappelé que j'apprécie également beaucoup le front. Finalement ce qui m'a pris le plus de temps, ça a été la rédaction des contenus !</p>
 
         `,
@@ -82,7 +86,7 @@ const projects = [
         id: 6,
         slug: 'ps-toyscolor',
         name: 'Prestashop Toyscolor',
-        introduction: ``,
+        introduction: `Lors de mon bachelor, nous avons eu à réaliser en équipe un projet web qui réponde au besoin d'un client réel. Nous avons donc conçu une boutique de vente en ligne dédiée aux produits de notre client : des jeux créatifs pour enfants. De mon côté, en tant que développeuse, je me suis concentrée sur la partie technique du projet : l'intégration de la maquette sur un site Prestashop, ainsi que le développement de deux modules pour mettre en avant les produits et l'entreprises. `,
         coverImage: [
             {
                 src: psToyscolor,
@@ -90,12 +94,18 @@ const projects = [
                 description: "Photo de couverture"
             }
         ],
-        techno: ['PHP', 'Symfony', 'Prestashop', 'SQL', 'Twig', 'HTML', 'Sass'],
-        description: ``,
+        techno: ['PHP', 'Symfony', 'Prestashop', 'SQL', 'Twig', 'HTML', 'Sass', 'Figma'],
+        description: `
+        <p>Pour ce projet intitulé <i>MyDigital Project</i>, nous étions cinq étudiantes à travailler ensemble, issues des 4 formations dispensées par l'école : Bachelor web marketing et social media, Bachelor digital, Bachelor création numérique, et moi en Bachelor développement web. En plus d'avoir à réaliser la partie concernant notre métier, nous avons également dû gérer ensemble le bon déroulement du projet.</p>
+        <p>En accord avec le client, j'ai choisi d'utiliser le CMS Prestashop pour générer la nouvelle boutique Toyscolor, pour deux principales raisons : c'est un CMS qui gère déjà tout l'aspect e-commerce (gestion des stocks, paiement en ligne, fiche produit, commandes, clients...), et j'ai l'habitude de l'utiliser lors de mon alternance en agence web, ce qui le simplifiera le développement. De plus, l'idée est que contrairement au développement d'un site de A à Z, l'utilisation d'un CMS permettra au client de continuer à faire évoluer sa boutique seul si besoin, à l'aide de nombreux modules à disposition.</p>
+        <p>J'ai d'abord créé la maquette du site sur Figma, et une fois celle-ci validée, je l'ai intégrée sur Prestashop et j'ai choisi les modules pertinents. J'ai aussi créé deux modules sur-mesure pour la page d'accueil du site, l'un pour mettre en avant le produit principal de Toyscolor, l'autre pour présenter la boutique. Pour le moment la boutique est disponible uniquement en français, mais pour parer à toute évolution future, j'ai choisi de rendre mes modules traduisibles et compatibles avec le multi-boutique.</p>
+        <p></p>
+        <p></p>
+        `,
         images: [
-            { src: DefaultPicture, title: "", description: ""},
-            { src: DefaultPicture, title: "", description: ""},
-            { src: DefaultPicture, title: "", description: ""}
+            { src: psToyscolor1, title: "Prestashop Toyscolor", description: "Les deux modules développés vus depuis le back-office, et l'UML de l'un des modules."},
+            { src: psToyscolor2, title: "Prestashop Toyscolor", description: "A gauche, arborescence des titres de la page d'accueil pour le SEO. A droite, l'évolution des performances entre l'ancien et le nouveau site Toyscolor."},
+            { src: psToyscolor3, title: "Prestashop Toyscolor", description: "Exemple de code du module pour présenter la boutique : création de tables en base de données lors de l'installation, pour supression des tables en cas de désinstallation du module."}
         ],
         githubLink: 'https://github.com/HeleneGreat/ps_toyscolor',
     },
