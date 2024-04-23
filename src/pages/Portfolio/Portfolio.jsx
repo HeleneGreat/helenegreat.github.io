@@ -31,7 +31,7 @@ function Portfolio() {
         <div className="main">
             <div className="page-header">
                 <div className="container">
-                    <h1>Portfolio</h1>
+                    <h1>Mes projets</h1>
                     <p className="presentation">
                         Bienvenue dans la section dédiée à mes projets web !
                         Ici, je vous invite à découvrir une sélection de
@@ -51,7 +51,6 @@ function Portfolio() {
             </div>
             <StyledPortfolioBody className="page-body">
                 <div className="container">
-                    <h2>Mes projets</h2>
                     <StyledProjectList>
                         {projects.map((project) => (
                             <ProjectCard key={project.id} project={project} />

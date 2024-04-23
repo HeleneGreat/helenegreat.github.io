@@ -24,6 +24,9 @@ import psToyscolor2 from '../assets/projects/ps-toyscolor2.png'
 import psToyscolor3 from '../assets/projects/ps-toyscolor3.png'
 //7 Photo Solex
 import photoSolex from '../assets/projects/photo-solex-cover.png'
+import photoSolex1 from '../assets/projects/photo-solex1.png'
+import photoSolex2 from '../assets/projects/photo-solex2.png'
+import photoSolex3 from '../assets/projects/photo-solex3.png'
 //8 Portfolio
 import portfolio from '../assets/projects/portfolio-cover.png'
 import portfolio1 from '../assets/projects/portfolio1.png'
@@ -66,7 +69,7 @@ const projects = [
         id: 7,
         slug: 'photo-solex',
         name: 'Photo Solex',
-        introduction: `Photo Solex c'est LE projet fil rouge de mon bachelor. C'est un site de partage de photos anciennes, pour les utilisateurs s'entraident pour identifier les personnes présentes sur les photos. C'est un projet en constant évolution, que je continue de développer sur mon temps libre.`,
+        introduction: `Photo Solex c'est LE projet fil rouge de mon bachelor. C'est un site de partage de photos anciennes, pour que les utilisateurs s'entraident pour identifier les personnes présentes sur les photos. L'idée, c'est de préserver la mémoire familiale et de partager ses souvenirs avec ses proches. Ce projet est en constante évolution, je continue de le développer sur mon temps libre.`,
         coverImage: [
             {
                 src: photoSolex,
@@ -75,11 +78,16 @@ const projects = [
             }
         ],
         techno: ['PHP', 'Javascript', 'Twig', 'HTML', 'Sass', 'Doctrine', 'Figma'],
-        description: ``,
+        description: `
+        <p>Ce projet part d'un besoin personnel : en tant que passionnée d'Histoire et de généalogie, j'ai numérisé et identifié de nombreuses photos anciennes. Il me manquait un outil pour partager mes trouvailles avec les membres de ma famille. J'ai donc réfléchi à une solution web qui permette à la fois aux utilisateurs de partager et identifier des photos, mais aussi de pouvoir intéragir entre membres d'une même famille.</p>
+        <p>Avant de passer au code, j'ai d'abord pris le temps de bien concevoir ce projet : quelles étaient les principales fonctionnalités que je souhaitais implémenter ? Comment le projet pourrait évoluer dans le temps ? J'ai pris le temps de rédiger un cahier des charges pour bien cerner les besoins auxquels répondra le site.</p>
+        <p>J'ai choisi de réaliser ce projet en Symfony, car j'apprécie particulièrement PHP. De plus, je venais de découvrir le framework Symfony en cours, dont les possibilités m'ont immédiatement séduite.</p>
+        <p>J'ai présenté ce projet lors d'un oral pour l'obtention de mon CDA (bac+3/4), que j'ai obtenu. Ce projet n'est pas terminé, et je continue de le développer sur mon temps libre, en fonction de mes disponibilités.</p>
+        `,
         images: [
-            { src: DefaultPicture, title: "", description: ""},
-            { src: DefaultPicture, title: "", description: ""},
-            { src: DefaultPicture, title: "", description: ""}
+            { src: photoSolex1, title: "Photo Solex", description: "Page d'une photo : information sur l'image, personnes identifiées, commentaires des membres de la famille."},
+            { src: photoSolex2, title: "Photo Solex", description: "Modèle conceptuel des données (MCD) du projet tel qu'il a été présenté lors de mon examen final. Il a depuis évolué, avec par exemple l'ajout des groupes d'utilisateurs (familles)."},
+            { src: photoSolex3, title: "Photo Solex", description: "Exemple de code : un service pour gérer l'upload des fichiers images (photos partagées et avatar des utilisateurs)."}
         ],
     },
     {
