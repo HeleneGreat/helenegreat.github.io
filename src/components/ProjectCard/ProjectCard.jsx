@@ -11,12 +11,11 @@ const StyledCoverImg = styled('img')`
     object-fit: cover;
     object-position: right;
 `
-const StyledLink = styled(Link)`
+const StyledButton = styled('div')`
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translatex(-50%);
-    font-size: 22px;
     text-wrap: nowrap;
     &:hover {
         background-color: ${colors.primary};
@@ -30,6 +29,7 @@ const StyledName = styled('span')`
     top: 30%;
     transform: translatey(-50%);
     font-family: ${fonts.colombo};
+    color: ${colors.black};
     font-size: 33px;
 `
 const StyledCard = styled('li')`
@@ -42,7 +42,7 @@ const StyledCard = styled('li')`
             transition: all 0.2s ease-in-out;
         }
         ${StyledCoverImg} {
-            opacity: 0.3;
+            opacity: 0.2;
             transition: all 0.5s ease-in-out;
         }
     }
@@ -51,20 +51,16 @@ const StyledCard = styled('li')`
 function Card({ project }) {
     return (
         <StyledCard>
-            <StyledName>{project.name}</StyledName>
-            <StyledCoverImg
-                src={project.coverImage[0].src}
-                alt={project.name}
-                height={390}
-                width={390}
-            />
-            <StyledLink
-                className="button"
-                to={`/projets/${project.slug}`}
-                project={project}
-            >
-                En savoir +
-            </StyledLink>
+            <Link to={`/projets/${project.slug}`} project={project}>
+                <StyledName>{project.name}</StyledName>
+                <StyledCoverImg
+                    src={project.coverImage[0].src}
+                    alt={project.name}
+                    height={390}
+                    width={390}
+                />
+                <StyledButton className="button">En savoir +</StyledButton>
+            </Link>
         </StyledCard>
     )
 }
