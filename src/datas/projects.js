@@ -1,4 +1,4 @@
-import DefaultPicture from '../assets/DefaultPicture.jpg'
+// import DefaultPicture from '../assets/DefaultPicture.jpg'
 //1 Istorel
 import istorel from '../assets/projects/istorel-cover.png'
 //2 Parc Asterix
@@ -7,6 +7,10 @@ import asterix1 from '../assets/projects/asterix1.png'
 import asterix2 from '../assets/projects/asterix2.png'
 import asterix3 from '../assets/projects/asterix3.png'
 //3 WP Yulbaba
+import yulbaba from '../assets/projects/wp-yulbaba-cover.png'
+import yulbaba1 from '../assets/projects/wp-yulbaba1.png'
+import yulbaba2 from '../assets/projects/wp-yulbaba2.png'
+import yulbaba3 from '../assets/projects/wp-yulbaba3.png'
 //4 The Bookshelf Corner
 import bookshelfCorner from '../assets/projects/bookshelf-corner-cover.png'
 import bookshelfCorner1 from '../assets/projects/bookshelf-corner1.png'
@@ -189,20 +193,24 @@ const projects = [
         id: 3,
         slug: 'wp-yulbaba',
         name: 'Wordpress Yulbaba',
-        introduction: ``,
+        introduction: `Yulbaba c'est mon premier Wordpress ! Dans le cadre de ma formation au Greta, nous avons étudié Wordpress et avons réalisé un thème sur-mesure à partir d'une maquette et d'un cahier des charges. J'ai tenté de réaliser ce thème avec le moins de plugins possible, afin de découvrir au mieux les possibilités offertes par le CMS. Nous avions 5 jours pour nous auto-former sur Wordpress puis réaliser ce thème, je suis assez fière du résultat !`,
         coverImage: [
             {
-                src: DefaultPicture,
+                src: yulbaba,
                 title: "Wordpress Yulbaba",
                 description: "Photo de couverture"
             }
         ],
         techno: ['Wordpress', 'PHP', 'CSS', 'Javascript', 'HTML'],
-        description: ``,
+        description: `
+        <p>J'ai réalisé ce thème from scratch en cinq jours, en plus de me découvrir le CMS Wordpress. J'avais déjà utilisé ce CMS en tant que webmaster, mais c'était très agréable de comprendre comment marche Wordpress, toutes les possibilités et les options ajustables, en fonction des besoins. Mes collègues se sont moqués de moi en disant que je réinventais la roue, mais je trouve que coder sans plugins quand on découvre le CMS c'est primordial, ça m'a permis de bien mieux comprendre comment il fonctionne.</p>
+        <p>Nous avions un cahier des charges assez précis, en plus de la maquette de la page d'accueil. L'idée était de créer le blog d'une agence de voyage qui soit entièrement paramétrable par son administrateur. J'ai par exemple créé un type de contenu <i>Voyage</i>, ajouté des emplacements de contenus aux endroits opportuns (barre de recherche dans le header, îcones des réseaux sociaux dans le footer), créé le menu principal, ajouté des images pour les catégories...</p>
+        <p>J'ai eu beaucoup de plaisir à réaliser ce projet, qui m'a souvent donné envie de fouiller le codex Wordpress à la recherche d'options et de paramétrages qui répondent au mieux aux besoins de mon thème.</p>
+        `,
         images: [
-            { src: DefaultPicture, title: "", description: ""},
-            { src: DefaultPicture, title: "", description: ""},
-            { src: DefaultPicture, title: "", description: ""}
+            { src: yulbaba1, title: "Wordpress Yulbaba", description: "Maquette de la page d'accueil."},
+            { src: yulbaba2, title: "Wordpress Yulbaba", description: "Cahier des charges du projet."},
+            { src: yulbaba3, title: "Wordpress Yulbaba", description: "Exemple de code : le fichier function.php"}
         ],
         githubLink: 'https://github.com/HeleneGreat/wp-yulbaba',
     },
