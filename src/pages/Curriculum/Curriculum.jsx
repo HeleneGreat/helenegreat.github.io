@@ -33,8 +33,8 @@ const StyledCurriculumBody = styled('div')`
     background-color: ${colors.secondary};
     h2 {
         text-align: center;
-        padding-bottom: 40px;
         @media screen and ${breakpoints.laptop} {
+            padding-bottom: 40px;
             flex-direction: row;
             align-items: flex-end;
         }

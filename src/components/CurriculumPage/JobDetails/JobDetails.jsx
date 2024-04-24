@@ -5,6 +5,7 @@ import { Link, Navigate } from 'react-router-dom'
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import jobs from '../../../datas/jobs'
 import Techno from '../../Techno/Techno'
+import { breakpoints } from '../../../utils/css-breakpoints'
 
 const StyledButton = styled(Link)`
     height: fit-content;
@@ -25,21 +26,28 @@ const StyledJobIcon = styled(FontAwesomeIcon)`
 `
 const StyledTitle = styled('div')`
     position: relative;
-    &&& h2 {
-        padding: 0 0 20px 0;
-    }
 `
 const StyledJobTitle = css`
-    margin-left: 190px; // Bouton retour
-    margin-right: 70px; // Icone
+    @media screen and ${breakpoints.tablet} {
+        margin-left: 190px; // Bouton retour
+        margin-right: 70px; // Icone
+    }
 `
 const StyledH2 = styled('h2')`
     ${StyledJobTitle}
+    padding: 0 0 20px 0;
+    padding-top: 60px;
+    @media screen and ${breakpoints.tablet} {
+        padding-top: 0;
+    }
 `
 const StyledWhere = styled('p')`
     ${StyledJobTitle}
-    font-size: 28px;
+    font-size: 22px;
     text-align: center;
+    @media screen and ${breakpoints.tablet} {
+        font-size: 28px;
+    }
 `
 const StyledWhen = styled('p')`
     ${StyledJobTitle}
@@ -50,7 +58,9 @@ const StyledWhen = styled('p')`
     }
 `
 const StyledDescription = styled('div')`
-    width: 80%;
+    @media screen and ${breakpoints.laptop} {
+        width: 80%;
+    }
     margin: 0 auto;
     h3 {
         padding: 40px 0 20px;
@@ -74,7 +84,7 @@ function JobDetails({ jobSlug }) {
     if (!job) {
         return <Navigate to="/404" />
     }
-    console.log(job.name)
+
     return (
         <div id="job-details">
             {job.techno ? <Techno technos={job.techno} /> : ''}
