@@ -21,6 +21,7 @@ import PostNoBillColombo from './assets/fonts/postnobillscolombo-medium-webfont.
 import {breakpoints} from './utils/css-breakpoints'
 import fonts from './utils/fonts'
 import colors from './utils/colors'
+import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -75,10 +76,16 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   h2 {
-    font-size: 50px;
+    font-size: 35px;
+    @media screen and ${breakpoints.tablet} {
+      font-size: 50px;
+    }
   }
   h3 {
-    font-size: 40px;
+    font-size: 28px;
+    @media screen and ${breakpoints.tablet} {
+      font-size: 40px;
+    }
   }
   .container {
     width: 90%;
@@ -154,6 +161,7 @@ root.render(
       <ScrollToTop/>
       <GlobalStyle/>
       <Header/>
+      <ScrollToTopButton/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/parcours" element={<Curriculum/>}/>

@@ -1,10 +1,11 @@
 import { faGithub, faHtml5, faCss3Alt, faPhp, faJsSquare, faGit, faWordpress, faFigma, faStackOverflow, faAndroid, faReact, faPython, faNode, faSymfony, faSass, faNpm, faJira, faBootstrap} from '@fortawesome/free-brands-svg-icons'
-import { faDatabase } from '@fortawesome/free-solid-svg-icons'
+import { faDatabase, faMobile } from '@fortawesome/free-solid-svg-icons'
+import photoshop from '../assets/photoshop.svg'
+import twig from '../assets/twig.svg'
+import prestashop from '../assets/prestashop.svg'
+import doctrine from '../assets/doctrine.svg'
 
-// TODO add Twig, prestashop + Doctrine, SQL ?
 const technoIcons = [
-
-
     {
         name: 'Symfony',
         icon: faSymfony,
@@ -46,10 +47,25 @@ const technoIcons = [
         level: 3
     },
     {
+        name: 'Twig',
+        icon: twig,
+        level: 5
+    },
+    {
         name: 'React',
         icon: faReact,
         level: 3
     },
+    {
+        name: 'ReactNative',
+        icon: faMobile,
+        level: 1
+    },
+    {
+        name: 'Prestashop',
+        icon: prestashop,
+        level: 4
+    }, 
     {
         name: 'Wordpress',
         icon: faWordpress,
@@ -57,7 +73,7 @@ const technoIcons = [
     }, 
     {
         name: 'Doctrine',
-        icon: faDatabase,
+        icon: doctrine,
         level: 4
     },
     {
@@ -82,6 +98,10 @@ const technoIcons = [
     {
         name: 'Figma',
         icon: faFigma
+    },
+    {
+        name: 'Photoshop',
+        icon: photoshop
     },
     {
         name: 'Node',

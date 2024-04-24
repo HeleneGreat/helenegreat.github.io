@@ -17,7 +17,7 @@ const StyledButton = styled('div')`
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
     opacity: ${({ visible }) => (visible ? 1 : 0)};
     pointer-events: ${({ visible }) => (visible ? 'auto' : 'none')};
     @media screen and ${breakpoints.tablet} {

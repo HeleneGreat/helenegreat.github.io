@@ -68,6 +68,10 @@ const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
         font-size: 60px;
     }
 `
+const StyledIconImg = styled('img')`
+    width: auto;
+    height: 54px;
+`
 const StyledName = styled('div')`
     text-align: center;
     font-size: 15px;
@@ -108,12 +112,27 @@ function Techno({ technos, allIcons = false }) {
                             (item) => item.name === techno
                         )
                         if (!technoIcon) return null
+                        const isSpecialTechno =
+                            technoIcon.name === 'Photoshop' ||
+                            technoIcon.name === 'Twig' ||
+                            technoIcon.name === 'Doctrine' ||
+                            technoIcon.name === 'Prestashop'
                         return (
                             <li
                                 key={index}
                                 className={!allIcons ? 'home-icons' : ''}
                             >
-                                <StyledFontAwesomeIcon icon={technoIcon.icon} />
+                                {isSpecialTechno ? (
+                                    <StyledIconImg
+                                        src={technoIcon.icon}
+                                        alt={technoIcon.name}
+                                        className={technoIcon.name}
+                                    />
+                                ) : (
+                                    <StyledFontAwesomeIcon
+                                        icon={technoIcon.icon}
+                                    />
+                                )}
                                 {!allIcons && (
                                     <StyledName className="name">
                                         {technoIcon.name}
