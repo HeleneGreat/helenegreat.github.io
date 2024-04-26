@@ -49,12 +49,6 @@ const StyledLink = styled(Link)`
     display: block;
     margin: 15px auto 0;
     width: fit-content;
-    font-size: 18px;
-    padding: 8px 20px;
-    @media screen and ${breakpoints.tablet} {
-        font-size: 22px;
-        padding: 8px 30px;
-    }
     &:hover {
         background-color: ${colors.primary};
     }

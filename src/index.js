@@ -139,13 +139,18 @@ const GlobalStyle = createGlobalStyle`
   .button{
     background-color: ${colors.tertiary};
     color: #fff;
-    padding: 8px 15px;
-    font-size: 20px;
+    padding: 8px 25px;
+    font-size: 25px;
+    line-height: 35px;
     font-family: ${fonts.colombo};
     &:hover {
         background-color: ${colors.primary};
         color: #fff;
         transition: all 0.2s ease-in-out;
+    }
+    @media screen and (max-width: 335px){
+        font-size: 19px;
+        padding: 8px 18px;
     }
     @media screen and ${breakpoints.laptop} {
       padding: 8px 30px;

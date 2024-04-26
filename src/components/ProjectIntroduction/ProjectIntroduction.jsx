@@ -17,6 +17,7 @@ const StyledIntro = styled('div')`
         max-width: 450px;
         height: auto;
         order: 1;
+        object-fit: cover;
         filter: drop-shadow(5px 5px 10px ${colors.black});
         &:hover {
             cursor: pointer;

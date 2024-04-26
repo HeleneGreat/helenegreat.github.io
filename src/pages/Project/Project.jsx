@@ -49,6 +49,7 @@ const StyledProjectImages = styled('div')`
         margin: 10px 0;
         border: 3px solid ${colors.black};
         border-radius: 5px;
+        max-height: 305px;
         img {
             width: 100%;
             height: auto;

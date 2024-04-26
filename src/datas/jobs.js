@@ -54,7 +54,7 @@ const jobs = [
         year: "2022-2023",
         fullDate: "Septembre 2022 à juin 2024",
         introduction: `J'ai poursuivi une formation Bac+3/4 en alternance. Cette expérience m'a immergée dans un environnement dynamique où j'ai perfectionné mes compétences en développement, en conception de bases de données et en gestion de projets. `,
-        techno: ['Symfony', 'React', 'ReactNative', 'Nodejs', 'Sass'],
+        techno: ['Symfony', 'React', 'ReactNative', 'Node', 'Sass'],
         description: `
         <h3>Cursus</h3>
         <p>Suite à ma reconversion et à l'obtention de mon bac+2 en développement web, j'ai décidé de continuer à me former afin de consolider mes compétences et d'améliorer la qualité de mon code. Cette fois-ci j'ai préféré choisir l'alternance, afin d'obtenir de l'expérience professionnelle et d'appliquer mes connaissances dans un environnement de travail réél.</p>
