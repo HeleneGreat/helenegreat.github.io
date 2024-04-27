@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.620fa7f0.css",
-    "main.js": "/static/js/main.c64eb329.js",
+    "main.css": "/static/css/main.1e80c281.css",
+    "main.js": "/static/js/main.f4e570d9.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
-    "static/media/wp-yulbaba1.png": "/static/media/wp-yulbaba1.fc51ba15d054c73cd993.png",
     "static/media/helene_carriou1.png": "/static/media/helene_carriou1.0f1b664963553bf0f232.png",
     "static/media/photo-solex3.png": "/static/media/photo-solex3.38811f19d805aa7f6007.png",
     "static/media/photo-solex1.png": "/static/media/photo-solex1.7a0e992bf37594e21ec4.png",
@@ -14,6 +13,7 @@
     "static/media/wp-yulbaba-cover.png": "/static/media/wp-yulbaba-cover.26c29cdac36bcd2b771d.png",
     "static/media/ps-toyscolor-cover.png": "/static/media/ps-toyscolor-cover.c1f5b9db6972b20ed1bb.png",
     "static/media/photo-solex-cover.png": "/static/media/photo-solex-cover.631d04cc8ee9df063c65.png",
+    "static/media/wp-yulbaba1.png": "/static/media/wp-yulbaba1.57201525c73ac7877386.png",
     "static/media/ps-toyscolor3.png": "/static/media/ps-toyscolor3.d5f3bc0a9dc68c71c4a7.png",
     "static/media/bookshelf-corner1.png": "/static/media/bookshelf-corner1.53e99c948a046538b45c.png",
     "static/media/bookshelf-corner-cover.png": "/static/media/bookshelf-corner-cover.06b6c36827c9604071b0.png",
@@ -42,12 +42,12 @@
     "static/media/doctrine.svg": "/static/media/doctrine.5cb96067582c988fd75a7c0020b7e440.svg",
     "index.html": "/index.html",
     "static/media/menu-burger.svg": "/static/media/menu-burger.3e10dd7cfbf3847dbfe88047825c95e2.svg",
-    "main.620fa7f0.css.map": "/static/css/main.620fa7f0.css.map",
-    "main.c64eb329.js.map": "/static/js/main.c64eb329.js.map",
+    "main.1e80c281.css.map": "/static/css/main.1e80c281.css.map",
+    "main.f4e570d9.js.map": "/static/js/main.f4e570d9.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.620fa7f0.css",
-    "static/js/main.c64eb329.js"
+    "static/css/main.1e80c281.css",
+    "static/js/main.f4e570d9.js"
   ]
 }
