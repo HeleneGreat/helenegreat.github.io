@@ -4,8 +4,6 @@ import fonts from '../../utils/fonts'
 import { useRef, useState } from 'react'
 import styled from 'styled-components'
 import emailData from '../../datas/email'
-// import ReCAPTCHA from 'react-google-recaptcha-enterprise'
-import ReCAPTCHA from 'react-google-recaptcha'
 import { Link } from 'react-router-dom'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { breakpoints } from '../../utils/css-breakpoints'
@@ -161,15 +159,6 @@ function Contact() {
     const [loading, setLoading] = useState(false)
     const [message, setMessage] = useState()
 
-    // function onChange(e) {
-    // grecaptcha.enterprise.ready(async () => {
-    //     const token = await grecaptcha.enterprise.execute(
-    //         '6LczCJ0pAAAAADiMojP3vhf9wTGRrKv4l2tbO9Cy',
-    //         { action: 'EMAIL' }
-    //     )
-    // })
-    // }
-
     const sendEmail = (e) => {
         e.preventDefault()
         setLoading(true)
@@ -238,7 +227,7 @@ function Contact() {
                         name="user_name"
                         placeholder="Votre nom *"
                         required
-                        // autoComplete="off"
+                        autoComplete="off"
                     />
                     <input
                         type="email"
@@ -249,12 +238,6 @@ function Contact() {
                     />
                     <textarea name="message" placeholder="Votre message... *" />
                     <input type="hidden" name="timestamp" />
-                    <input type="hidden" name="g-recaptcha-response" />
-                    <ReCAPTCHA
-                        sitekey="6Lc_JJ0pAAAAABmjgM4Pd2bPVuGfC4Rznyu0kiiA" // v2
-                        // sitekey="6LeaFp0pAAAAAPdno-IAAm2L2AHJhuaGMmpnzXin" // enterprise
-                        onChange={sendEmail}
-                    />
                     <StyledSubmit>
                         <input
                             type="submit"
@@ -270,5 +253,4 @@ function Contact() {
     )
 }
 
-// TODO contact :  captcha
 export default Contact
