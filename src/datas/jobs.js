@@ -28,11 +28,11 @@ const jobs = [
         techno: ['PHP', 'Symfony', 'Javascript', 'Sass', 'HTML', 'Prestashop', 'SQL'],
         description: `
         <h3>Missions</h3>
-        <p>Mon poste de développeuse web full-stack en alternance au sein d'une agence web a été une opportunité passionnante de mettre en pratique mes compétences dans un environnement professionnel dynamique. J'ai eu le privilège de travailler aux côtés d'équipes multidisciplinaires comprenant des chefs de projet, des designers et des experts en SEO pour créer des sites web vitrine et e-commerce personnalisés répondant aux besoins spécifiques de chaque client.</p>
+        <p>Mon poste de développeuse web full-stack en alternance au sein d'une agence web a été une opportunité passionnante de mettre en pratique mes compétences dans un environnement professionnel dynamique. J'ai eu le privilège de travailler aux côtés d'équipes pluriciplinaires comprenant des chefs de projet, un designer et des experts en SEO pour créer des sites web vitrine et e-commerce personnalisés répondant aux besoins spécifiques de chaque client.</p>
         <p>Une partie importante de mon travail a été axée sur le développement de modules sur Prestashop, utilisant le framework Symfony. Cela comprenait la création, la correction et l'amélioration de modules existants pour répondre aux exigences fonctionnelles et esthétiques des clients. J'ai apporté une attention particulière à l'optimisation des performances et à la compatibilité avec les dernières versions de Prestashop, assurant ainsi une expérience utilisateur optimale.</p>
         <p>En plus du développement de modules, j'ai également été impliquée dans l'intervention sur des sites en production. Cela incluait la résolution de problèmes techniques, l'ajout de nouvelles fonctionnalités et la correction de bugs pour garantir le bon fonctionnement continu des sites web de nos clients. Mon travail s'est concentré sur la rapidité et l'efficacité afin de minimiser les interruptions de service et d'assurer la satisfaction des clients.</p>
         <p>Par ailleurs, j'ai intégré des maquettes sur Prestashop, en collaborant étroitement avec le designer pour traduire ses concepts visuels en interfaces utilisateur fonctionnelles, esthétiques et responsives. J'ai veillé à respecter les bonnes pratiques en matière d'intégration web, en assurant la compatibilité avec différents navigateurs et appareils.</p>
-        <p>Travailler au sein de cette agence web m'a permis de développer non seulement mes compétences techniques, mais aussi ma capacité à collaborer efficacement au sein d'une équipe multidisciplinaire et à répondre aux besoins variés des clients. Cette expérience m'a également offert une vue d'ensemble sur le processus de développement web, de la conception à la mise en production, renforçant ainsi ma polyvalence en tant que développeuse web full-stack.</p>
+        <p>Travailler au sein de cette agence web m'a permis de développer non seulement mes compétences techniques, mais aussi ma capacité à collaborer efficacement au sein d'une équipe pluridisciplinaire et à répondre aux besoins variés des clients. Cette expérience m'a également offert une vue d'ensemble sur le processus de développement web, de la conception à la mise en production, renforçant ainsi ma polyvalence en tant que développeuse web full-stack.</p>
         <h3>Quelques réalisations</h3>
         <ul>
         <li>Intégrations de maquettes : Seanertek, Girouette.fr, Casafan... </li>
@@ -81,7 +81,7 @@ const jobs = [
         city: 'Vannes',
         year: "2022",
         fullDate: "Mai à juin 2022",
-        introduction: ` Ma mission principale lors de ce stage était de concevoir un script automatisé pour exécuter le framework de test Cypress, générer des rapports CSV détaillés, et rendre les résultats des tests accessibles à tous, même aux non-informaticiens`,
+        introduction: ` Ma mission principale lors de ce stage était de concevoir un script automatisé pour exécuter le framework de test Cypress, générer des rapports CSV détaillés, et rendre les résultats des tests accessibles à tous, même aux non-informaticiens.`,
         techno: ['Python', 'Wordpress', 'HTML'],
         description: `
         <h3>Mission principale</h3>
@@ -102,7 +102,7 @@ const jobs = [
         year: "2021-2022",
         techno: ['HTML', 'CSS', 'Javascript', 'PHP', 'Git', 'SQL', 'Bootstrap', 'Figma'],
         fullDate: "Novembre 2021 à juin 2022",
-        introduction: `Je me suis reconvertie dans le développement web grâce à la formation Kercode du Greta. Cette puissante montée en compétence a tout de suite conforté ma passion pour le code`,
+        introduction: `Je me suis reconvertie dans le développement web grâce à la formation Kercode du Greta. Cette puissante montée en compétence a tout de suite conforté ma passion pour le code.`,
         description: `
         <h3>Cursus</h3>
         <p>En 2021, suite à plusieurs expériences professionnelles peu épanouissantes, j'ai décidé de sauter le pas et de me reconvertir. C'est dans ce contexte que j'ai découvert un peu par hasard le développement web. J'ai été immédiatement passionnée par le code. C'est d'autant plus un moyen de nourrir ma curiosité naturelle en me formant en permanence, autant par la veille technologique que par la montée en compétence.</p>
@@ -170,11 +170,11 @@ const jobs = [
         company: "Université de Caen-Normandie",
         city: 'Caen',
         year: "2016-2017",
-        introduction: `Cette formation multidisciplinaire m'a permis d'explorer les défis du développement durable, tout en développant mes compétences en langues étrangères, en communication interculturelle et en gouvernance.`,
+        introduction: `Cette formation pluridisciplinaire m'a permis d'explorer les défis du développement durable, tout en développant mes compétences en langues étrangères, en communication interculturelle et en gouvernance.`,
         description: `
         <h3>Cursus</h3>
         <p>Ce Master 2 en LEA m'a permis d'allier mes intérêts pour les langues, la communication et l'environnement. Le programme dispensé m'a plongée au cœur des problématiques actuelles du développement durable, m'offrant une compréhension approfondie des enjeux écologiques, sociaux et économiques auxquels notre société est confrontée.</p>
-        <p>L'une des forces de cette formation réside dans son approche multidisciplinaire. J'ai eu l'opportunité d'étudier les fondements du développement durable, en examinant les politiques environnementales, les aspects socio-économiques et les innovations technologiques qui façonnent notre avenir. Les cours axés sur les langues étrangères et l'interculturalité ont été essentiels pour élargir mes horizons et me permettre de collaborer efficacement avec des partenaires internationaux.</p>
+        <p>L'une des forces de cette formation réside dans son approche pluridisciplinaire. J'ai eu l'opportunité d'étudier les fondements du développement durable, en examinant les politiques environnementales, les aspects socio-économiques et les innovations technologiques qui façonnent notre avenir. Les cours axés sur les langues étrangères et l'interculturalité ont été essentiels pour élargir mes horizons et me permettre de collaborer efficacement avec des partenaires internationaux.</p>
         <p>La communication et la gouvernance ont été des axes centraux de mon apprentissage. J'ai appris à élaborer des stratégies de communication efficaces pour sensibiliser et mobiliser les parties prenantes autour des questions liées au développement durable. Parallèlement, j'ai étudié les principes de gouvernance participative et de concertation, qui sont essentiels pour promouvoir des actions durables et inclusives.</p>
         <p>Enfin, les technologies de l'information et de la communication ont été intégrées à chaque étape de ma formation. De la collecte et l'analyse de données à la création de supports de communication innovants, j'ai acquis des compétences pratiques pour utiliser les outils numériques dans le contexte du développement durable.</p>
         <p>En complément de mes études, j'ai participé activement à un projet étudiant de gestion des biodéchets. Cette expérience pratique m'a permis d'appliquer mes connaissances théoriques à des situations réelles, tout en contribuant à des initiatives concrètes en faveur de l'environnement.</p>
@@ -226,7 +226,7 @@ const jobs = [
         company: "Universidad Autónoma de Querétaro",
         city: 'Querétaro (Mexique)',
         year: "2014-2015",
-        introduction: `Cette dernière année de licence a été un chapitre marquant de mon parcours académique. Ma décision de suivre des cours axés sur le commerce international et l'économie du tourisme s'est avérée être une opportunité exceptionnelle pour élargir ma perspective et comprendre les réalités latino-américaines`,
+        introduction: `Cette dernière année de licence a été un chapitre marquant de mon parcours académique. Ma décision de suivre des cours axés sur le commerce international et l'économie du tourisme s'est avérée être une opportunité exceptionnelle pour élargir ma perspective et comprendre les réalités latino-américaines.`,
         description: `
         <h3>Cursus</h3>
         <p>Mon année de Licence à l'Université de Querétaro au Mexique a été une étape décisive dans mon parcours académique. Plongé au cœur de la culture mexicaine, j'ai vécu une immersion totale qui a profondément enrichi mes compétences linguistiques et culturelles. J'y ai choisi des matières axées sur le commerce international et l'économie du tourisme afin d'obtenir une équivalence au diplôme français. Cette décision s'est avérée être une opportunité exceptionnelle pour comprendre les dynamiques économiques et commerciales dans un contexte latino-américain.</p>
@@ -249,7 +249,7 @@ const jobs = [
         city: 'Ploemeur',
         year: "2013-2017",
         fullDate: "Étés 2013 à 2017",
-        introduction: `Lorsque j'étais étudiante, j'ai souvent travaillé l'été en tant qu'aide à domicile auprès de personnes âgées et/ou handicapées, pour les accompagner dans leur quotidien`,
+        introduction: `Lorsque j'étais étudiante, j'ai souvent travaillé l'été en tant qu'aide à domicile auprès de personnes âgées et/ou handicapées, pour les accompagner dans leur quotidien.`,
         description: `
         <h3>Missions</h3>
         <p>J'ai commencé à l'ADMR sur des missions de ménages, mais mes compétences relationnelles m'ont rapidement amenée à aider des personnes âgées et/ou handicapées dans leurs gestes du quotidien :</p>

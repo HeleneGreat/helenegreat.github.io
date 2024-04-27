@@ -57,7 +57,7 @@ function Presentation() {
                         avec vous mon portfolio, mes projets, et mon parcours
                         professionnel, dans l'espoir de vous inspirer et de vous
                         faire découvrir ma passion pour le développement web.
-                        N'hésitez pas à explorer et à me contacter pour toute
+                        N'hésitez pas à l'explorer et à me contacter pour toute
                         collaboration ou opportunité professionnelle.
                     </p>
                     <StyledLink className="button" to="/parcours">

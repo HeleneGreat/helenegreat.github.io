@@ -17,7 +17,7 @@ const StyledIntro = styled('div')`
         max-width: 450px;
         height: auto;
         order: 1;
-        object-fit: cover;
+        object-fit: contain;
         filter: drop-shadow(5px 5px 10px ${colors.black});
         &:hover {
             cursor: pointer;
@@ -73,7 +73,7 @@ function ProjectIntroduction({ project, titleSize }) {
                 <p>{project.introduction}</p>
                 <img
                     src={project.coverImage[0].src}
-                    alt={project.title}
+                    alt={project.name}
                     width={450}
                     height={450}
                     onClick={() => setOpen(true)}

@@ -18,8 +18,8 @@ const StyledButton = styled('div')`
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease;
-    opacity: ${({ visible }) => (visible ? 1 : 0)};
-    pointer-events: ${({ visible }) => (visible ? 'auto' : 'none')};
+    opacity: ${(props) => (props.$isVisible ? '1' : '0')};
+    pointer-events: ${(props) => (props.$isVisible ? 'auto' : 'none')};
     @media screen and ${breakpoints.tablet} {
         width: 50px;
         height: 50px;
@@ -56,7 +56,7 @@ function ScrollToTopButton() {
     }
 
     return (
-        <StyledButton onClick={handleScrollToTop} visible={isVisible}>
+        <StyledButton onClick={handleScrollToTop} $isVisible={isVisible}>
             <StyledFontAwesomeIcon icon={faChevronUp} />
         </StyledButton>
     )
