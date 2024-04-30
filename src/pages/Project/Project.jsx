@@ -177,7 +177,7 @@ function Project() {
                 <div className="container">
                     <StyledProjectImages>
                         {project.images.map((image, index) => (
-                            <div className="img-container">
+                            <div className="img-container" key={index}>
                                 <img
                                     onClick={() => {
                                         setOpen(true)
@@ -185,7 +185,6 @@ function Project() {
                                     }}
                                     src={image.src}
                                     alt={image.legend}
-                                    key={index}
                                     width={300}
                                     height={300}
                                 />

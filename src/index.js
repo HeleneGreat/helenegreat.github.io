@@ -34,6 +34,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     scroll-behavior: smooth;
+    background-color: ${colors.primary};
   }
   ::-webkit-scrollbar {
     width: 12px;

@@ -70,7 +70,10 @@ const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
 `
 const StyledIconImg = styled('img')`
     width: auto;
-    height: 54px;
+    height: 26px;
+    @media screen and ${breakpoints.tablet} {
+        height: 54px;
+    }
 `
 const StyledName = styled('div')`
     text-align: center;

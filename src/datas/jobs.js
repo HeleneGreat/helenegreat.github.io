@@ -23,7 +23,7 @@ const jobs = [
         contrat: "Contrat en alternance",
         city: 'Saint-Avé',
         year: "2022-2023",
-        fullDate: "Septembre 2022 à août 2024",
+        fullDate: "Septembre 2022 à août 2023",
         introduction: `En alternance au sein d'une agence web spécialisée dans les sites vitrine et e-commerce, j'ai collaboré avec les différents métiers pour concevoir et améliorer des sites personnalisés, et répondre au mieux aux besoins du client. `,
         techno: ['PHP', 'Symfony', 'Javascript', 'Sass', 'HTML', 'Prestashop', 'SQL'],
         description: `
@@ -52,7 +52,7 @@ const jobs = [
         company: "MyDigitalSchool",
         city: 'Plescop',
         year: "2022-2023",
-        fullDate: "Septembre 2022 à juin 2024",
+        fullDate: "Septembre 2022 à juin 2023",
         introduction: `J'ai poursuivi une formation Bac+3/4 en alternance. Cette expérience m'a immergée dans un environnement dynamique où j'ai perfectionné mes compétences en développement, en conception de bases de données et en gestion de projets. `,
         techno: ['Symfony', 'React', 'ReactNative', 'Node', 'Sass'],
         description: `
@@ -66,7 +66,7 @@ const jobs = [
         <h3>Projets étudiants</h3>
         <ul>
         <li>Photo Solex : c'est un projet que j'ai présenté pour l'obtention de mon diplôme. Il s'agit d'une application de partage de photos anciennes conçue pour les membres d'une même famille. L'objectif est de permettre aux utilisateurs d'identifier les personnes sur les photos et de préserver ainsi la mémoire familiale. J'ai également intégré des fonctionnalités de collaboration et d'échange afin de favoriser l'entraide au sein de la famille. C'est un projet sur lequel je continue de travailler aujourd'hui et que j'aimerai un jour mettre en production.</li>
-        <li>Toyscolors:  c'était un projet collaboratif impliquant des web designers, des spécialistes du marketing et moi-même. Notre objectif était de répondre aux besoins d'un client réel en élaborant une nouvelle charte graphique et un site e-commerce. J'ai opté pour PrestaShop comme solution pour le site, intégré la maquette graphique que j'avais moi-même conçue sur Figma. J'ai choisi et intégré les modules pertinents pour optimiser les fonctionnalités de la boutique en ligne. J'ai également développé des modules personnalisés pour répondre aux besoins spécifiques du client.</li>
+        <li>Toyscolors:  c'était un projet collaboratif impliquant des web designers, des spécialistes du marketing et moi-même. Notre objectif était de répondre aux besoins d'un client réel en élaborant une nouvelle charte graphique et un site e-commerce. J'ai opté pour PrestaShop comme solution pour le site, et intégré la maquette graphique que j'avais moi-même conçue sur Figma. J'ai choisi et intégré les modules pertinents pour optimiser les fonctionnalités de la boutique en ligne. J'ai également développé des modules personnalisés pour répondre aux besoins spécifiques du client.</li>
         <li>English Game : il s'agit d'un projet collaboratif réalisé avec les autres promotions de l'école. Avec mon équipe, nous avons conçu et développé un jeu éducatif sur le thème du développement durable. J'ai contribué à la conception du jeu et à son développement technique. Pendant la semaine dédié à ce projet, nous devions communiquer exclusivement en anglais. Il n'y avait pas de développement web lors de ce projet.</li>
         </ul>
         `,
@@ -89,7 +89,7 @@ const jobs = [
         <p>Ma mission principale consistait à développer un script en Python pour automatiser l'exécution du framework de test Cypress. Ce script devait être capable de récupérer les données issues des fichiers XML des tests Cypress, les renommer pour éviter toute erreur lors des prochaines exécutions, puis les consolider dans un fichier CSV. Ce dernier devait contenir une liste de tous les modules testés, leur temps d'exécution, ainsi que les éventuelles erreurs rencontrées. De plus, j'ai mis en place un deuxième fichier CSV contenant des statistiques clés sur les tests, telles que le temps d'exécution moyen et maximal, la liste des modules avec des erreurs, et le nombre total d'erreurs.</p>
         <p>L'objectif principal de ce script était de rendre les résultats des tests facilement interprétables et compréhensibles, même pour les non-informaticiens. Pour garantir la robustesse et la fiabilité du script, j'ai pris soin de typer chaque fonction, variable et retour pour éviter toute erreur potentielle. De plus, j'ai commenté mon code en français et en anglais afin de faciliter les évolutions futures du script. Enfin, j'ai rédigé un README détaillé à l'intention de l'utilisateur pour assurer une utilisation fluide et optimale du script.</p>
         <h3>Missions secondaires</h3>
-        <p>En parallèle de ma mission principale, j'ai également contribué à d'autres projets, tels que la création d'un questionnaire sur le site de l'entreprise et l'amélioration du référencement SEO du site iole.fr. J'ai également participé à la création de contenus pour le site, démontrant ainsi ma polyvalence et ma capacité à mener plusieurs tâches de front.</p>
+        <p>En parallèle de ma mission principale, j'ai également contribué à d'autres projets, tels que la création d'un questionnaire sur le site de l'entreprise et l'amélioration du référencement SEO du site iole.fr. J'ai également rédigé des contenus pour le site, démontrant ainsi ma polyvalence et ma capacité à mener plusieurs tâches de front.</p>
         `,
     }, 
     {
@@ -100,18 +100,18 @@ const jobs = [
         company: "Greta",
         city: 'Vannes',
         year: "2021-2022",
-        techno: ['HTML', 'CSS', 'Javascript', 'PHP', 'Git', 'SQL', 'Bootstrap', 'Figma'],
+        techno: ['HTML', 'CSS', 'Javascript', 'PHP', 'Git', 'SQL', 'Bootstrap', 'Figma', 'Photoshop'],
         fullDate: "Novembre 2021 à juin 2022",
         introduction: `Je me suis reconvertie dans le développement web grâce à la formation Kercode du Greta. Cette puissante montée en compétence a tout de suite conforté ma passion pour le code.`,
         description: `
         <h3>Cursus</h3>
-        <p>En 2021, suite à plusieurs expériences professionnelles peu épanouissantes, j'ai décidé de sauter le pas et de me reconvertir. C'est dans ce contexte que j'ai découvert un peu par hasard le développement web. J'ai été immédiatement passionnée par le code. C'est d'autant plus un moyen de nourrir ma curiosité naturelle en me formant en permanence, autant par la veille technologique que par la montée en compétence.</p>
+        <p>En 2021, suite à plusieurs périodes de contrats courts et temporaires, j'ai décidé de sauter le pas et de me reconvertir. C'est dans ce contexte que j'ai découvert un peu par hasard le développement web. J'ai été immédiatement passionnée par le code, qui s'est avéré être un formidable outil pour nourrir ma curiosité naturelle en me formant en permanence, autant par la veille technologique que par la montée en compétence.</p>
         <p>Ma reconversion professionnelle m'a conduite à entreprendre un parcours intensif en suivant la formation Kercode du Greta de Vannes. Cette formation de niveau Bac+2 a été une plongée profonde dans l'univers complexe et dynamique du développement web.</p>
-        <p>J'ai commencé par maîtriser les bases fondamentales, telles que HTML et CSS, pour créer des interfaces web attractives, fonctionnelles et responsives. L'intégration de frameworks tels que Bootstrap m'a permis d'accélérer le processus de développement tout en assurant une compatibilité multiplateforme optimale.</p>
-        <p>En progressant, j'ai exploré les langages de programmation côté client comme JavaScript et sa bibliothèque JQuery, pour rendre les sites web interactifs et dynamiques. Côté serveur, j'ai découvert PHP, qui s'est révélé être une véritable passion pour moi. J'ai ensuite approfondi mes connaissances, en mettant en pratique les principes de la Programmation Orientée Objet (POO) et en utilisant le framework Laravel pour développer des applications web robustes et évolutives, soutenues par une base de données MySQL.</p>
+        <p>J'ai commencé par maîtriser les bases fondamentales, telles que HTML et CSS, pour créer des interfaces web attractives, fonctionnelles et responsives. L'intégration de librairies tels que Bootstrap m'a permis d'accélérer le processus de développement tout en assurant une compatibilité multiplateforme optimale.</p>
+        <p>En progressant, j'ai exploré les langages de programmation côté client comme Javascript et sa bibliothèque JQuery, pour rendre les sites web interactifs et dynamiques. Côté serveur, j'ai découvert PHP, qui s'est très vite révélé être une véritable passion pour moi. J'ai ensuite approfondi mes connaissances, en mettant en pratique les principes de la Programmation Orientée Objet (POO) et en utilisant le framework Laravel pour développer des applications web robustes et évolutives, soutenues par une base de données MySQL.</p>
         <p>Parallèlement au développement, j'ai également étudié des CMS populaires tels que Wordpress et Drupal, me permettant de créer des sites web dynamiques et facilement administrables. La gestion de versions avec Git/GitHub, le référencement naturel (SEO), l'accessibilité et l'utilisation de méthodes agiles comme les user stories ont également été au cœur de mon apprentissage.</p>
         <p>En outre, j'ai été initié à des compétences complémentaires essentielles pour un développeur web, telles que la virtualisation et l'utilisation d'outils de conception graphique tels que Photoshop, Illustrator, Figma et Adobe XD. Comprendre les principes de l'ergonomie et de l'expérience utilisateur (UX) a également été une partie intégrante de ma formation, afin de garantir des applications web conviviales et intuitives.</p>
-        <p>J'ai été ravie de découvrir que mes formations passées me seront utiles pour ma carrière de développeuse, notamment la maîtrise de l'anglais, langue indispensable en informatique, la communication, mais aussi la sensibilisation au développemenet durable via l'éco-conceptions</p>
+        <p>J'ai été ravie de découvrir que mes formations passées me seront utiles pour ma carrière de développeuse, notamment la maîtrise de l'anglais, langue indispensable en informatique, la communication, mais aussi la sensibilisation au développemenet durable via l'éco-conception de sites.</p>
         <p>En conclusion, cette formation a été une expérience immersive et intense, me préparant pleinement à relever les défis d'une carrière réussie dans le développement web. Forte de ces compétences polyvalentes, je suis prête à contribuer de manière significative à des projets web ambitieux et innovants.</p>
         `,
     }, 
@@ -132,7 +132,7 @@ const jobs = [
         <p>Une part importante de mon travail consistait à assurer la gestion administrative des dossiers de prévention de l'enfance. Cela impliquait l'organisation des instances de prévention telles que les instances de régulation et la commission de protection de l'enfance (CPE). J'étais chargée de diffuser les informations pertinentes aux parties prenantes concernées, y compris les collègues, les partenaires externes et les personnes accompagnées. De plus, j'ai joué un rôle clé dans la création, l'amélioration et la mise à jour des outils de suivi des procédures, ainsi que dans l'application des règles d'archivage pour garantir la conformité et la traçabilité des dossiers.</p>
         <p>Une autre facette de mon travail était la saisie et la liquidation des demandes d'aides financières, notamment le Fond Unique d'Aide, le Fond de Solidarité Logement et le Fond Énergie Eau. J'ai veillé à ce que les procédures soient suivies rigoureusement et que les demandes soient traitées de manière efficace et équitable.</p>
         <p>En parallèle, j'ai contribué à la vie du territoire et du centre médico-social (CMS) en organisant des réunions inter-services et inter-partenariales, en assurant le secrétariat et la gestion du courrier, et en assurant ponctuellement l'accueil au CMS. De plus, j'ai agi en tant que correspondante Temps pour les agents du territoire, veillant à la gestion efficace des ressources humaines et au respect des réglementations en vigueur.</p>
-        <p>Dans l'ensemble, mon rôle d'assistante de territoire en protection de l'enfance a été une expérience enrichissante et valorisante, me permettant de découvrir de manière significative le fonctionnement de la protection au niveau départemental. Cela a aussi été l'occasion de découvrir le travail en collectivité territorial et de participer à des missions de service public.</p>
+        <p>Dans l'ensemble, mon rôle d'assistante de territoire en protection de l'enfance a été une expérience enrichissante et valorisante, me permettant de découvrir de manière significative le fonctionnement de la protection de l'enfance au niveau départemental. Cela a aussi été l'occasion de découvrir le travail en collectivité territoriale et de participer à des missions de service public.</p>
         `,
     }, 
     {
@@ -196,8 +196,8 @@ const jobs = [
         <h3>Missions</h3>
         <p>Ma mission en tant que chargée de communication internationale a été une opportunité passionnante de promouvoir l'excellence académique et la diversité culturelle de cette université irlandaise à l'échelle mondiale. Mon rôle s'est articulé autour de plusieurs axes majeurs, allant de la gestion des admissions internationales à l'amélioration de l'expérience des étudiants Erasmus.</p>
         <p>Dans le cadre de mon travail au Bureau des Admissions Internationales, j'ai en charge du marketing et du mailing destinés à attirer les étudiants internationaux et européens vers l'université. J'ai coordonné le traitement des candidatures, veillant à offrir un processus transparent et efficace pour les futurs étudiants. De plus, j'ai géré les demandes et les attributions de bourses, facilitant ainsi l'accès à l'éducation pour des étudiants talentueux du monde entier.</p>
-        <p>Un aspect crucial de ma mission a été de renforcer l'attractivité de notre université à l'international. Pour ce faire, j'ai lancé une campagne de collecte de témoignages d'anciens étudiants, mettant en lumière leurs expériences positives et leurs réussites après leur passage dans notre établissement. Ces témoignages ont été intégrés au site internet de l'université, offrant ainsi une perspective authentique et inspirante aux futurs étudiants potentiels.</p>
-        <p>En parallèle, j'ai été responsable de la refonte et de la mise à jour du site internet du Service Erasmus, fournissant aux étudiants et aux partenaires toutes les informations nécessaires sur le programme. L'objectif de cette refonte était que le site du service Erasmus respecte la charte graphique de l'université, et que les informations soient claires et faciles à trouver, surtout pour des étudiants dont l'anglais n'est pas la langue maternelle. J'ai également rédigé un guide d'utilisation du back-office du site internet, permettant à l'équipe de gestion de maintenir et de mettre à jour facilement le contenu en ligne.</p>
+        <p>Un aspect crucial de ma mission a été de renforcer l'attractivité de l'université à l'international. Pour ce faire, j'ai lancé une campagne de collecte de témoignages d'anciens étudiants, mettant en lumière leurs expériences positives et leurs réussites après leur passage dans notre établissement. Ces témoignages ont été intégrés au site internet de l'université, offrant ainsi une perspective authentique et inspirante aux futurs étudiants potentiels.</p>
+        <p>En parallèle, j'ai été responsable de la refonte et de la mise à jour du site internet du Service Erasmus, fournissant aux étudiants et aux partenaires toutes les informations nécessaires sur le programme. L'objectif de cette refonte était que le site du service Erasmus respecte la charte graphique de l'Université, et que les informations soient claires et faciles à trouver, surtout pour des étudiants dont l'anglais n'est pas la langue maternelle. J'ai également rédigé un guide d'utilisation du back-office du site internet, permettant à l'équipe de gestion de maintenir et de mettre à jour facilement le contenu en ligne.</p>
         <p>Mon expérience en tant que Chargée de Communication Internationale a été enrichissante à bien des égards, me permettant de développer mes compétences en communication, en gestion de projet et en relations interculturelles tout en contribuant au rayonnement international de l'université de Galway.</p>
         `,
     }, 
@@ -214,7 +214,7 @@ const jobs = [
         <h3>Cursus</h3>
         <p>Ce Master 1 a été une étape cruciale dans mon parcours académique et professionnel. Au cœur de ce programme, j'ai acquis des compétences polyvalentes qui m'ont préparée à évoluer dans un monde de plus en plus connecté et diversifié.</p>
         <p>Le management de projet a été au centre de ma formation, m'enseignant les techniques nécessaires pour planifier, organiser et coordonner des initiatives à l'échelle internationale. La communication interculturelle est devenue une seconde nature, m'aidant à naviguer avec succès dans des contextes multiculturels et à construire des ponts entre différentes communautés. La recherche en langue étrangère m'a permis de développer une compréhension approfondie des cultures et des sociétés étrangères, renforçant ainsi ma capacité à m'adapter à des environnements divers.</p>
-        <p>De plus, la maîtrise des technologies de l'information et de la communication a été un aspect important de ma formation. Apprendre à utiliser efficacement ces outils m'a permis de rester compétente dans un monde numérique en constante évolution. Enfin, la création de sites web m'a donné une base solide pour développer mes compétences techniques, tout en explorant de nouvelles façons de communiquer et de partager des idées à travers le monde.</p>
+        <p>De plus, la maîtrise des technologies de l'information et de la communication a été un aspect important de ma formation. Apprendre à utiliser efficacement ces outils m'a permis de rester compétente dans un monde numérique en constante évolution. Enfin, la gestion de sites web m'a donné une base solide pour développer mes compétences techniques, tout en explorant de nouvelles façons de communiquer et de partager des idées à travers le monde.</p>
         <p>En somme, ce Master m'a doté des compétences et des connaissances nécessaires pour relever les défis d'un environnement professionnel international et interculturel.</p>
         `,
     }, 
@@ -229,13 +229,13 @@ const jobs = [
         introduction: `Cette dernière année de licence a été un chapitre marquant de mon parcours académique. Ma décision de suivre des cours axés sur le commerce international et l'économie du tourisme s'est avérée être une opportunité exceptionnelle pour élargir ma perspective et comprendre les réalités latino-américaines.`,
         description: `
         <h3>Cursus</h3>
-        <p>Mon année de Licence à l'Université de Querétaro au Mexique a été une étape décisive dans mon parcours académique. Plongé au cœur de la culture mexicaine, j'ai vécu une immersion totale qui a profondément enrichi mes compétences linguistiques et culturelles. J'y ai choisi des matières axées sur le commerce international et l'économie du tourisme afin d'obtenir une équivalence au diplôme français. Cette décision s'est avérée être une opportunité exceptionnelle pour comprendre les dynamiques économiques et commerciales dans un contexte latino-américain.</p>
+        <p>Ma dernière année de licence à l'Université de Querétaro au Mexique a été une étape décisive dans mon parcours académique. Plongé au cœur de la culture mexicaine, j'ai vécu une immersion totale qui a profondément enrichi mes compétences linguistiques et culturelles. J'y ai choisi des matières axées sur le commerce international et l'économie du tourisme afin d'obtenir une équivalence au diplôme français. Cette décision s'est avérée être une opportunité exceptionnelle pour comprendre les dynamiques économiques et commerciales dans un contexte latino-américain.</p>
         <p>Étant moi-même passionnée d'histoire et désireuse de mieux comprendre la société mexicaine, j'ai également suivi des cours sur le Mexique pré-colombien. J'ai ensuite étudié la période plus moderne qui concerne l'indépendance du pays puis la révolution des années 1910.</p>
         <p>Cette année d'immersion a été bien plus qu'un simple chapitre de ma formation : elle a été une véritable aventure humaine qui a forgé ma vision du monde et renforcé ma détermination à poursuivre une carrière tournée vers l'international. Je suis reconnaissante pour les enseignements et les souvenirs précieux que j'ai acquis lors de cette période inoubliable.</p>
-        <p>A noter que nous n'étions que 8 étudiants étrangers dans cette université, l'immersion a donc été totale.</p>
+        <p>A noter que nous n'étions que huit étudiants étrangers dans cette université, l'immersion a donc été totale.</p>
         <h3>Voyages</h3>
         <p>Au-delà des salles de classe, j'ai exploré les richesses culturelles du Mexique, tissant des liens avec la population locale et découvrant les subtilités de la vie quotidienne. Cette expérience m'a permis de développer ma capacité d'adaptation, ma curiosité et mon ouverture d'esprit.</p>
-        <p>Je me suis régulièrement organisé des excursions pour découvrir les environs de Querétaro. Le pays étant très grand, j'ai également voyagé seule pendant un mois pour découvrir le centre et le sud du Mexique.</p>
+        <p>Je me suis régulièrement organisé des excursions pour découvrir les environs de Querétaro. Le pays étant très grand, j'ai également voyagé seule pendant un mois pour découvrir le centre et le sud du Mexique, à la découverte de nombreux sites archéologiques.</p>
 
         `,
     },
@@ -259,7 +259,7 @@ const jobs = [
         <li>Aide pour les courses</li>
         <li>Entretien du logement</li>
         </ul>
-        <p>J'ai beaucoup aimé ces jobs d'été, ils m'ont apporté beaucoup sur le plan humain. Ils ont aussi été l'occasion de mettre en pratique diverses qualités personnelles qui m'ont été utiles pour mes postes suivants : patience, adaptabilité, empathie, écoute, responsabilité, rigueur, diplomatie, confidentialité...</p>
+        <p>J'ai beaucoup aimé ces jobs d'été, ils m'ont apporté énormément sur le plan humain. Ils ont aussi été l'occasion de mettre en pratique diverses qualités personnelles qui m'ont été utiles pour mes postes suivants : patience, adaptabilité, empathie, écoute, responsabilité, rigueur, diplomatie, confidentialité...</p>
         `,
     },  
     {
@@ -273,7 +273,7 @@ const jobs = [
         introduction: `J'ai commencé mes études en LEA à Nantes, où j'ai découvert le monde étudiant mais aussi le monde du travail dans un contexte international et interculturel.`,
         description: `
         <h3>Cursus</h3>
-        <p>Ma Licence en Langues Étrangères Appliquées à l'Université de Nantes a été une aventure passionnante où j'ai exploré les méandres des langues et des cultures à travers des cours stimulants en anglais, espagnol et russe. Mais ce n'était pas tout ! J'ai également plongé dans des disciplines aussi variées que les civilisations étrangères, l'économie des entreprises, les statistiques, la communication, le droit fiscal et du travail.  Cette diversité m'a permis d'acquérir une compréhension approfondie des enjeux linguistiques, culturels et commerciaux dans un contexte international.</p>
+        <p>Ma licence en Langues Étrangères Appliquées à l'Université de Nantes a été une aventure passionnante où j'ai exploré les méandres des langues et des cultures à travers des cours stimulants en anglais, espagnol et russe. Mais ce n'était pas tout ! J'ai également plongé dans des disciplines aussi variées que les civilisations étrangères, l'économie des entreprises, les statistiques, la communication, le droit fiscal et du travail.  Cette diversité m'a permis d'acquérir une compréhension approfondie des enjeux linguistiques, culturels et commerciaux dans un contexte international.</p>
         <h3>Activités étudiantes</h3>
         <p>En dehors des cours, je me suis engagées dans plusieurs associations. Le Muggle Quidditch était l'un de mes passe-temps préférés. Et puis, il y avait les English Nights, où nous discutions et débations en anglais entre étudiants français mais aussi avec les étudiants et professeurs internationaux.</p> 
         `,
