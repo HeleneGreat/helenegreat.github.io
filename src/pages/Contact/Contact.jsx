@@ -186,12 +186,12 @@ function Contact() {
             })
             .then(
                 () => {
-                    console.log('SUCCESS!')
+                    // console.log('SUCCESS!')
                     setMessage('Votre e-mail a été envoyé avec succès!')
                     form.current.reset()
                 },
                 (error) => {
-                    console.log('FAILED...', error.text)
+                    // console.log('FAILED...', error.text)
                     setMessage(
                         "Une erreur s'est produite. Veuillez réessayer ultérieusement"
                     )
