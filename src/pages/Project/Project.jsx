@@ -48,6 +48,7 @@ const StyledProjectImages = styled('div')`
         overflow: hidden;
         margin: 10px 0;
         border: 3px solid ${colors.black};
+        background-color: ${colors.black};
         border-radius: 5px;
         max-height: 305px;
         img {
@@ -94,22 +95,18 @@ const StyledLink = styled(Link)`
         height: 40px;
         padding: 0 15px;
         line-height: 40px;
+        margin-bottom: 20px;
         @media screen and ${breakpoints.laptop} {
             height: 60px;
             padding: 0 30px;
             line-height: 55px;
         }
-        &:last-of-type {
-            margin-left: 30px;
-            @media screen and ${breakpoints.laptop} {
-                margin-left: 50px;
-            }
-        }
     }
 `
 const StyledButtons = styled('div')`
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin-top: 30px;
 `
 const StyledIcon = styled(FontAwesomeIcon)`

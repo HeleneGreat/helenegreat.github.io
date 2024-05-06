@@ -35,7 +35,7 @@ const jobs = [
         <p>Travailler au sein de cette agence web m'a permis de développer non seulement mes compétences techniques, mais aussi ma capacité à collaborer efficacement au sein d'une équipe pluridisciplinaire et à répondre aux besoins variés des clients. Cette expérience m'a également offert une vue d'ensemble sur le processus de développement web, de la conception à la mise en production, renforçant ainsi ma polyvalence en tant que développeuse web full-stack.</p>
         <h3>Quelques réalisations</h3>
         <ul>
-        <li>Intégrations de maquettes : Seanertek, Girouette.fr, Casafan... </li>
+        <li>Intégrations de maquettes&#8239;: Seanertek, Girouette.fr, Casafan... </li>
         <li>Mise à jour et amélioration de modules Prestashop</li>
         <li>Création de modules Prestashop</li>
         <li>Manipulation de bases de données</li>
@@ -65,9 +65,9 @@ const jobs = [
         <p>En somme, cette formation en alternance m'a fourni une base solide pour une carrière réussie en tant que Concepteur Développeur d'Applications, et je suis enthousiaste à l'idée d'apporter ma contribution à des projets innovants et stimulants.</p>
         <h3>Projets étudiants</h3>
         <ul>
-        <li>Photo Solex : c'est un projet que j'ai présenté pour l'obtention de mon diplôme. Il s'agit d'une application de partage de photos anciennes conçue pour les membres d'une même famille. L'objectif est de permettre aux utilisateurs d'identifier les personnes sur les photos et de préserver ainsi la mémoire familiale. J'ai également intégré des fonctionnalités de collaboration et d'échange afin de favoriser l'entraide au sein de la famille. C'est un projet sur lequel je continue de travailler aujourd'hui et que j'aimerai un jour mettre en production.</li>
-        <li>Toyscolors:  c'était un projet collaboratif impliquant des web designers, des spécialistes du marketing et moi-même. Notre objectif était de répondre aux besoins d'un client réel en élaborant une nouvelle charte graphique et un site e-commerce. J'ai opté pour PrestaShop comme solution pour le site, et intégré la maquette graphique que j'avais moi-même conçue sur Figma. J'ai choisi et intégré les modules pertinents pour optimiser les fonctionnalités de la boutique en ligne. J'ai également développé des modules personnalisés pour répondre aux besoins spécifiques du client.</li>
-        <li>English Game : il s'agit d'un projet collaboratif réalisé avec les autres promotions de l'école. Avec mon équipe, nous avons conçu et développé un jeu éducatif sur le thème du développement durable. J'ai contribué à la conception du jeu et à son développement technique. Pendant la semaine dédié à ce projet, nous devions communiquer exclusivement en anglais. Il n'y avait pas de développement web lors de ce projet.</li>
+        <li>Photo Solex&#8239;: c'est un projet que j'ai présenté pour l'obtention de mon diplôme. Il s'agit d'une application de partage de photos anciennes conçue pour les membres d'une même famille. L'objectif est de permettre aux utilisateurs d'identifier les personnes sur les photos et de préserver ainsi la mémoire familiale. J'ai également intégré des fonctionnalités de collaboration et d'échange afin de favoriser l'entraide au sein de la famille. C'est un projet sur lequel je continue de travailler aujourd'hui et que j'aimerai un jour mettre en production.</li>
+        <li>Toyscolors&#8239;:  c'était un projet collaboratif impliquant des web designers, des spécialistes du marketing et moi-même. Notre objectif était de répondre aux besoins d'un client réel en élaborant une nouvelle charte graphique et un site e-commerce. J'ai opté pour PrestaShop comme solution pour le site, et intégré la maquette graphique que j'avais moi-même conçue sur Figma. J'ai choisi et intégré les modules pertinents pour optimiser les fonctionnalités de la boutique en ligne. J'ai également développé des modules personnalisés pour répondre aux besoins spécifiques du client.</li>
+        <li>English Game&#8239;: il s'agit d'un projet collaboratif réalisé avec les autres promotions de l'école. Avec mon équipe, nous avons conçu et développé un jeu éducatif sur le thème du développement durable. J'ai contribué à la conception du jeu et à son développement technique. Pendant la semaine dédié à ce projet, nous devions communiquer exclusivement en anglais. Il n'y avait pas de développement web lors de ce projet.</li>
         </ul>
         `,
     },   
@@ -231,7 +231,7 @@ const jobs = [
         <h3>Cursus</h3>
         <p>Ma dernière année de licence à l'Université de Querétaro au Mexique a été une étape décisive dans mon parcours académique. Plongé au cœur de la culture mexicaine, j'ai vécu une immersion totale qui a profondément enrichi mes compétences linguistiques et culturelles. J'y ai choisi des matières axées sur le commerce international et l'économie du tourisme afin d'obtenir une équivalence au diplôme français. Cette décision s'est avérée être une opportunité exceptionnelle pour comprendre les dynamiques économiques et commerciales dans un contexte latino-américain.</p>
         <p>Étant moi-même passionnée d'histoire et désireuse de mieux comprendre la société mexicaine, j'ai également suivi des cours sur le Mexique pré-colombien. J'ai ensuite étudié la période plus moderne qui concerne l'indépendance du pays puis la révolution des années 1910.</p>
-        <p>Cette année d'immersion a été bien plus qu'un simple chapitre de ma formation : elle a été une véritable aventure humaine qui a forgé ma vision du monde et renforcé ma détermination à poursuivre une carrière tournée vers l'international. Je suis reconnaissante pour les enseignements et les souvenirs précieux que j'ai acquis lors de cette période inoubliable.</p>
+        <p>Cette année d'immersion a été bien plus qu'un simple chapitre de ma formation&#8239;: elle a été une véritable aventure humaine qui a forgé ma vision du monde et renforcé ma détermination à poursuivre une carrière tournée vers l'international. Je suis reconnaissante pour les enseignements et les souvenirs précieux que j'ai acquis lors de cette période inoubliable.</p>
         <p>A noter que nous n'étions que huit étudiants étrangers dans cette université, l'immersion a donc été totale.</p>
         <h3>Voyages</h3>
         <p>Au-delà des salles de classe, j'ai exploré les richesses culturelles du Mexique, tissant des liens avec la population locale et découvrant les subtilités de la vie quotidienne. Cette expérience m'a permis de développer ma capacité d'adaptation, ma curiosité et mon ouverture d'esprit.</p>
@@ -259,7 +259,7 @@ const jobs = [
         <li>Aide pour les courses</li>
         <li>Entretien du logement</li>
         </ul>
-        <p>J'ai beaucoup aimé ces jobs d'été, ils m'ont apporté énormément sur le plan humain. Ils ont aussi été l'occasion de mettre en pratique diverses qualités personnelles qui m'ont été utiles pour mes postes suivants : patience, adaptabilité, empathie, écoute, responsabilité, rigueur, diplomatie, confidentialité...</p>
+        <p>J'ai beaucoup aimé ces jobs d'été, ils m'ont apporté énormément sur le plan humain. Ils ont aussi été l'occasion de mettre en pratique diverses qualités personnelles qui m'ont été utiles pour mes postes suivants&#8239;: patience, adaptabilité, empathie, écoute, responsabilité, rigueur, diplomatie, confidentialité...</p>
         `,
     },  
     {

@@ -70,7 +70,11 @@ function ProjectIntroduction({ project, titleSize }) {
         <StyledProjectIntro>
             <TitleSize>{project.name}</TitleSize>
             <StyledIntro>
-                <p>{project.introduction}</p>
+                <p
+                    dangerouslySetInnerHTML={{
+                        __html: project.introduction,
+                    }}
+                ></p>
                 <img
                     src={project.coverImage[0].src}
                     alt={project.name}

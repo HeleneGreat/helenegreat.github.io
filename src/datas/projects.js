@@ -1,6 +1,9 @@
 // import DefaultPicture from '../assets/DefaultPicture.jpg'
 //1 Istorel
 import istorel from '../assets/projects/istorel-cover.png'
+import istorel1 from '../assets/projects/istorel1.png'
+import istorel2 from '../assets/projects/istorel2.png'
+import istorel3 from '../assets/projects/istorel3.png'
 //2 Parc Asterix
 import asterix from '../assets/projects/asterix-cover.png'
 import asterix1 from '../assets/projects/asterix1.png'
@@ -55,8 +58,8 @@ const projects = [
         ],
         techno: ['React', 'Javascript', 'Figma'],
         description: `
-        <p>La réalisation de ce portfolio a été l'occasion de me replonger dans le framework Reactjs, que j'avais étudié lors de mon bachelor, mais que je n'avais pas eu l'occasion d'utiliser depuis. Pour réaliser le plus simplement possible ce projet, il n'y a pas de back-office, c'est uniquement un site front. Les données telles que mes expériences et mes projets sont contenus dans des tableaux, que je modifie manuellement si besoin.</p>
-        <p>Après avoir cherché de l'inspiration sur Dribbble, j'ai réalisé la maquette du site sur Figma, ce qui m'a permis de rapidement identifier les principaux composants que j'aurai à coder. Pour gagner du temps, j'ai uniquement réalisé la maquette pour grands écrans, puisque grâce à mon expérience en agence web, je suis capable de réaliser facilement des pages responsives. Ce site est d'ailleurs intégré en mobile-first.</p>
+        <p>La réalisation de ce portfolio a été l'occasion de me replonger dans le framework Reactjs, que j'avais étudié lors de mon bachelor, mais que je n'avais pas eu l'occasion d'utiliser depuis. Pour concrétiser le plus simplement possible ce projet, il n'y a pas de back-office, c'est uniquement un site front. Les données telles que mes expériences et mes projets sont contenus dans des tableaux, que je modifie manuellement si besoin.</p>
+        <p>Après avoir cherché de l'inspiration sur Dribbble, j'ai conçu la maquette du site sur Figma, ce qui m'a permis de rapidement identifier les principaux composants que j'aurai à coder. Pour gagner du temps, j'ai uniquement réalisé la maquette pour grands écrans, puisque grâce à mon expérience en agence web, je suis capable de développer facilement des pages responsives. Ce site est d'ailleurs intégré en mobile-first.</p>
         <p>J'ai profité des GitHub Pages pour héberger mon portfolio, car c'était pour moi la solution la plus simple et la plus économique. Cela a été facile grâce au package <i>gh-pages</i>, qui publie en une ligne de commande ce que je commite sur la branche main de ce projet. Le seul soucis que j'ai rencontré est que GitHub Pages ne gère pas le router de react si on ne passe pas par la page d'accueil du projet. Pour y remédier, j'ai créé une page 404.html non dynamique spécialement pour GitHub.</p>
         <p>Certains composants sont assez conséquents et aurait pu être redécoupés en plusieurs petits composants, mais comme ils n'ont pas vocation à être réutilisés autre part dans ce petit projet, je les ai laissés tels quels.</p>
         <p>Ce projet a été un vrai moment de détente, moi qui travaillait dernièrement surtout sur du back, ça m'a rappelé que j'apprécie également beaucoup le front. Finalement ce qui m'a pris le plus de temps, ça a été la rédaction des contenus !</p>
@@ -83,9 +86,9 @@ const projects = [
         ],
         techno: ['PHP', 'Javascript', 'Twig', 'HTML', 'Sass', 'Doctrine', 'Figma'],
         description: `
-        <p>Ce projet part d'un besoin personnel : en tant que passionnée d'Histoire et de généalogie, j'ai numérisé et identifié de nombreuses photos anciennes. Il me manquait un outil pour partager mes trouvailles avec les membres de ma famille. J'ai donc réfléchi à une solution web qui permette à la fois aux utilisateurs de partager et identifier des photos, mais aussi de pouvoir intéragir entre membres d'une même famille.</p>
-        <p>Avant de passer au code, j'ai d'abord pris le temps de bien concevoir ce projet : quelles étaient les principales fonctionnalités que je souhaitais implémenter ? Comment le projet pourrait évoluer dans le temps ? J'ai pris le temps de rédiger un cahier des charges pour bien cerner les besoins auxquels répondra le site.</p>
-        <p>J'ai choisi de réaliser ce projet en Symfony, car j'apprécie particulièrement PHP. De plus, je venais de découvrir le framework Symfony en cours, dont les possibilités m'ont immédiatement séduite.</p>
+        <p>Ce projet part d'un besoin personnel&#8239;: en tant que passionnée d'Histoire et de généalogie, j'ai numérisé et identifié de nombreuses photos anciennes. Il me manquait un outil pour partager mes trouvailles avec les membres de ma famille. J'ai donc réfléchi à une solution web qui permette à la fois aux utilisateurs de partager et identifier des photos, mais aussi de pouvoir intéragir entre membres d'une même famille.</p>
+        <p>Avant de passer au code, j'ai d'abord pris le temps de bien concevoir ce projet&#8239;: quelles étaient les principales fonctionnalités que je souhaitais implémenter ? Comment le projet pourrait évoluer dans le temps ? J'ai commencé par rédiger un cahier des charges détaillé pour bien cerner les besoins auxquels répondra le site.</p>
+        <p>J'ai choisi de réaliser ce projet en Symfony, car j'apprécie particulièrement PHP. De plus, je venais de découvrir le framework Symfony en cours, dont les possibilités et le potentiel m'ont immédiatement séduites.</p>
         <p>J'ai présenté ce projet lors d'un oral pour l'obtention de mon CDA (bac+3/4), que j'ai obtenu. Ce projet n'est pas terminé, et je continue de le développer sur mon temps libre, en fonction de mes disponibilités.</p>
         `,
         images: [
@@ -98,7 +101,7 @@ const projects = [
         id: 6,
         slug: 'ps-toyscolor',
         name: 'Prestashop Toyscolor',
-        introduction: `Lors de mon bachelor, nous avons eu à réaliser en équipe un projet web qui réponde au besoin d'un client réel. Nous avons donc conçu une boutique de vente en ligne dédiée aux produits de notre client : des jeux créatifs pour enfants. De mon côté, en tant que développeuse, je me suis concentrée sur la partie technique du projet : l'intégration de la maquette sur un site Prestashop, ainsi que le développement de deux modules pour mettre en avant les produits et l'entreprises. `,
+        introduction: `Lors de mon bachelor, nous avons eu à réaliser en équipe un projet web qui réponde aux besoins d'un client réel. Nous avons donc conçu une boutique de vente en ligne dédiée aux produits de notre client&#8239;: des jeux créatifs pour enfants. De mon côté, en tant que développeuse, je me suis concentrée sur la partie technique du projet, c'est-à-dire l'intégration de la maquette sur un site Prestashop ainsi que le développement de deux modules pour mettre en avant les produits et l'entreprise. `,
         coverImage: [
             {
                 src: psToyscolor,
@@ -108,8 +111,8 @@ const projects = [
         ],
         techno: ['PHP', 'Symfony', 'Prestashop', 'SQL', 'Twig', 'HTML', 'Sass', 'Figma'],
         description: `
-        <p>Pour ce projet intitulé <i>MyDigital Project</i>, nous étions cinq étudiantes à travailler ensemble, issues des 4 formations dispensées par l'école : Bachelor web marketing et social media, Bachelor digital, Bachelor création numérique, et moi en Bachelor développement web. En plus d'avoir à réaliser la partie concernant notre métier, nous avons également dû gérer ensemble le bon déroulement du projet.</p>
-        <p>En accord avec le client, j'ai choisi d'utiliser le CMS Prestashop pour générer la nouvelle boutique Toyscolor, pour deux principales raisons : c'est un CMS qui gère déjà tout l'aspect e-commerce (gestion des stocks, paiement en ligne, fiche produit, commandes, clients...), et j'ai l'habitude de l'utiliser lors de mon alternance en agence web, ce qui le simplifiera le développement. De plus, l'idée est que contrairement au développement d'un site de A à Z, l'utilisation d'un CMS permettra au client de continuer à faire évoluer sa boutique seul si besoin, à l'aide de nombreux modules à disposition.</p>
+        <p>Pour ce projet intitulé <i>MyDigital Project</i>, nous étions cinq étudiantes à travailler ensemble, issues des 4 formations dispensées par l'école&#8239;: Bachelor web marketing et social media, Bachelor digital, Bachelor création numérique, et moi en Bachelor développement web. En plus d'avoir à réaliser la partie concernant notre métier, nous avons également dû gérer ensemble le bon déroulement du projet, et participer à la rédaction d'un rapport commun.</p>
+        <p>En accord avec le client, j'ai choisi d'utiliser le CMS Prestashop pour générer la nouvelle boutique Toyscolor, pour deux principales raisons&#8239;: c'est un CMS qui gère déjà tout l'aspect e-commerce (gestion des stocks, paiement en ligne, fiche produit, commandes, clients...), et j'ai l'habitude de l'utiliser lors de mon alternance en agence web, ce qui simplifiera le développement. De plus, l'idée est que contrairement au développement d'un site de A à Z, l'utilisation d'un CMS permettra au client de continuer à faire évoluer sa boutique seul si besoin, à l'aide de nombreux modules à disposition.</p>
         <p>J'ai d'abord créé la maquette du site sur Figma, et une fois celle-ci validée, je l'ai intégrée sur Prestashop et j'ai choisi les modules pertinents. J'ai aussi créé deux modules sur-mesure pour la page d'accueil du site, l'un pour mettre en avant le produit principal de Toyscolor, l'autre pour présenter la boutique. Pour le moment la boutique est disponible uniquement en français, mais pour parer à toute évolution future, j'ai choisi de rendre mes modules traduisibles et compatibles avec le multi-boutique.</p>
         <p></p>
         <p></p>
@@ -117,7 +120,7 @@ const projects = [
         images: [
             { src: psToyscolor1, title: "Prestashop Toyscolor", description: "Les deux modules développés vus depuis le back-office, et l'UML de l'un des modules."},
             { src: psToyscolor2, title: "Prestashop Toyscolor", description: "A gauche, arborescence des titres de la page d'accueil pour le SEO. A droite, l'évolution des performances entre l'ancien et le nouveau site Toyscolor."},
-            { src: psToyscolor3, title: "Prestashop Toyscolor", description: "Exemple de code du module pour présenter la boutique : création de tables en base de données lors de l'installation, pour supression des tables en cas de désinstallation du module."}
+            { src: psToyscolor3, title: "Prestashop Toyscolor", description: "Exemple de code du module pour présenter la boutique : création de tables en base de données lors de l'installation, puis supression des tables en cas de désinstallation du module."}
         ],
         githubLink: 'https://github.com/HeleneGreat/ps_toyscolor',
     },
@@ -135,7 +138,7 @@ const projects = [
         ],
         techno: ['Symfony', 'PHP', 'Sass', 'Twig', 'Bootstrap', 'Doctrine'],
         description: `
-        <p>Dans le cadre de ce projet, notre mission était de concevoir un site de type WIKI avec Symfony, en respectant un cahier des charges exigeant. Nous devions créer un site comprenant au minimum quatre articles répartis dans deux catégories spécifiques, chacun défini par des entités distinctes.</p>
+        <p>Dans le cadre de ce projet, notre mission était de concevoir un site de type wiki avec Symfony, en respectant un cahier des charges exigeant. Nous devions créer un site comprenant au minimum quatre articles répartis dans deux catégories spécifiques, chacun défini par des entités distinctes.</p>
         <p>Nous avons choisi de répertorier les personnages de l'univers Disney. Les utilisateurs inscrits peuvent ajouter les personnages de leur choix et ainsi agrandir chaque jour un peu plus ce catalogue.</p>
         <p>La structure du site devait comporter des éléments standard tels qu'un menu de navigation, une bannière, un footer et un bouton de connexion. La partie publique du site devait inclure une page d'accueil présentant une description du thème du Wiki, des listes de catégories et d'articles aléatoires, ainsi que des pages dédiées aux catégories et aux articles. La partie privée devait permettre aux utilisateurs de gérer les articles qu'ils ont créés, avec la possibilité de créer de nouveaux articles.</p>
         <p>L'évaluation de ce travail couvrait divers aspects tels que :</p>
@@ -203,7 +206,7 @@ const projects = [
         ],
         techno: ['Wordpress', 'PHP', 'CSS', 'Javascript', 'HTML'],
         description: `
-        <p>J'ai réalisé ce thème from scratch en cinq jours, en plus de me découvrir le CMS Wordpress. J'avais déjà utilisé ce CMS en tant que webmaster, mais c'était très agréable de comprendre comment marche Wordpress, toutes les possibilités et les options ajustables, en fonction des besoins. Mes collègues se sont moqués de moi en disant que je réinventais la roue, mais je trouve que coder sans plugins quand on découvre le CMS c'est primordial, ça m'a permis de bien mieux comprendre comment il fonctionne.</p>
+        <p>J'ai réalisé ce thème from scratch en cinq jours, en plus de me découvrir le CMS Wordpress. J'avais déjà utilisé ce CMS en tant que webmaster, mais c'était très agréable de comprendre comment fonctionne Wordpress, toutes les possibilités et les options ajustables, en fonction des besoins. Mes collègues se sont moqués de moi en disant que je réinventais la roue, mais je trouve que coder sans plugins quand on découvre le CMS c'est primordial, ça m'a permis de bien mieux comprendre sa logique et son potentiel.</p>
         <p>Nous avions un cahier des charges assez précis, en plus de la maquette de la page d'accueil. L'idée était de créer le blog d'une agence de voyage qui soit entièrement paramétrable par son administrateur. J'ai par exemple créé un type de contenu <i>Voyage</i>, ajouté des emplacements de contenus aux endroits opportuns (barre de recherche dans le header, îcones des réseaux sociaux dans le footer), créé le menu principal, ajouté des images pour les catégories...</p>
         <p>J'ai eu beaucoup de plaisir à réaliser ce projet, qui m'a souvent donné envie de fouiller le codex Wordpress à la recherche d'options et de paramétrages qui répondent au mieux aux besoins de mon thème.</p>
         `,
@@ -229,7 +232,7 @@ const projects = [
         techno: ['PHP'],
         description: `
         <p>Ce projet incarnait pour moi un laboratoire d'exploration des fondements de la POO. J'ai pris plaisir à expérimenter avec ses principes fondamentaux, explorant les concepts de classe, d'objet, d'encapsulation, d'héritage et de polymorphisme.</p>
-        <p>Il s'agit d'un jeu de gestion d'un parc d'attractions. Il est possible de construire des attractions, les entretenir et les dégrader !</p>
+        <p>Il s'agit d'un jeu de gestion d'un parc d'attractions. Il est possible de construire des attractions, de les entretenir et de les dégrader !</p>
         <p>Ce jeu n'est qu'une ébauche. Il suffit de décommenter les différentes lignes de index.php en fonction des consignes qu'on veut implémenter, puis de le lancer via la commande <i>php index.php</i>.</p>
         <p>Toute ressemblance avec le jeu Planet Coaster n'est absolument pas fortuite...</p>
         `,
@@ -244,7 +247,7 @@ const projects = [
         id: 1,
         slug: 'istorel',
         name: 'Istorel',
-        introduction: `Istorel représente une étape significative dans mon parcours de développement web, marquant mes premiers pas dans la création et la refonte d'un site web. L'objectif principal était de moderniser un site existant, initialement non responsive et non conforme aux standards d'accessibilité et d'ergonomie contemporains. Pour ce faire, j'ai sélectionné le site d'une association d'historiens locaux comme terrain d'expérimentation.`,
+        introduction: `Istorel représente une étape significative dans mon parcours de développement web&#8239;: c'est mon tout premier site ! L'idée de ce projet était de prendre en exemple un site existant mais non responsive et non conforme aux standards contemporains d'accessibilité et d'ergonomie. Pour ce faire, j'ai sélectionné le site d'une association d'historiens locaux, que j'ai modernisé grâce à une refonte complète.`,
         coverImage: [
             {
                 src: istorel,
@@ -254,14 +257,14 @@ const projects = [
         ],
         techno: ['PHP', 'HTML', 'CSS', 'Javascript'],
         description: `
-        <p>Au cœur de ce projet résidait la nécessité de repenser entièrement le design tout en réorganisant les informations pour une expérience utilisateur optimale. La page d'accueil, initialement surchargée, a été rationalisée, épurée de ses éléments superflus pour une navigation plus fluide et intuitive.</p>
-        <p>J'ai choisi le site d'une association d'historiens locaux. En plus du design, l'objectif était aussi de réorganiser les informations et d'épurer la page d'accueil, qui comportait beaucoup trop d'éléments, pas forcément pertinents.</p>
-        <p>Initialement construit en HTML/CSS avec une touche de JavaScript pour des interactions dynamiques, j'ai étendu les fonctionnalités du site avec l'introduction de la programmation orientée objet (POO) en PHP. Cela m'a permis d'implémenter une classe dédiée aux articles ('Article') facilitant la gestion et l'affichage automatisé des actualités et des articles détaillés.</p>
-        <p>Cependant, une limitation de ce projet résidait dans l'absence de connexion à une base de données (BDD). Par conséquent, bien que le formulaire de contact ait été intégré, il demeurait non fonctionnel. Malgré cette contrainte, Istorel représente une étape cruciale dans mon apprentissage du développement web, m'offrant une solide base pour mes projets futurs.</p>`,
+        <p>La première étape de ce projet a été de repenser entièrement l'organisation du site, pour une expérience utilisateur optimale. En effet, il était très difficile de naviguer entre les pages, certaines d'entres elles étaient beaucoup trop surchargées. C'était notamment le cas de la page d'accueil, que j'ai rationalisée et épurée de ses éléments superflus pour une navigation plus fluide et intuitive&#8239;: elle comportait beaucoup trop d'éléments, pas forcément pertinents.</p>
+        <p>J'ai initialement construit la refonte de ce site en HTML/CSS avec une touche de Javascript pour des interactions dynamiques. Lorsque j'ai découvert PHP et la programmation orientée objet (POO), j'en ai profité pour étendre les fonctionnalités du site. Cela m'a permis d'implémenter une classe dédiée aux articles ('Article'), facilitant la gestion et l'affichage automatisé des actualités et des articles détaillés.</p>
+        <p>Cependant, une limitation de ce projet réside dans l'absence de connexion à une base de données (BDD). Par conséquent, bien que le formulaire de contact ait été intégré, il demeure non fonctionnel.</p>
+        <p>Malgré ce point, Istorel représente une étape cruciale dans mon apprentissage du développement web, m'offrant une solide base pour mes projets futurs.</p>`,
         images: [
-            { src: bookshelfCorner, title: "Istorel", description: "A beautiful project"},
-            { src: psToyscolor, title: "Istorel", description: "A beautiful project"},
-            { src: photoSolex, title: "Istorel", description: "A beautiful project"}
+            { src: istorel1, title: "Istorel", description: "Page HTML qui affiche la liste des articles du blog."},
+            { src: istorel2, title: "Istorel", description: "Formulaire de contact avec API pour la saisie des adresses."},
+            { src: istorel3, title: "Istorel", description: "Affichage de la liste des articles, tri possible par catégorie."}
         ],
         githubLink: 'https://github.com/HeleneGreat/istorel',
         websiteLink: 'https://helenegreat.alwaysdata.net/istorel/'
