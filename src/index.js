@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
@@ -13,7 +13,7 @@ import Error from './components/Error/Error';
 import projects from './datas/projects'
 import jobs from './datas/jobs';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
-
+import ReactGA from 'react-ga';
 
 // Style
 import { createGlobalStyle } from 'styled-components'
@@ -24,12 +24,16 @@ import colors from './utils/colors'
 import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
 
 const GlobalStyle = createGlobalStyle`
+  #no-script{
+    display: none;
+    visibility: hidden;
+  }
   @font-face {
     font-family: 'post_no_bills_colombomedium';
     src: url(${PostNoBillColombo}) format('truetype');
     font-weight: 300;
     font-style: normal;
-    font-display: auto;
+    font-display: swap;
   }
   body {
     margin: 0;
@@ -160,27 +164,40 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
+
+function App() {
+  const TRACKING_ID = "G-0VBD0CDMXS"; // OUR_TRACKING_ID
+  ReactGA.initialize(TRACKING_ID);
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
+
+  return (
+    <React.StrictMode>
+        <Router>
+          <ScrollToTop/>
+          <GlobalStyle/>
+          <Header/>
+          <ScrollToTopButton/>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/parcours" element={<Curriculum/>}/>
+            <Route path="/parcours/:jobSlug" element={<Curriculum jobs={jobs}/>}/>
+            <Route path="/projets" element={<Portfolio/>}/>
+            <Route path="/projets/:projectSlug" element={<Project projects={projects}/>}/>
+            <Route path="/contact" element={<Contact/>}/>
+            <Route path='*' element={<Error/>}/>
+          </Routes>
+          <Footer/>
+        </Router>
+      </React.StrictMode>
+  )
+}
+  
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <Router>
-      <ScrollToTop/>
-      <GlobalStyle/>
-      <Header/>
-      <ScrollToTopButton/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/parcours" element={<Curriculum/>}/>
-        <Route path="/parcours/:jobSlug" element={<Curriculum jobs={jobs}/>}/>
-        <Route path="/projets" element={<Portfolio/>}/>
-        <Route path="/projets/:projectSlug" element={<Project projects={projects}/>}/>
-        <Route path="/contact" element={<Contact/>}/>
-        <Route path='*' element={<Error/>}/>
-      </Routes>
-      <Footer/>
-    </Router>
-  </React.StrictMode>
-);
+root.render(<App/>);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

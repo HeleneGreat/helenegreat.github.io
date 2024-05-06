@@ -115,6 +115,8 @@ function Title() {
                     </h1>
                     <StyledImg
                         src={portrait}
+                        width={300}
+                        height={300}
                         alt="Hélène Carriou, développeuse full-stack"
                     />
                     <StyledDescription>
