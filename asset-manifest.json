@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.1e80c281.css",
-    "main.js": "/static/js/main.f4ff341c.js",
+    "main.js": "/static/js/main.ab313c73.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/helene_carriou1.png": "/static/media/helene_carriou1.0f1b664963553bf0f232.png",
-    "static/media/photo-solex3.png": "/static/media/photo-solex3.38811f19d805aa7f6007.png",
-    "static/media/photo-solex1.png": "/static/media/photo-solex1.7a0e992bf37594e21ec4.png",
-    "static/media/wp-yulbaba3.png": "/static/media/wp-yulbaba3.a368e6893795cfd2b4a8.png",
+    "static/media/photo-solex3.png": "/static/media/photo-solex3.c01994d8ae8b9c24c64f.png",
     "static/media/portfolio3.png": "/static/media/portfolio3.08d05189f15f739261d8.png",
+    "static/media/photo-solex1.png": "/static/media/photo-solex1.d749edc1ac7830587dd4.png",
+    "static/media/wp-yulbaba3.png": "/static/media/wp-yulbaba3.4b34ead85bdd8905bb56.png",
     "static/media/istorel-cover.png": "/static/media/istorel-cover.403ac3339ae1429dfe49.png",
     "static/media/asterix2.png": "/static/media/asterix2.b048cb47197381c9ec14.png",
     "static/media/wp-yulbaba-cover.png": "/static/media/wp-yulbaba-cover.26c29cdac36bcd2b771d.png",
@@ -40,17 +40,17 @@
     "static/media/postnobillscolombo-medium-webfont.woff": "/static/media/postnobillscolombo-medium-webfont.36b1dec88e4c6d2dcf57.woff",
     "static/media/wiki-disney1.png": "/static/media/wiki-disney1.85df92e70319698a2743.png",
     "static/media/prestashop.svg": "/static/media/prestashop.fd7e66669881816c9377b3a46b81e0aa.svg",
+    "index.html": "/index.html",
     "static/media/photoshop.svg": "/static/media/photoshop.7aceeb7ac16b1b3675740051509e1c29.svg",
     "static/media/twig.svg": "/static/media/twig.f67893e7d7089c8c73ae644aa1c35d07.svg",
     "static/media/doctrine.svg": "/static/media/doctrine.5cb96067582c988fd75a7c0020b7e440.svg",
-    "index.html": "/index.html",
     "static/media/menu-burger.svg": "/static/media/menu-burger.3e10dd7cfbf3847dbfe88047825c95e2.svg",
     "main.1e80c281.css.map": "/static/css/main.1e80c281.css.map",
-    "main.f4ff341c.js.map": "/static/js/main.f4ff341c.js.map",
+    "main.ab313c73.js.map": "/static/js/main.ab313c73.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1e80c281.css",
-    "static/js/main.f4ff341c.js"
+    "static/js/main.ab313c73.js"
   ]
 }
