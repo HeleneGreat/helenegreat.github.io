@@ -62,6 +62,7 @@ const StyledImg = styled('img')`
 
 function Curriculum() {
     const { jobSlug } = useParams()
+    document.title = 'Parcours | Hélène Carriou'
 
     return (
         <div className="main">

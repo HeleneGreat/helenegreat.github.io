@@ -24,6 +24,8 @@ const StyledImg = styled('img')`
 `
 
 function Error() {
+    document.title = 'Erreur 404 | Hélène Carriou'
+
     return (
         <StyledError className="main">
             <div className="container">

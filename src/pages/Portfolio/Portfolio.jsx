@@ -27,6 +27,8 @@ const StyledProjectList = styled('ul')`
 `
 
 function Portfolio() {
+    document.title = 'Projets | Hélène Carriou'
+
     return (
         <div className="main">
             <div className="page-header">

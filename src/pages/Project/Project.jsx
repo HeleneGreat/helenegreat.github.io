@@ -157,6 +157,7 @@ function Project() {
     if (!project) {
         return <Navigate to="/404" />
     }
+    document.title = project.name + ' | Hélène Carriou'
 
     return (
         <div className="main">

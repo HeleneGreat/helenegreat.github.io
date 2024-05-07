@@ -14,6 +14,8 @@ function Home() {
         'SQL',
         'CSS',
     ]
+    document.title = 'Hélène Carriou, développeuse full-stack'
+
     return (
         <div className="main">
             <Title />

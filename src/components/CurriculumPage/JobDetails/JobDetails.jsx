@@ -84,6 +84,7 @@ function JobDetails({ jobSlug }) {
     if (!job) {
         return <Navigate to="/404" />
     }
+    document.title = job.name + ' | Hélène Carriou'
 
     return (
         <div id="job-details">
