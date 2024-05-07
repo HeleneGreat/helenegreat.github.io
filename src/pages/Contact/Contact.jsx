@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { breakpoints } from '../../utils/css-breakpoints'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import ReactGA from 'react-ga4'
 
 const StyledContact = styled('div')`
     background-color: ${colors.primary};
@@ -155,9 +156,18 @@ const StyledForm = styled('form')`
 `
 
 function Contact() {
+    document.title = 'Contact | Hélène Carriou'
     const form = useRef()
     const [loading, setLoading] = useState(false)
     const [message, setMessage] = useState()
+
+    const handleClick = (platform) => {
+        ReactGA.event({
+            category: 'Réseaux sociaux',
+            action: 'Click',
+            label: platform,
+        })
+    }
 
     const sendEmail = (e) => {
         e.preventDefault()
@@ -217,6 +227,7 @@ function Contact() {
                         to="https://www.linkedin.com/in/hélène-carriou/"
                         title="Profil LinkedIn"
                         target="_blank"
+                        onClick={() => handleClick('LinkedIn Contact')}
                     >
                         <StyledFontAwesomeIcon icon={faLinkedin} />
                     </Link>
@@ -234,7 +245,6 @@ function Contact() {
                         name="user_email"
                         placeholder="Votre email *"
                         required
-                        // autoComplete="off"
                     />
                     <textarea name="message" placeholder="Votre message... *" />
                     <input type="hidden" name="timestamp" />

@@ -13,7 +13,7 @@ import Error from './components/Error/Error';
 import projects from './datas/projects'
 import jobs from './datas/jobs';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 // Style
 import { createGlobalStyle } from 'styled-components'
@@ -166,11 +166,29 @@ const GlobalStyle = createGlobalStyle`
 
 
 function App() {
-  const TRACKING_ID = "G-0VBD0CDMXS"; // OUR_TRACKING_ID
-  ReactGA.initialize(TRACKING_ID);
-
+  const TRACKING_ID = "G-69WBCTNJ1C"; // GA4 TRACKING_ID
+  
+  ReactGA.gtag(
+    'consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied'
+    }
+  )
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.initialize(TRACKING_ID, {
+      gaOptions: {
+        storage: 'none', // Désactive le stockage des cookies
+        storeGac: false, // Ne pas stocker les données de consentement dans les cookies
+        anonymize_ip: true // Anonymise l'adresse IP des utilisateurs
+    }
+    });
+    ReactGA.ga('consent', 'default', {
+      ad_storage: 'denied', // Refuser le suivi publicitaire
+      analytics_storage: 'denied' // Refuser le suivi analytique
+  });
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname, title: window.location.pathname });
   }, []);
 
   return (

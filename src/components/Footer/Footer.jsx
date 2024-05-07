@@ -5,6 +5,7 @@ import fonts from '../../utils/fonts'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { breakpoints } from '../../utils/css-breakpoints'
+import ReactGA from 'react-ga4'
 
 const StyleFooter = styled('footer')`
     padding: 30px 0;
@@ -67,6 +68,14 @@ const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
 `
 
 function Footer() {
+    const handleClick = (platform) => {
+        ReactGA.event({
+            category: 'Réseaux sociaux',
+            action: 'Click',
+            label: platform,
+        })
+    }
+
     return (
         <StyleFooter>
             <StyledContainer className="container">
@@ -81,6 +90,7 @@ function Footer() {
                         to="https://www.linkedin.com/in/hélène-carriou/"
                         title="Profil LinkedIn"
                         target="_blank"
+                        onClick={() => handleClick('LinkedIn Footer')}
                     >
                         <StyledFontAwesomeIcon icon={faLinkedin} />
                     </Link>
@@ -88,6 +98,7 @@ function Footer() {
                         to="https://github.com/HeleneGreat"
                         title="Profil GitHub"
                         target="_blank"
+                        onClick={() => handleClick('GitHub Footer')}
                     >
                         <StyledFontAwesomeIcon icon={faSquareGithub} />
                     </Link>
