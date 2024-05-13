@@ -14,6 +14,7 @@ import projects from './datas/projects'
 import jobs from './datas/jobs';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import ReactGA from 'react-ga4';
+import CookieInformation from './components/CookieInformation/CookieInformation'
 
 // Style
 import { createGlobalStyle } from 'styled-components'
@@ -194,6 +195,7 @@ function App() {
           <GlobalStyle/>
           <Header/>
           <ScrollToTopButton/>
+          <CookieInformation/>
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/parcours" element={<Curriculum/>}/>
