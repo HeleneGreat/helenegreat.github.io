@@ -24,10 +24,6 @@ import colors from './utils/colors'
 import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
 
 const GlobalStyle = createGlobalStyle`
-  #no-script{
-    display: none;
-    visibility: hidden;
-  }
   @font-face {
     font-family: 'post_no_bills_colombomedium';
     src: url(${PostNoBillColombo}) format('truetype');
@@ -187,7 +183,7 @@ function App() {
     ReactGA.ga('consent', 'default', {
       ad_storage: 'denied', // Refuser le suivi publicitaire
       analytics_storage: 'denied' // Refuser le suivi analytique
-  });
+    });
     ReactGA.send({ hitType: "pageview", page: window.location.pathname, title: window.location.pathname });
   }, []);
 
