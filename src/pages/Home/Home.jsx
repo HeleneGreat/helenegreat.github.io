@@ -6,12 +6,13 @@ import ProjectTypes from '../../components/HomePage/ProjectTypes/ProjectTypes'
 
 function Home() {
     const mainTechnos = [
+        'PHP',
         'Symfony',
         'React',
-        'HTML',
         'Git',
-        'Javascript',
         'SQL',
+        'Javascript',
+        'HTML',
         'CSS',
     ]
     document.title = 'Hélène Carriou, développeuse full-stack'
