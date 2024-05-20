@@ -29,12 +29,17 @@ import psToyscolor from '../assets/projects/ps-toyscolor-cover.png'
 import psToyscolor1 from '../assets/projects/ps-toyscolor1.png'
 import psToyscolor2 from '../assets/projects/ps-toyscolor2.png'
 import psToyscolor3 from '../assets/projects/ps-toyscolor3.png'
-//7 Photo Solex
+//7 Script Casino
+import casino from '../assets/projects/casino-cover.png'
+import casino1 from '../assets/projects/casino1.png'
+import casino2 from '../assets/projects/casino2.png'
+import casino3 from '../assets/projects/casino3.png'
+//9 Photo Solex
 import photoSolex from '../assets/projects/photo-solex-cover.png'
 import photoSolex1 from '../assets/projects/photo-solex1.png'
 import photoSolex2 from '../assets/projects/photo-solex2.png'
 import photoSolex3 from '../assets/projects/photo-solex3.png'
-//8 Portfolio
+//10 Portfolio
 import portfolio from '../assets/projects/portfolio-cover.png'
 import portfolio1 from '../assets/projects/portfolio1.png'
 import portfolio2 from '../assets/projects/portfolio2.png'
@@ -44,7 +49,7 @@ import portfolio3 from '../assets/projects/portfolio3.png'
 
 const projects = [
     {
-        id: 8,
+        id: 10,
         slug: 'portfolio',
         name: 'Portfolio',
         introduction: `
@@ -73,7 +78,7 @@ const projects = [
         githubLink: 'https://github.com/HeleneGreat/helenegreat.github.io',
     },
     {
-        id: 7,
+        id: 9,
         slug: 'photo-solex',
         name: 'Photo Solex',
         introduction: `Photo Solex c'est LE projet fil rouge de mon bachelor. C'est un site de partage de photos anciennes, pour que les utilisateurs s'entraident pour identifier les personnes présentes sur les photos. L'idée, c'est de préserver la mémoire familiale et de partager ses souvenirs avec ses proches. Ce projet est en constante évolution, je continue de le développer sur mon temps libre.`,
@@ -95,6 +100,62 @@ const projects = [
             { src: photoSolex1, title: "Photo Solex", description: "Page d'une photo : information sur l'image, personnes identifiées, commentaires des membres de la famille."},
             { src: photoSolex2, title: "Photo Solex", description: "Modèle conceptuel des données (MCD) du projet tel qu'il a été présenté lors de mon examen final. Il a depuis évolué, avec par exemple l'ajout des groupes d'utilisateurs (familles)."},
             { src: photoSolex3, title: "Photo Solex", description: "Exemple de code : un service pour gérer l'upload des fichiers images (photos partagées et avatar des utilisateurs)."}
+        ],
+    },
+    {
+        id: 8,
+        slug: '',
+        name: '',
+        introduction: ``,
+        coverImage: [
+            {
+                src: photoSolex,
+                title: "",
+                description: "Photo de couverture"
+            }
+        ],
+        techno: ['PHP', 'Javascript'],
+        description: `
+        <p></p>
+        `,
+        images: [
+            { src: photoSolex1, title: "", description: ""},
+            { src: photoSolex2, title: "", description: ""},
+            { src: photoSolex3, title: "", description: ""}
+        ],
+    },
+    {
+        id: 7,
+        slug: 'script-casino',
+        name: 'Script de casino en bash',
+        introduction: `Lors de mon cours d'initiation à Linux, j'ai créé un script Bash pour jouer à un casino virtuel comprenant plusieurs jeux. Ce projet m'a permis d'appliquer des concepts de scripting Linux tout en développant une interface interactive pour les utilisateurs. Il a été réalisé en 2h, dans le cadre d'une évaluation.`,
+        coverImage: [
+            {
+                src: casino,
+                title: "Script de casino en bash",
+                description: "Photo de couverture"
+            }
+        ],
+        techno: ['Linux', 'Shell'],
+        description: `
+        <p>Fonctionnalités principales de ce script :</p>
+        <ul>
+            <li>Gestion de la cagnotte : le joueur commence avec une cagnotte initiale de 100€ et doit définir un pari à atteindre (minimum 500€).</li>
+            <li>Sélection de jeux : trois jeux sont disponibles :</li>
+            <ol>
+                <li>Pile ou Face</li>
+                <li>Machine à sous (à compléter)</li>
+                <li>Pierre Feuille Ciseaux</li>
+            </ol>
+            <li>Mises et gains : le joueur peut miser un montant pour chaque jeu, avec la possibilité de gagner ou perdre des fonds en fonction des résultats.</li>
+        </ul>
+       <p>Le script utilise des fonctions pour gérer les différentes étapes du jeu, telles que l'initialisation, le choix du jeu, la gestion des mises et la vérification des gains ou des pertes. Le script n'est pas terminé, je n'ai pas eu le temps d'implémenter la machine à sous dans le temps imparti. Plutôt que de commencer à coder quelque chose qui aurait peu de chance de fonctionner, j'ai préféré utiliser le peu de temps qui me restait pour agrémenter le jeu avec des couleurs et en améliorant les textes. Cela m'a permis d'améliorer grandement la lisibilité et l'expérience utilisateur.</p>
+       <p>Ce projet a été une excellente opportunité pour mettre en pratique mes compétences en scripting Bash, tout en créant une application ludique et interactive. Il illustre également l'importance de la gestion des entrées utilisateurs et des vérifications conditionnelles dans le développement de scripts robustes et fiables.</p>
+        `,
+        images: [
+            { src: casino1, title: "Script de casino en bash", description: "Jeu du Pile ou Face"},
+            { src: casino2, title: "Script de casino en bash", description: "Jeu de Pierre Feuille Ciseaux"},
+            { src: casino3, title: "Script de casino en bash", description: "Exécution du script dans le terminal"}
         ],
     },
     {

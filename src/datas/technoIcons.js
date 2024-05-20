@@ -1,5 +1,5 @@
-import { faGithub, faHtml5, faCss3Alt, faPhp, faJsSquare, faGit, faWordpress, faFigma, faStackOverflow, faAndroid, faReact, faPython, faNode, faSymfony, faSass, faNpm, faJira, faBootstrap} from '@fortawesome/free-brands-svg-icons'
-import { faDatabase, faMobile } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faHtml5, faCss3Alt, faPhp, faJsSquare, faGit, faWordpress, faFigma, faStackOverflow, faAndroid, faReact, faPython, faNode, faSymfony, faSass, faNpm, faJira, faBootstrap, faLinux} from '@fortawesome/free-brands-svg-icons'
+import { faDatabase, faMobile, faTerminal } from '@fortawesome/free-solid-svg-icons'
 import photoshop from '../assets/photoshop.svg'
 import twig from '../assets/twig.svg'
 import prestashop from '../assets/prestashop.svg'
@@ -85,6 +85,14 @@ const technoIcons = [
         name: 'Python',
         icon: faPython,
         level: 1
+    },
+    {
+        name: 'Linux',
+        icon: faLinux,
+    },
+    {
+        name: 'Shell',
+        icon: faTerminal,
     },
     {
         name: 'Git',
