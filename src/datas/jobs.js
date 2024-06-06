@@ -81,13 +81,14 @@ const jobs = [
         city: 'Vannes',
         year: "2022",
         fullDate: "Mai à juin 2022",
-        introduction: ` Ma mission principale lors de ce stage était de concevoir un script automatisé pour exécuter le framework de test Cypress, générer des rapports CSV détaillés, et rendre les résultats des tests accessibles à tous, même aux non-informaticiens.`,
+        introduction: ` Ma mission principale lors de ce stage était de concevoir un script automatisé pour exécuter le framework de test Cypress, générer des rapports CSV détaillés, et rendre les résultats des tests accessibles à tous, même aux non-informaticiens. Mission au sein d'une équipe agile.`,
         techno: ['Python', 'Wordpress', 'HTML'],
         description: `
         <h3>Mission principale</h3>
         <p>Dans le cadre de mon stage en tant que développeuse web python, j'ai eu l'opportunité de plonger dans l'univers du langage Python de manière autonome. J'ai pris en charge la manipulation de fichiers XML et CSV, ce qui m'a permis d'acquérir une expertise dans la gestion de données structurées. De plus, j'ai travaillé activement avec Git/Gitea pour assurer une gestion efficace des branches et des versions de mon code.</p>
         <p>Ma mission principale consistait à développer un script en Python pour automatiser l'exécution du framework de test Cypress. Ce script devait être capable de récupérer les données issues des fichiers XML des tests Cypress, les renommer pour éviter toute erreur lors des prochaines exécutions, puis les consolider dans un fichier CSV. Ce dernier devait contenir une liste de tous les modules testés, leur temps d'exécution, ainsi que les éventuelles erreurs rencontrées. De plus, j'ai mis en place un deuxième fichier CSV contenant des statistiques clés sur les tests, telles que le temps d'exécution moyen et maximal, la liste des modules avec des erreurs, et le nombre total d'erreurs.</p>
         <p>L'objectif principal de ce script était de rendre les résultats des tests facilement interprétables et compréhensibles, même pour les non-informaticiens. Pour garantir la robustesse et la fiabilité du script, j'ai pris soin de typer chaque fonction, variable et retour pour éviter toute erreur potentielle. De plus, j'ai commenté mon code en français et en anglais afin de faciliter les évolutions futures du script. Enfin, j'ai rédigé un README détaillé à l'intention de l'utilisateur pour assurer une utilisation fluide et optimale du script.</p>
+        <p>Travaillant en mode agile, j'ai participé activement aux réunions quotidiennes (daily) et aux itérations pour assurer une progression efficace du projet.</p>
         <h3>Missions secondaires</h3>
         <p>En parallèle de ma mission principale, j'ai également contribué à d'autres projets, tels que la création d'un questionnaire sur le site de l'entreprise et l'amélioration du référencement SEO du site iole.fr. J'ai également rédigé des contenus pour le site, démontrant ainsi ma polyvalence et ma capacité à mener plusieurs tâches de front.</p>
         `,

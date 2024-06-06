@@ -34,6 +34,11 @@ import casino from '../assets/projects/casino-cover.png'
 import casino1 from '../assets/projects/casino1.png'
 import casino2 from '../assets/projects/casino2.png'
 import casino3 from '../assets/projects/casino3.png'
+//8 
+import bdd from '../assets/projects/bdd-cover.png'
+import bdd1 from '../assets/projects/bdd1.png'
+import bdd2 from '../assets/projects/bdd2.png'
+import bdd3 from '../assets/projects/bdd3.png'
 //9 Photo Solex
 import photoSolex from '../assets/projects/photo-solex-cover.png'
 import photoSolex1 from '../assets/projects/photo-solex1.png'
@@ -48,6 +53,28 @@ import portfolio3 from '../assets/projects/portfolio3.png'
 
 
 const projects = [
+    // {
+    //     id: 8,
+    //     slug: '',
+    //     name: '',
+    //     introduction: ``,
+    //     coverImage: [
+    //         {
+    //             src: photoSolex,
+    //             title: "",
+    //             description: "Photo de couverture"
+    //         }
+    //     ],
+    //     techno: ['PHP', 'Javascript'],
+    //     description: `
+    //     <p></p>
+    //     `,
+    //     images: [
+    //         { src: photoSolex1, title: "", description: ""},
+    //         { src: photoSolex2, title: "", description: ""},
+    //         { src: photoSolex3, title: "", description: ""}
+    //     ],
+    // },
     {
         id: 10,
         slug: 'portfolio',
@@ -104,24 +131,33 @@ const projects = [
     },
     {
         id: 8,
-        slug: '',
-        name: '',
-        introduction: ``,
+        slug: 'conception-base-de-donnees',
+        name: 'Conception de bases de données et requêtes SQL',
+        introduction: `Au cours de cet exercice, je me suis investie dans la pratique de la conception de bases de données (MCD, MLD) ainsi que dans l'écriture de requêtes SQL, allant des plus simples aux plus complexes. Cette démarche m'a permis de consolider mes compétences dans le domaine de la gestion des données et de la manipulation de bases de données relationnelles.`,
         coverImage: [
             {
-                src: photoSolex,
-                title: "",
+                src: bdd,
+                title: "Conception de bases de données et requêtes SQL",
                 description: "Photo de couverture"
             }
         ],
-        techno: ['PHP', 'Javascript'],
+        techno: ['SQL'],
         description: `
         <p></p>
+        <ul>
+        <li>Conception de Bases de Données</li>
+        <p>A partir d'un texte qui explique les besoins des utilisateurs finaux, j'ai débuté cet exercice par la modélisation des bases de données en élaborant des Modèles Conceptuels de Données (MCD). Ces modèles m'ont aidé à visualiser la structure générale des informations à stocker et à établir les relations entre les différentes entités.</p>
+        <p>Ensuite, j'ai affiné ces modèles en élaborant des Modèles Logiques de Données (MLD) qui décrivent de manière précise les tables, les attributs et les contraintes de la base de données.</p>
+        <li>Requêtes SQL</li>
+        <p>Une fois les bases de données conçues, j'ai mis en pratique mes compétences en rédigeant des requêtes SQL pour interagir avec ces bases de données. Ces requêtes vont de simples opérations de sélection, d'insertion et de mise à jour de données à des requêtes plus complexes impliquant des jointures, des sous-requêtes et des fonctions SQL avancées.</p>
+        <li>Apprentissage Continu</li>
+        <p>Ce projet m'a permis d'approfondir mes connaissances en conception de bases de données et en SQL, mais également de découvrir de nouveaux concepts et techniques pour optimiser la gestion et l'exploitation des données. Je reste engagé dans mon parcours d'apprentissage continu dans le domaine des bases de données pour pouvoir répondre aux défis futurs avec confiance et expertise.</p>
+        </ul>
         `,
         images: [
-            { src: photoSolex1, title: "", description: ""},
-            { src: photoSolex2, title: "", description: ""},
-            { src: photoSolex3, title: "", description: ""}
+            { src: bdd1, title: "Conception de bases de données et requêtes SQL", description: "Conception d'un MCD et MLD d'un site de réservation de billets d'avion"},
+            { src: bdd2, title: "Conception de bases de données et requêtes SQL", description: "Différentes requêtes concernant les billets d'avion"},
+            { src: bdd3, title: "Conception de bases de données et requêtes SQL", description: "Exercice avec le calcul de loyer et du prix du m2 de logements"}
         ],
     },
     {
