@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.1e80c281.css",
-    "main.js": "/static/js/main.3b6da2da.js",
+    "main.js": "/static/js/main.da0ab841.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/helene_carriou1.png": "/static/media/helene_carriou1.0f1b664963553bf0f232.png",
+    "static/media/bdd3.png": "/static/media/bdd3.886e2bf0ecab884a1f36.png",
     "static/media/photo-solex3.png": "/static/media/photo-solex3.c01994d8ae8b9c24c64f.png",
     "static/media/portfolio3.png": "/static/media/portfolio3.08d05189f15f739261d8.png",
     "static/media/casino2.png": "/static/media/casino2.b752a909deae3e9f58f2.png",
@@ -18,10 +19,12 @@
     "static/media/wp-yulbaba1.png": "/static/media/wp-yulbaba1.57201525c73ac7877386.png",
     "static/media/ps-toyscolor3.png": "/static/media/ps-toyscolor3.d5f3bc0a9dc68c71c4a7.png",
     "static/media/bookshelf-corner1.png": "/static/media/bookshelf-corner1.53e99c948a046538b45c.png",
+    "static/media/bdd2.png": "/static/media/bdd2.f8f7d0aac648ad0060b9.png",
     "static/media/istorel1.png": "/static/media/istorel1.05e6b1a121da28205948.png",
     "static/media/casino1.png": "/static/media/casino1.7233c3b4ea508519dc28.png",
     "static/media/bookshelf-corner-cover.png": "/static/media/bookshelf-corner-cover.06b6c36827c9604071b0.png",
     "static/media/portfolio-cover.png": "/static/media/portfolio-cover.dee34c2d71df919c84fb.png",
+    "static/media/bdd-cover.png": "/static/media/bdd-cover.349aa9323b53547b08f9.png",
     "static/media/ps-toyscolor2.png": "/static/media/ps-toyscolor2.c90f382cbb16aa76924b.png",
     "static/media/wiki-disney3.png": "/static/media/wiki-disney3.7b7e53f2c6be71b9764a.png",
     "static/media/wp-yulbaba2.png": "/static/media/wp-yulbaba2.3aae828888ba81dc76a8.png",
@@ -34,6 +37,7 @@
     "static/media/istorel2.png": "/static/media/istorel2.b307a5587d47f401060d.png",
     "static/media/casino-cover.png": "/static/media/casino-cover.d5f2da7bb71e49a8c7d6.png",
     "static/media/bookshelf-corner2.png": "/static/media/bookshelf-corner2.80d3d95871f2363abec5.png",
+    "static/media/bdd1.png": "/static/media/bdd1.397eff8da97b314afca0.png",
     "static/media/asterix1.png": "/static/media/asterix1.90e3b1e34c47f247cce3.png",
     "static/media/wiki-disney2.png": "/static/media/wiki-disney2.d08d47b048e52a000b50.png",
     "static/media/casino3.png": "/static/media/casino3.fbec8fec775639413421.png",
@@ -50,11 +54,11 @@
     "static/media/doctrine.svg": "/static/media/doctrine.5cb96067582c988fd75a7c0020b7e440.svg",
     "static/media/menu-burger.svg": "/static/media/menu-burger.3e10dd7cfbf3847dbfe88047825c95e2.svg",
     "main.1e80c281.css.map": "/static/css/main.1e80c281.css.map",
-    "main.3b6da2da.js.map": "/static/js/main.3b6da2da.js.map",
+    "main.da0ab841.js.map": "/static/js/main.da0ab841.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1e80c281.css",
-    "static/js/main.3b6da2da.js"
+    "static/js/main.da0ab841.js"
   ]
 }
