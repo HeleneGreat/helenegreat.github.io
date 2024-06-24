@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1e80c281.css",
-    "main.js": "/static/js/main.da0ab841.js",
+    "main.js": "/static/js/main.8888baec.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/helene_carriou1.png": "/static/media/helene_carriou1.0f1b664963553bf0f232.png",
     "static/media/bdd3.png": "/static/media/bdd3.886e2bf0ecab884a1f36.png",
@@ -11,11 +11,13 @@
     "static/media/photo-solex1.png": "/static/media/photo-solex1.d749edc1ac7830587dd4.png",
     "static/media/wp-yulbaba3.png": "/static/media/wp-yulbaba3.4b34ead85bdd8905bb56.png",
     "static/media/istorel-cover.png": "/static/media/istorel-cover.403ac3339ae1429dfe49.png",
+    "static/media/genealogy2.png": "/static/media/genealogy2.5d4749598c234bd82a4c.png",
     "static/media/asterix2.png": "/static/media/asterix2.b048cb47197381c9ec14.png",
     "static/media/wp-yulbaba-cover.png": "/static/media/wp-yulbaba-cover.26c29cdac36bcd2b771d.png",
     "static/media/istorel3.png": "/static/media/istorel3.f0ace0edca639d777c11.png",
     "static/media/ps-toyscolor-cover.png": "/static/media/ps-toyscolor-cover.c1f5b9db6972b20ed1bb.png",
     "static/media/photo-solex-cover.png": "/static/media/photo-solex-cover.631d04cc8ee9df063c65.png",
+    "static/media/genealogy-cover.png": "/static/media/genealogy-cover.b57de7eb5379bc2f6e7b.png",
     "static/media/wp-yulbaba1.png": "/static/media/wp-yulbaba1.57201525c73ac7877386.png",
     "static/media/ps-toyscolor3.png": "/static/media/ps-toyscolor3.d5f3bc0a9dc68c71c4a7.png",
     "static/media/bookshelf-corner1.png": "/static/media/bookshelf-corner1.53e99c948a046538b45c.png",
@@ -33,6 +35,8 @@
     "static/media/portfolio2.png": "/static/media/portfolio2.9a86f799a8fe54462ab6.png",
     "static/media/asterix-cover.png": "/static/media/asterix-cover.cab3eb9893c6f52161b9.png",
     "static/media/photo-solex2.png": "/static/media/photo-solex2.5aa1f7000fe92a85c3a4.png",
+    "static/media/genealogy1.png": "/static/media/genealogy1.7a775307a2bd2f8b5cf1.png",
+    "static/media/genealogy3.png": "/static/media/genealogy3.0960d2365701f6538544.png",
     "static/media/ps-toyscolor1.png": "/static/media/ps-toyscolor1.0993b12ed021a6fceec5.png",
     "static/media/istorel2.png": "/static/media/istorel2.b307a5587d47f401060d.png",
     "static/media/casino-cover.png": "/static/media/casino-cover.d5f2da7bb71e49a8c7d6.png",
@@ -54,11 +58,11 @@
     "static/media/doctrine.svg": "/static/media/doctrine.5cb96067582c988fd75a7c0020b7e440.svg",
     "static/media/menu-burger.svg": "/static/media/menu-burger.3e10dd7cfbf3847dbfe88047825c95e2.svg",
     "main.1e80c281.css.map": "/static/css/main.1e80c281.css.map",
-    "main.da0ab841.js.map": "/static/js/main.da0ab841.js.map",
+    "main.8888baec.js.map": "/static/js/main.8888baec.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1e80c281.css",
-    "static/js/main.da0ab841.js"
+    "static/js/main.8888baec.js"
   ]
 }
