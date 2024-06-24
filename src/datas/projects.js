@@ -49,6 +49,11 @@ import portfolio from '../assets/projects/portfolio-cover.png'
 import portfolio1 from '../assets/projects/portfolio1.png'
 import portfolio2 from '../assets/projects/portfolio2.png'
 import portfolio3 from '../assets/projects/portfolio3.png'
+//111 Genealogy visualization
+import genealogy from '../assets/projects/genealogy-cover.png'
+import genealogy1 from '../assets/projects/genealogy1.png'
+import genealogy2 from '../assets/projects/genealogy2.png'
+import genealogy3 from '../assets/projects/genealogy3.png'
 
 
 
@@ -70,14 +75,46 @@ const projects = [
     //     <p></p>
     //     `,
     //     images: [
-    //         { src: photoSolex1, title: "", description: ""},
-    //         { src: photoSolex2, title: "", description: ""},
-    //         { src: photoSolex3, title: "", description: ""}
+    //         { src: photoSolex1, description: ""},
+    //         { src: photoSolex2, description: ""},
+    //         { src: photoSolex3, description: ""}
     //     ],
+    //      githubLink: 'https://github.com/HeleneGreat/',
+    //      websiteLink:'',
     // },
     {
+        id: 11,
+        slug: '11-genealogie-visualization',
+        name: 'Illustration de ma généalogie',
+        introduction: `Alliant ma passion pour le code à celle de la généalogie, j'ai entrepris ce projet pour visualiser l'histoire de ma famille sous une forme innovante. En adaptant et personnalisant un code open-source trouvé sur GitHub, j'ai créé une représentation en roue de mon arbre généalogique, mettant en lumière l'origine géographique et la longévité de mes ancêtres. Ce projet me permet de partager mes recherches historiques avec ma famille et mes proches.
+`,
+        coverImage: [
+            {
+                src: genealogy,
+                title: "Illustration de ma généalogie",
+                description: "Photo de couverture"
+            }
+        ],
+        techno: ['Javascript', 'React', 'GitHub'],
+        description: `
+        <p>Ce projet est l'adaptation d'un code open-source que j'ai trouvé sur GitHub. Comme il correspondait presque parfaitement à mes besoins, j'ai décidé de le modifier pour l'adapter à mes envies.</p>
+        <p>Il s'agit d'un arbre généalogique représenté sous la forme d'une roue, où chaque génération est un cercle concentrique autour de l'individu racine. Le premier arbre permet de visualiser rapidement l'origine géographique de mes ancêtres. Comme beaucoup d'entre eux sont originaires des mêmes villes, j'en ai profité pour ajouter un nouveau niveau de zoom avec les lieux-dits. Le deuxième arbre illustre la longévité de mes ancêtres : plus leur quartier est foncé, plus ils sont décédés à un âge avancé.</p>
+        <p>La première étape a été d'adapter le code au format de données de mon logiciel de généalogie. En effet, les noms des lieux sont stockés différemment selon les logiciels, et le code d'origine n'était pas compatible avec mon fichier GEDCOM (fichier d'enrigistrement des données généalogiques). Une fois ce problème réglé, j'ai pu facilement ajouter les lieux-dits en plus des villes et des départements déjà existants.</p>
+        <p>De même, seul le numéro sosa (le numéro de l'ancêtre) s'affichait au survol de la souris, ce qui n'était pas très clair. Même moi qui m'y connais en généalogie, j'avais des difficultés à me repérer parmi tout ces ancêtres, sachant qu'en plus les données sont anonymisées. J'ai ainsi ajouté le numéro de génération de l'individu survolé, ainsi que son genre.</p>
+        <p>J'ai ajouté encore d'autres petits détails et réparés notamment la date de dernière mise à jour, qui ne fonctionnait pas. L'étape suivante a été la mise en ligne de ce projet, pour pouvoir le partager avec ma famille et mes cousins éloignés. C'est là que les choses se sont révélées plus compliquées que prévues ! En effet, le code est construit pour fonctionner en intégration continue, avec les GitHub Actions. Or, bien que je connaisse la théorie de la CI, je ne l'avais jamais mise en pratique.</p>
+        <p>Je remercie donc très chaleureusement Florian Cassayre, le développeur à l'origine de ce projet, qui m'a aidée à mettre en ligne mon code. Il a été très réactif pour essayer de trouver des solutions aux différents problèmes que j'ai rencontrés. Après avoir failli baisser les bras, ça y est, l'infographie de mon arbre généalogique est en ligne ! A l'avenir, au fur et à mesure de la progression de mes recherches, je n'aurai plus qu'à mettre à jour sur mon dépôt mon fichier GEDCOM pour générer une nouvelle illustration de mes ancêtres.</p>
+        `,
+        images: [
+            { src: genealogy1, description: "Au survol d'un quartier, diverses informations apparaissent."},
+            { src: genealogy2, description: "Adaptation du code à mon format de données, ajout du genre et du numéro de génération."},
+            { src: genealogy3, description: "Utilisation des GitHub Actions pour l'intégration continue."}
+        ],
+        githubLink: 'https://github.com/HeleneGreat/genealogy-visualization',
+        websiteLink:'https://helenegreat.github.io/genealogy-visualization',
+    },
+    {
         id: 10,
-        slug: 'portfolio',
+        slug: '10-portfolio',
         name: 'Portfolio',
         introduction: `
         Mon portfolio, c'est le site sur lequel vous vous trouvez ! Il représente bien plus qu'un simple site web, c'est une vitrine de mes compétences et de ma passion pour le développement web. En plus de me présenter, il met en lumière les projets que j'ai développés sur mon temps libre, reflétant mon engagement et mon dévouement envers mon métier. Ce portfolio, ça a également été une excuse pour replonger dans le monde merveilleux de Reactjs, et de piocher parmi les nombreuses librairies de composants existantes pour expérimenter et améliorer mes compétences dans ce domaine. `,
@@ -98,15 +135,15 @@ const projects = [
 
         `,
         images: [
-            { src: portfolio1, title: "Portfolio", description: "La maquette du site, réalisée sur Figma."},
-            { src: portfolio2, title: "Portfolio", description: "Appel des composants de la page d'accueil."},
-            { src: portfolio3, title: "Portfolio", description: "Création d'une timeline responsive pour afficher la liste de mes expériences."}
+            { src: portfolio1, description: "La maquette du site, réalisée sur Figma."},
+            { src: portfolio2, description: "Appel des composants de la page d'accueil."},
+            { src: portfolio3, description: "Création d'une timeline responsive pour afficher la liste de mes expériences."}
         ],
         githubLink: 'https://github.com/HeleneGreat/helenegreat.github.io',
     },
     {
         id: 9,
-        slug: 'photo-solex',
+        slug: '9-photo-solex',
         name: 'Photo Solex',
         introduction: `Photo Solex c'est LE projet fil rouge de mon bachelor. C'est un site de partage de photos anciennes, pour que les utilisateurs s'entraident pour identifier les personnes présentes sur les photos. L'idée, c'est de préserver la mémoire familiale et de partager ses souvenirs avec ses proches. Ce projet est en constante évolution, je continue de le développer sur mon temps libre.`,
         coverImage: [
@@ -124,14 +161,14 @@ const projects = [
         <p>J'ai présenté ce projet lors d'un oral pour l'obtention de mon CDA (bac+3/4), que j'ai obtenu. Ce projet n'est pas terminé, et je continue de le développer sur mon temps libre, en fonction de mes disponibilités.</p>
         `,
         images: [
-            { src: photoSolex1, title: "Photo Solex", description: "Page d'une photo : information sur l'image, personnes identifiées, commentaires des membres de la famille."},
-            { src: photoSolex2, title: "Photo Solex", description: "Modèle conceptuel des données (MCD) du projet tel qu'il a été présenté lors de mon examen final. Il a depuis évolué, avec par exemple l'ajout des groupes d'utilisateurs (familles)."},
-            { src: photoSolex3, title: "Photo Solex", description: "Exemple de code : un service pour gérer l'upload des fichiers images (photos partagées et avatar des utilisateurs)."}
+            { src: photoSolex1, description: "Page d'une photo : information sur l'image, personnes identifiées, commentaires des membres de la famille."},
+            { src: photoSolex2, description: "Modèle conceptuel des données (MCD) du projet tel qu'il a été présenté lors de mon examen final. Il a depuis évolué, avec par exemple l'ajout des groupes d'utilisateurs (familles)."},
+            { src: photoSolex3, description: "Exemple de code : un service pour gérer l'upload des fichiers images (photos partagées et avatar des utilisateurs)."}
         ],
     },
     {
         id: 8,
-        slug: 'conception-base-de-donnees',
+        slug: '8-conception-base-de-donnees',
         name: 'Conception de bases de données et requêtes SQL',
         introduction: `Au cours de cet exercice, je me suis investie dans la pratique de la conception de bases de données (MCD, MLD) ainsi que dans l'écriture de requêtes SQL, allant des plus simples aux plus complexes. Cette démarche m'a permis de consolider mes compétences dans le domaine de la gestion des données et de la manipulation de bases de données relationnelles.`,
         coverImage: [
@@ -155,14 +192,14 @@ const projects = [
         </ul>
         `,
         images: [
-            { src: bdd1, title: "Conception de bases de données et requêtes SQL", description: "Conception d'un MCD et MLD d'un site de réservation de billets d'avion"},
-            { src: bdd2, title: "Conception de bases de données et requêtes SQL", description: "Différentes requêtes concernant les billets d'avion"},
-            { src: bdd3, title: "Conception de bases de données et requêtes SQL", description: "Exercice avec le calcul de loyer et du prix du m2 de logements"}
+            { src: bdd1, description: "Conception d'un MCD et MLD d'un site de réservation de billets d'avion"},
+            { src: bdd2, description: "Différentes requêtes concernant les billets d'avion"},
+            { src: bdd3, description: "Exercice avec le calcul de loyer et du prix du m2 de logements"}
         ],
     },
     {
         id: 7,
-        slug: 'script-casino',
+        slug: '7-script-casino',
         name: 'Script de casino en bash',
         introduction: `Lors de mon cours d'initiation à Linux, j'ai créé un script Bash pour jouer à un casino virtuel comprenant plusieurs jeux. Ce projet m'a permis d'appliquer des concepts de scripting Linux tout en développant une interface interactive pour les utilisateurs. Il a été réalisé en 2h, dans le cadre d'une évaluation.`,
         coverImage: [
@@ -189,14 +226,14 @@ const projects = [
        <p>Ce projet a été une excellente opportunité pour mettre en pratique mes compétences en scripting Bash, tout en créant une application ludique et interactive. Il illustre également l'importance de la gestion des entrées utilisateurs et des vérifications conditionnelles dans le développement de scripts robustes et fiables.</p>
         `,
         images: [
-            { src: casino1, title: "Script de casino en bash", description: "Jeu du Pile ou Face"},
-            { src: casino2, title: "Script de casino en bash", description: "Jeu de Pierre Feuille Ciseaux"},
-            { src: casino3, title: "Script de casino en bash", description: "Exécution du script dans le terminal"}
+            { src: casino1, description: "Jeu du Pile ou Face"},
+            { src: casino2, description: "Jeu de Pierre Feuille Ciseaux"},
+            { src: casino3, description: "Exécution du script dans le terminal"}
         ],
     },
     {
         id: 6,
-        slug: 'ps-toyscolor',
+        slug: '6-ps-toyscolor',
         name: 'Prestashop Toyscolor',
         introduction: `Lors de mon bachelor, nous avons eu à réaliser en équipe un projet web qui réponde aux besoins d'un client réel. Nous avons donc conçu une boutique de vente en ligne dédiée aux produits de notre client&#8239;: des jeux créatifs pour enfants. De mon côté, en tant que développeuse, je me suis concentrée sur la partie technique du projet, c'est-à-dire l'intégration de la maquette sur un site Prestashop ainsi que le développement de deux modules pour mettre en avant les produits et l'entreprise. `,
         coverImage: [
@@ -215,15 +252,15 @@ const projects = [
         <p></p>
         `,
         images: [
-            { src: psToyscolor1, title: "Prestashop Toyscolor", description: "Les deux modules développés vus depuis le back-office, et l'UML de l'un des modules."},
-            { src: psToyscolor2, title: "Prestashop Toyscolor", description: "A gauche, arborescence des titres de la page d'accueil pour le SEO. A droite, l'évolution des performances entre l'ancien et le nouveau site Toyscolor."},
-            { src: psToyscolor3, title: "Prestashop Toyscolor", description: "Exemple de code du module pour présenter la boutique : création de tables en base de données lors de l'installation, puis supression des tables en cas de désinstallation du module."}
+            { src: psToyscolor1, description: "Les deux modules développés vus depuis le back-office, et l'UML de l'un des modules."},
+            { src: psToyscolor2, description: "A gauche, arborescence des titres de la page d'accueil pour le SEO. A droite, l'évolution des performances entre l'ancien et le nouveau site Toyscolor."},
+            { src: psToyscolor3, description: "Exemple de code du module pour présenter la boutique : création de tables en base de données lors de l'installation, puis supression des tables en cas de désinstallation du module."}
         ],
         githubLink: 'https://github.com/HeleneGreat/ps_toyscolor',
     },
     {
         id: 5,
-        slug: 'wiki-disney',
+        slug: '5-wiki-disney',
         name: 'Wiki Disney',
         introduction: `Premier projet en Symfony, ce wiki a été l'occasion d'expérimenter sur les entités, leurs relations, mais aussi de travailler à trois développeurs, avec Git et GitHub. Nous avions un cahier des charges à respecter, avec trois entités et différentes relations, pour découvrir et tester les différentes possibilités offertes par le framework Symfony. Ce projet était orienté back, ce qui explique le peu d'effort fourni pour la charte graphique du site !`,
         coverImage: [
@@ -249,15 +286,15 @@ const projects = [
         <p>En plus de se familiariser avec Symfony, ce projet a été l'occasion de découvrir Twig et le concept d'héritage de templates, que je réutiliserai presque constamment dans mes projets suivants.</p>
         `,
         images: [
-            { src: wikiDisney1, title: "Wiki Disney", description: "UML du projet"},
-            { src: wikiDisney2, title: "Wiki Disney", description: "Cahier des charges du projet"},
-            { src: wikiDisney3, title: "Wiki Disney", description: "Exemple de code : ajout de la liste des catégories en tant que variables globales Twig pour pouvoir y accéder par exemple dans le header"}
+            { src: wikiDisney1, description: "UML du projet"},
+            { src: wikiDisney2, description: "Cahier des charges du projet"},
+            { src: wikiDisney3, description: "Exemple de code : ajout de la liste des catégories en tant que variables globales Twig pour pouvoir y accéder par exemple dans le header"}
         ],
         githubLink: 'https://github.com/HeleneGreat/wiki_disney',
     },
     {
         id: 4,
-        slug: 'the-bookshelf-corner',
+        slug: '4-the-bookshelf-corner',
         name: 'The Bookshelf Corner',
         introduction: `The Bookshelf Corner c'est un blog littéraire fictif qui permet aux administrateurs de publier leur avis sur des livres. Il y a également tout une communauté, avec des utilisateurs qui peuvent s'inscrire pour poster des commentaires sur les articles. Le back office complet permet de gérer son compte en fonction de ses autorisations. C'est le projet que j'ai présenté pour l'obtention de mon titre de Développeur intégrateur web (bac+2).`,
         coverImage: [
@@ -282,16 +319,16 @@ const projects = [
         <p></p>
         `,
         images: [
-            { src: bookshelfCorner1, title: "The Bookshelf Corner", description: "Back office d'un administrateur"},
-            { src: bookshelfCorner2, title: "The Bookshelf Corner", description: "Requêtes SQL pour le CRUD d'un livre"},
-            { src: bookshelfCorner3, title: "The Bookshelf Corner", description: "Requête SQL pour récupérer les commentaires d'un livre"}
+            { src: bookshelfCorner1, description: "Back office d'un administrateur"},
+            { src: bookshelfCorner2, description: "Requêtes SQL pour le CRUD d'un livre"},
+            { src: bookshelfCorner3, description: "Requête SQL pour récupérer les commentaires d'un livre"}
         ],
         githubLink: 'https://github.com/HeleneGreat/bookshelf-corner',
         websiteLink: 'https://helenegreat.alwaysdata.net/bookshelf_corner/'
     },
     {
         id: 3,
-        slug: 'wp-yulbaba',
+        slug: '3-wp-yulbaba',
         name: 'Wordpress Yulbaba',
         introduction: `Yulbaba c'est mon premier Wordpress ! Dans le cadre de ma formation au Greta, nous avons étudié Wordpress et avons réalisé un thème sur-mesure à partir d'une maquette et d'un cahier des charges. J'ai tenté de réaliser ce thème avec le moins de plugins possible, afin de découvrir au mieux les possibilités offertes par le CMS. Nous avions 5 jours pour nous auto-former sur Wordpress puis réaliser ce thème, je suis assez fière du résultat !`,
         coverImage: [
@@ -308,15 +345,15 @@ const projects = [
         <p>J'ai eu beaucoup de plaisir à réaliser ce projet, qui m'a souvent donné envie de fouiller le codex Wordpress à la recherche d'options et de paramétrages qui répondent au mieux aux besoins de mon thème.</p>
         `,
         images: [
-            { src: yulbaba1, title: "Wordpress Yulbaba", description: "Maquette de la page d'accueil."},
-            { src: yulbaba2, title: "Wordpress Yulbaba", description: "Cahier des charges du projet."},
-            { src: yulbaba3, title: "Wordpress Yulbaba", description: "Exemple de code : le fichier function.php"}
+            { src: yulbaba1, description: "Maquette de la page d'accueil."},
+            { src: yulbaba2, description: "Cahier des charges du projet."},
+            { src: yulbaba3, description: "Exemple de code : le fichier function.php"}
         ],
         githubLink: 'https://github.com/HeleneGreat/wp-yulbaba',
     },
     {
         id: 2,
-        slug: 'parc-asterix',
+        slug: '2-parc-asterix',
         name: 'Parc Asterix',
         introduction: `Dans les débuts de ma découverte du PHP orienté objet, j'ai entrepris un projet modeste mais passionnant. Plongeant dans les méandres de la programmation orientée objet (POO), j'ai élaboré un petit jeu de gestion de parc d'attraction, qui se lance dans la console de VS Code.`,
         coverImage: [
@@ -334,15 +371,15 @@ const projects = [
         <p>Toute ressemblance avec le jeu Planet Coaster n'est absolument pas fortuite...</p>
         `,
         images: [
-            { src: asterix1, title: "Parc Asterix", description: "UML du projet : seules les parties 'Parc' et 'Attraction' ont été implémentée"},
-            { src: asterix2, title: "Parc Asterix", description: "Class Parc"},
-            { src: asterix3, title: "Parc Asterix", description: "Execution du script dans le terminal"}
+            { src: asterix1, description: "UML du projet : seules les parties 'Parc' et 'Attraction' ont été implémentée"},
+            { src: asterix2, description: "Class Parc"},
+            { src: asterix3, description: "Execution du script dans le terminal"}
         ],
         githubLink: 'https://github.com/HeleneGreat/parc-asterix',
     },
     {
         id: 1,
-        slug: 'istorel',
+        slug: '1-istorel',
         name: 'Istorel',
         introduction: `Istorel représente une étape significative dans mon parcours de développement web&#8239;: c'est mon tout premier site ! L'idée de ce projet était de prendre en exemple un site existant mais non responsive et non conforme aux standards contemporains d'accessibilité et d'ergonomie. Pour ce faire, j'ai sélectionné le site d'une association d'historiens locaux, que j'ai modernisé grâce à une refonte complète.`,
         coverImage: [
@@ -359,9 +396,9 @@ const projects = [
         <p>Cependant, une limitation de ce projet réside dans l'absence de connexion à une base de données (BDD). Par conséquent, bien que le formulaire de contact ait été intégré, il demeure non fonctionnel.</p>
         <p>Malgré ce point, Istorel représente une étape cruciale dans mon apprentissage du développement web, m'offrant une solide base pour mes projets futurs.</p>`,
         images: [
-            { src: istorel1, title: "Istorel", description: "Page HTML qui affiche la liste des articles du blog."},
-            { src: istorel2, title: "Istorel", description: "Formulaire de contact avec API pour la saisie des adresses."},
-            { src: istorel3, title: "Istorel", description: "Affichage de la liste des articles, tri possible par catégorie."}
+            { src: istorel1, description: "Page HTML qui affiche la liste des articles du blog."},
+            { src: istorel2, description: "Formulaire de contact avec API pour la saisie des adresses."},
+            { src: istorel3, description: "Affichage de la liste des articles, tri possible par catégorie."}
         ],
         githubLink: 'https://github.com/HeleneGreat/istorel',
         websiteLink: 'https://helenegreat.alwaysdata.net/istorel/'
