@@ -1,5 +1,5 @@
 import { faGraduationCap, faBriefcase } from '@fortawesome/free-solid-svg-icons'
-
+//13 UBS
 //12 Dream me up
 //11 CDA Mydi 
 //10 ioleSolutions
@@ -14,6 +14,27 @@ import { faGraduationCap, faBriefcase } from '@fortawesome/free-solid-svg-icons'
 //1 Licence Nantes
 
 const jobs = [
+    {
+        id: 13,
+        slug: '13-ingenieure-developpement-deploiement',
+        icon: faBriefcase,
+        name: 'Ingénieure développement et déploiement web',
+        company: "Université Bretagne Sud",
+        contrat: "Contractuelle",
+        city: 'Vannes',
+        year: "Depuis 2024",
+        fullDate: "Septembre 2024 à aujourd'hui",
+        introduction: `À l’université, je contribue au bon fonctionnement des applications métier utilisées par les services et les étudiants. Entre maintenance, développement et administration de bases de données, ce poste me permet de faciliter le quotidien des utilisateurs.`,
+        techno: ['Linux', 'Shell','SQL'],
+        description: `
+        <h3>Missions</h3>
+        <p>À l’Université Bretagne Sud, j’occupe un poste d’ingénieure développement et déploiement web au sein de la Direction des Systèmes d’Information (DSI), plus précisément dans le service Application Métier des Systèmes d’Information. Mon rôle est de garantir la disponibilité, l’évolution et la fiabilité des applications utilisées par les différents services et étudiants de l’université.</p>
+        <p>Mon quotidien s’articule autour du maintien en condition opérationnelle des applications : déploiement des mises à jour, correction des bugs et optimisation des performances. J’assure également le support technique aux utilisateurs, en intervenant rapidement pour résoudre les incidents et garantir une utilisation fluide de leurs outils.</p>
+        <p>Une autre facette de mon travail concerne l’administration des serveurs et des bases de données (MySQL et Oracle). J’interviens sur la gestion des utilisateurs, la structuration des bases et l’optimisation des requêtes. SQL me permet de développer des connecteurs entre les différentes applications de l’université, en utilisant des vues, des vues matérialisées, des fonctions et des procédures stockées, ainsi que des liens entre bases de données (dblink).</p>
+        <p>J’apprécie particulièrement l’environnement universitaire, qui offre un cadre de travail stimulant et collaboratif. Travailler en lien étroit avec les services opérationnels qui utilisent mes applications est un réel atout, car cela me permet de mieux comprendre leurs besoins et d’adapter les outils pour les rendre toujours plus performants et intuitifs.</p>
+        <p>Ce poste me permet d’évoluer dans un environnement où mes compétences en développement, administration et support sont pleinement exploitées, tout en contribuant directement à l’amélioration des services numériques de l’université.</p>
+        `,
+    },   
     {
         id: 12,
         slug: '12-developpeuse-full-stack',
